@@ -3,7 +3,7 @@ import {terribleTraitsTable, brokenBodyTable, badHabitTable, troublingTaleTable,
 
 function App() {
   const terribleTraitValue1 = Math.floor((Math.random() * 20));
-  const terribleTraitValue2 = Math.floor((Math.random() * 19) + terribleTraitValue1) % 20;
+  const terribleTraitValue2 = Math.floor((Math.random() * 19) + terribleTraitValue1 + 1) % 20;
   const brokenBodyValue = Math.floor((Math.random() * 20));
   const badHabitValue = Math.floor((Math.random() * 20));
   const troublingTaleValue = Math.floor((Math.random() * 20));
