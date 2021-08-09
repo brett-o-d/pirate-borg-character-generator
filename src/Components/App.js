@@ -70,7 +70,7 @@ function App() {
     <div>Agility: {agilityStat}</div>
     <div>Presence: {presenceStat}</div>
     <div>Toughness: {toughnessStat}</div>
-    <div></div>
+    <br></br>
     <div>Terrible Trait: {terribleTrait1}</div>
     <div>Terrible Trait: {terribleTrait2}</div>
     <div>Broken Body: {brokenBody}</div>
