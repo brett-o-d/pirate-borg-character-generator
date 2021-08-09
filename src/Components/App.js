@@ -2,8 +2,8 @@ import React from 'react';
 import {terribleTraitsTable, brokenBodyTable, badHabitTable, troublingTaleTable,
         placeOfImportanceTable, thingOfImportanceTable, backgroundTable,
         containerTable, cheapGearTable, valuableGearTable, petTable,
-        instrumentTable, enchantedArtifactTable, echantedArtifactDescriptionTable,
-        mythicArtifactTable, mythicArtifactDescriptionTable, clothingTable,
+        instrumentTable, enchantedArtifactTable, 
+        mythicArtifactTable, clothingTable,
         hatTable, weaponTable, bombTable, firstNamesTable, nicknameTable, 
         lastNameTable, statLookupTable} from '../Tables/tables.js'
 
