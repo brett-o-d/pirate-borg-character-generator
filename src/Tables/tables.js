@@ -401,7 +401,7 @@ export const mythicArtifactTable =
     "Curse Monkey Paw"]
 
 export const mythicArtifactDescriptionTable = 
-    ["d2 creatures regain d10 HP each.. ",
+    ["d2 creatures regain d10 HP each. ",
     "A creature of your choice gets +d6 on one roll (damage, test etc.)",
     "Ask three questions to a deceased creature.",
     "A creature of your choice gains 2d6 extra HP for 10 rounds.",
@@ -4073,3 +4073,82 @@ export const statLookupTable =
     "18":"+3",
     "19":"+3",
     "20":"+3"}
+
+export const classTable = 
+    ["Brute",
+    "Rapscallion",
+    "Buccaneer",
+    "Swashbuckler",
+    "Zealot",
+    "Voudou Bokor"]
+
+export const classStatsModifierTable = [[2, 0, -2, 0], [2, 0, -2, 0], [0, -2, 2, 0], [1, 1, -2, 0], [-2, 0, 2, 0], [0, 0, +2, 2], ]
+
+export const bruteAbilityTable = 
+["You begin with a trusted weapon [d6]. It has a nickname (what is it?). It will never break (but can be dropped). DR10 to attack:"]
+
+export const bruteWeaponTable = 
+    ["Iron Anchor. Requires two hands,d8 damage. Reduces armor by -d2.",
+    "Whaling Harpoon. d8 damage and can be thrown by testing Agility DR12.",
+    "Meat Cleaver. It’s caked in layers of dried blood. d4 damage; on a 1 a disease from one of its prior victims infects the target. It dies in d6 hours unless cured.",
+    "Part of a Broken Mast. It has a rusted nail protruding from one end. d8 damage, plus an extra d4 on a critical hit.",
+    "Large, Rusted Machete. d6 damage. Great for chopping down vines and fopdoodles. It glows in the dark if there are snakes nearby.",
+    "Rotten Cargo Net. Throw it at someone (or something) by testing Agility DR8 to stop them from moving for d2 rounds. Trapped targets take 1 damage each round."]
+
+export const rapscallionAbilityTable = 
+    ["Back Stabber. If you attack by surprise (from hiding, distracted enemy, etc.) lower the attack DR by 2 and deal d2 extra damage.",
+    "Burglar.You begin with lock picks. Pickpocket, disarm an enemy, or disable a trap: -2 to DR.",
+    "Rope Monkey. You’re as nimble in the rigging as you are on the deck. If you attack after swinging, jumping, or making an acrobatic maneuver, test Agility DR10 to automatically hit and deal +2 damage.",
+    "Sneaky Bastard. You can hide, sneak, and disappear into the shadows. DR14 to notice you.",
+    "Lucky Devil. When you use the Devil’s Luck, draw a playing card: 8+: Regain 1 Luck. Joker: Roll on the Joker Table.",
+    "Grog Brewer. Each day you can brew d4 servings of potent grog. You can soak melee weapons in it to use as a poison (it will get you drunk, too). Grog in a wound:Toughness DR14 or -d6 HP."]
+
+export const buccaneerAbilityTable = 
+    ["Wildlife Tracker. You always know the direction that something you are tracking has headed from your current location, and can tell approximately how long ago it was here.",
+    "Crack Shot. All ranged attacks are DR8.",
+    "Fast Reloader. Reloading takes 1 round instead of 2.",
+    "Focused Aim. Every time you shoot an enemy you have already hit this combat, lower the DR by 2. This effect is cumulative.",
+    "Buccan Cook: Months of island life have taught you the fine art of cooking meats over the buccan fire. You start with d8 rations of exquisite smoked meat. Eating it immediately recovers d4 hp, and you can make d4 more rations from any edible animal you kill.",
+    "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. -2 DR to toughness checks."]
+
+export const swashbucklerAbilityTable = 
+    ["Ostentatious Fencer: Your melee Attack/Defense is DR10 when wielding a rapier or cutlass. When dueling one-on-one, you deal +1 damage.",
+    "Flintlock Fanatic. You can attack with up to three pistols on your turn (if you have them). Reloading one pistol only takes you one round.",
+    "Scurvy Scallywag: You don’t fight fair. -2 DR when attacking an enemy that has already been attacked this turn.",
+    "Inspiring Leader. Once a combat, roll a d4. Everyone else may add or subtract that value from any roll during this combat.",
+    "Knife Knave. You start with 2 knives, and when you attack with them you can make two attacks a turn. They are DR10 to hit, and if the first attack hits, the 2nd is an auto-hit.",
+    "Black Powder Poet. Your DR when throwing bombs and grenades is DR10. You start with explosives: iron grenade, smoke bomb, smoke bomb, smoke bomb"]
+
+export const zealotAbilityTable = 
+    ["Heal. Heal thyself or another for d6 HP.",
+    "Curse. Test Presence DR10: deal d8 + Presence damage to an enemy thy can see that has already been hurt in this fight.",
+    "Death Ward. Touch the corpse of someone that has just died and test Presence DR10: they come back to life with 1 HP. Crit: Full HP. Fumble: They come back as a zombie and attack thee!",
+    "Influence Weather. Test Presence DR10 to change the direction of thy wind. If thee succeedth by 5 or more thee can also conjure or repel precipitation. Crit: Lighting strike d12. Fumble: Lighting strikes thee: d6",
+    "Blessed Guidance. Thee may add d4 to any roll thee or another player maketh.",
+    "Holy Protection. Thee or an ally gets -4 to DRs to defend for one attack. This may be applied after dice are rolled.",
+    "Divine Light. Bright light radiates from thee for up to d6 x 10 minutes.",
+    "Silence. For the next 2d6 x 10 minutes, everything within 25 feet of thee makes no sound. The effect only ends when the time doth expire.",
+    "Turn Undead. Check morale (add or subtract thy Presence modifier) to attempt to place an undead creature under thy command.",
+    "Commune. Test Presence DR8: Ask thy deity a single  “yes” or “no” question. The answer may be “unclear” or thee may receiveth no answer at all."]
+
+export const zealotWorshipTable = 
+    ["THE ONE TRUE GOD", "THE CHURCH", "MOTHER NATURE", "THE GREAT OLD ONE", "THE ANCIENT GODS OF MESOA", "THE PRINCE OF DARKNESS"]
+
+export const voudouBokorAbilityTable = ["Commune with the Lwa. Ask the spirits a question about an adjacent room, though they may lie. Test Presence DR12 to know if they are telling the truth but after failing you cannot test again until sunrise.",
+    "Lwa Possession. Once per combat, one random creature is possessed by a Lwa for d2 rounds. Friends: -2 DR to attack and defense. Foes: -2 DR to attack or defend against it. Any fumbles related to this creature cause the Lwa to leave, stunning the host for 1 round",
+    "Protection. Each day you can cast a ritual, summoning Papa Legba to watch over the soul of you or an ally. (+d2 Armor for the day)",
+    "Hand of Samedi. You can summon a ghostly, purple hand. It obeys your commands, but will attack on a Fumble. 2d4 damage",
+    "\"Zombie\" Powder. A taste of this white powder appears to kill a living creature, but when they awake they'll remember everything. Once a combat, test Presence DR 12 to see if it falls \"dead\" asleep for d2 rounds",
+    "Raise the Dead: Once a day, you can create 1 skeletal thrall from a nearby corpse. They tumble into bones at dawn. HP 4 Morale - Claw/Bite d4"]
+
+export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, voudouBokorAbilityTable]
+
+export const classDevilsLuckTable = ["d2", "d2", "d2", "d2", "d4", "d4"]
+
+export const classHpTable = [10, 6, 8, 8, 6, 6]
+
+export const classClothingTable = [10, 6, 10, 10, 10, 6]
+
+export const classHatTable = [12, 10, 12, 12, 0, 0]
+
+export const classWeaponTable = [0, 6, 0, 10, 8, 0]
