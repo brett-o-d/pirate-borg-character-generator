@@ -10,6 +10,8 @@
     position: absolute;
     top: 135px;
     left: 100px;
+    font-size: x-large;
+    font-weight:bold;
 }
 
 /* Class and Abilities text */
@@ -25,56 +27,98 @@
     position: absolute;
     top: 80px;
     left: 605px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* weapon text */
+.weapon {
+    position: absolute;
+    top: 70px;
+    left: 815px;
+    width: 300px;
 }
 
 /* strength stat text */
 .strength {
     position: absolute;
-    top: 360px;
-    left: 615px;
+    top: 350px;
+    left: 665px;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 /* strength stat text */
 .agility {
     position: absolute;
-    top: 450px;
-    left: 615px;
+    top: 435px;
+    left: 665px;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 /* strength stat text */
 .presence {
     position: absolute;
-    top: 530px;
-    left: 615px;
+    top: 510px;
+    left: 685px;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 /* strength stat text */
 .toughness {
     position: absolute;
-    top: 605px;
-    left: 615px;
+    top: 590px;
+    left: 665px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* equipment text */
+.clothes-text {
+    position: absolute;
+    top: 250px;
+    left: 805px;
+}
+
+/* equipment text */
+.hat-text {
+    position: absolute;
+    top: 250px;
+    left: 1005px;
+}
+
+/* equipment text */
+.equipment {
+    position: absolute;
+    top: 450px;
+    left: 805px;
+    width: 300px;
 }
 
 /* devils luck text */
 .devils-luck {
     position: absolute;
-    top: 730px;
-    left: 455px;
+    top: 720px;
+    left: 525px;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 /* terrible trait 1 text */
 .terrible-trait-1 {
     position: absolute;
     top: 940px;
-    left: 90px;
+    left: 100px;
     width: 240px;
 }
 
 /* terrible trait 2 text */
 .terrible-trait-2 {
     position: absolute;
-    top: 990px;
-    left: 90px;
+    top: 1000px;
+    left: 100px;
     width: 240px;
 }
 
@@ -83,12 +127,13 @@
     position: absolute;
     top: 1140px;
     left: 100px;
+    width: 240px;
 }
 
 /* bad habit text */
 .bad-habit {
     position: absolute;
-    top: 1280px;
+    top: 1290px;
     left: 100px;
     width: 240px;
 }
@@ -96,7 +141,7 @@
 /* troubling tale text */
 .troubling-tale {
     position: absolute;
-    top: 1440px;
+    top: 1450px;
     left: 100px;
     width: 240px;
 }
@@ -105,8 +150,8 @@
 .character-background {
     position: absolute;
     top: 940px;
-    left: 470px;
-    width: 335px;
+    left: 480px;
+    width: 325px;
 }
 
 /* thing of importance text */
@@ -115,6 +160,22 @@
     top: 940px;
     left: 870px;
     width: 200px;
+}
+
+/* place of importance text */
+.place-of-importance {
+    position: absolute;
+    top: 1520px;
+    left: 1000px;
+    width: 300px;
+}
+
+/* Artifacts text */
+.artifacts {
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    width: 300px;
 }
 
 /* Centered text */

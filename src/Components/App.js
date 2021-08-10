@@ -87,27 +87,32 @@ function App() {
     return (
       <div className="weapon">
         {classValue === 0 /* Brute */ 
-          ? <div><strong>Weapon:</strong> {bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
-          : <div><strong>Weapon:</strong> {weapon}</div>}
+          ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
+          : <div>{weapon}</div>}
       </div>
     )
   }
 
   function GearDisplay(){
     return (
-      <div className="gear">
-        <div><strong>Container:</strong> {container}</div>
-        <div><strong>Cheap Gear:</strong> {cheapGear}</div>
-        {cheapGearValue === 11 ? <div><strong>Pet:</strong> {pet}</div> : null}
-        <div><strong>Valuable Gear:</strong> {valuableGear}</div>
-        {valuableGearValue === 3 ? <div>
+      <div>
+        <div className="equipment">
+          <div><strong>Container:</strong> {container}</div>
+          <div><strong>Cheap Gear:</strong> {cheapGear}</div>
+          {cheapGearValue === 11 ? <div><strong>Pet:</strong> {pet}</div> : null}
+          <div><strong>Valuable Gear:</strong> {valuableGear}</div>
+          {valuableGearValue === 11 ? <div><strong>Instrument:</strong> {instrument}</div> : null}
+        </div>
+        {valuableGearValue === 3 ? 
+          <div className="artifacts">
             <div><strong>Mythic Artifact 1:</strong> {mythicArtifact1}</div>
             <div><i>{mythicArtifactDescription1}</i></div>
+            <br/>
             <div><strong>Mythic Artifact 2:</strong> {mythicArtifact2}</div>
             <div><i>{mythicArtifactDescription2}</i></div>
           </div> 
           : null}
-        {valuableGearValue === 11 ? <div><strong>Instrument:</strong> {instrument}</div> : null}
+
       </div>
     );
     
@@ -120,9 +125,7 @@ function App() {
     </div>
 
     <div className="character-name-text">
-      <div><strong>First Name:</strong> {firstNames}</div>
-      <div><strong>Nickname:</strong> {nickname}</div>
-      <div><strong>Last Name:</strong> {lastName}</div>
+      {firstNames + " " + nickname + " " + lastName}
     </div>
     <div className="class-and-abilities">
       <div><strong>Class:</strong> {className}</div>
@@ -130,69 +133,56 @@ function App() {
     </div>
 
     <div className="hp">
-      <div><strong>HP:</strong> {classHp}</div>
+      <strong>{classHp}</strong>
     </div>
 
     <div className="strength">
-      <div><strong>Strength:</strong> {strengthStat}</div>
+      {strengthStat}
     </div>
     <div className="agility">
-      <div><strong>Agility:</strong> {agilityStat}</div>
+      {agilityStat}
     </div>
     <div className="presence">
-      <div><strong>Presence:</strong> {presenceStat}</div>
+      {presenceStat}
     </div>
     <div className="toughness">
-      <div><strong>Toughness:</strong> {toughnessStat}</div>
+      {toughnessStat}
     </div>
     <div className="devils-luck">
-      <div><strong>Devil's Luck:</strong> {classDevilsLuck}</div>
+      {classDevilsLuck}
     </div>
 
     <div className="terrible-trait-1">
-      <div><strong>Terrible Trait:</strong> {terribleTrait1}</div>
+      {terribleTrait1}
     </div>
     <div className="terrible-trait-2">
-      <div><strong>Terrible Trait:</strong> {terribleTrait2}</div>
+      {terribleTrait2}
     </div>
     <div className="broken-body">
-      <div><strong>Broken Body:</strong> {brokenBody}</div>
+      {brokenBody}
     </div>
     <div className="bad-habit">
-      <div><strong>Bad Habit:</strong> {badHabit}</div>
+      {badHabit}
     </div>
     <div className="troubling-tale">
-      <div><strong>Troubling Tale:</strong> {troublingTale}</div>
+      {troublingTale}
     </div>
     <div className="character-background">
-      <div><strong>Background:</strong> {background}</div>
+      {background}
     </div>
     <div className="thing-of-importance">
-      <div><strong>Thing of Importance:</strong> {thingOfImportance}</div>
+      {thingOfImportance}
     </div>
-    
-    <br/>
-    
-    
-    
-    
-    <br/>
-    {/* <div><strong>Enchanted Artifact:</strong> {enchantedArtifact}</div> */}
-    {/* <div><strong>Mythic Artifact:</strong> {mythicArtifact}</div> */}
-    {WeaponDisplay()}
-    <div><strong>Clothing:</strong> {clothing}</div>
-    <div><strong>Hat:</strong> {hat}</div>
-    {/* <div>Bomb:</strong> {bomb}</div> */}
-    {GearDisplay()}
-    <br/>
-    
-    
-    
-    
-    
-    <div><strong>Place of Importance:</strong> {placeOfImportance}</div>
-    
+    <div className="clothes-text">
+      {clothing}
+    </div>
+    <div className="hat-text">
+      {hat}
+    </div>
 
+    {WeaponDisplay()}
+    {GearDisplay()}
+    <div className="place-of-importance"><strong>Place of Importance:</strong> {placeOfImportance}</div>
   </div>
   );
 }
