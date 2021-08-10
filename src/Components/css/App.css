@@ -1,0 +1,126 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+/* Character Name text */
+.character-name-text {
+    position: absolute;
+    top: 135px;
+    left: 100px;
+}
+
+/* Class and Abilities text */
+.class-and-abilities {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 300px;
+}
+
+/* max hp text */
+.hp {
+    position: absolute;
+    top: 80px;
+    left: 605px;
+}
+
+/* strength stat text */
+.strength {
+    position: absolute;
+    top: 360px;
+    left: 615px;
+}
+
+/* strength stat text */
+.agility {
+    position: absolute;
+    top: 450px;
+    left: 615px;
+}
+
+/* strength stat text */
+.presence {
+    position: absolute;
+    top: 530px;
+    left: 615px;
+}
+
+/* strength stat text */
+.toughness {
+    position: absolute;
+    top: 605px;
+    left: 615px;
+}
+
+/* devils luck text */
+.devils-luck {
+    position: absolute;
+    top: 730px;
+    left: 455px;
+}
+
+/* terrible trait 1 text */
+.terrible-trait-1 {
+    position: absolute;
+    top: 940px;
+    left: 90px;
+    width: 240px;
+}
+
+/* terrible trait 2 text */
+.terrible-trait-2 {
+    position: absolute;
+    top: 990px;
+    left: 90px;
+    width: 240px;
+}
+
+/* Broken body text */
+.broken-body {
+    position: absolute;
+    top: 1140px;
+    left: 100px;
+}
+
+/* bad habit text */
+.bad-habit {
+    position: absolute;
+    top: 1280px;
+    left: 100px;
+    width: 240px;
+}
+
+/* troubling tale text */
+.troubling-tale {
+    position: absolute;
+    top: 1440px;
+    left: 100px;
+    width: 240px;
+}
+
+/* terrible trait 1 text */
+.character-background {
+    position: absolute;
+    top: 940px;
+    left: 470px;
+    width: 335px;
+}
+
+/* thing of importance text */
+.thing-of-importance {
+    position: absolute;
+    top: 940px;
+    left: 870px;
+    width: 200px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 

@@ -6,7 +6,9 @@ import {terribleTraitsTable, brokenBodyTable, badHabitTable, troublingTaleTable,
         hatTable, weaponTable, firstNamesTable, nicknameTable, 
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
         classHatTable, classHpTable, classDevilsLuckTable, classClothingTable, classWeaponTable, 
-        bruteWeaponTable, mythicArtifactDescriptionTable} from '../Tables/tables.js'
+        bruteWeaponTable, mythicArtifactDescriptionTable} from '../Tables/tables.js';
+import PirateBorgBackground from '../Assets/PirateBorgBackground.png';
+import './css/App.css';
 
 function App() {
   const classValue = Math.floor((Math.random() * classTable.length));
@@ -113,19 +115,67 @@ function App() {
   
   return (
   <div>
-    <div><strong>First Name:</strong> {firstNames}</div>
-    <div><strong>Nickname:</strong> {nickname}</div>
-    <div><strong>Last Name:</strong> {lastName}</div>
+    <div className="container">
+      <img src={PirateBorgBackground} alt=""></img>
+    </div>
+
+    <div className="character-name-text">
+      <div><strong>First Name:</strong> {firstNames}</div>
+      <div><strong>Nickname:</strong> {nickname}</div>
+      <div><strong>Last Name:</strong> {lastName}</div>
+    </div>
+    <div className="class-and-abilities">
+      <div><strong>Class:</strong> {className}</div>
+      <div><strong>Class Ability:</strong> {classAbility}</div>
+    </div>
+
+    <div className="hp">
+      <div><strong>HP:</strong> {classHp}</div>
+    </div>
+
+    <div className="strength">
+      <div><strong>Strength:</strong> {strengthStat}</div>
+    </div>
+    <div className="agility">
+      <div><strong>Agility:</strong> {agilityStat}</div>
+    </div>
+    <div className="presence">
+      <div><strong>Presence:</strong> {presenceStat}</div>
+    </div>
+    <div className="toughness">
+      <div><strong>Toughness:</strong> {toughnessStat}</div>
+    </div>
+    <div className="devils-luck">
+      <div><strong>Devil's Luck:</strong> {classDevilsLuck}</div>
+    </div>
+
+    <div className="terrible-trait-1">
+      <div><strong>Terrible Trait:</strong> {terribleTrait1}</div>
+    </div>
+    <div className="terrible-trait-2">
+      <div><strong>Terrible Trait:</strong> {terribleTrait2}</div>
+    </div>
+    <div className="broken-body">
+      <div><strong>Broken Body:</strong> {brokenBody}</div>
+    </div>
+    <div className="bad-habit">
+      <div><strong>Bad Habit:</strong> {badHabit}</div>
+    </div>
+    <div className="troubling-tale">
+      <div><strong>Troubling Tale:</strong> {troublingTale}</div>
+    </div>
+    <div className="character-background">
+      <div><strong>Background:</strong> {background}</div>
+    </div>
+    <div className="thing-of-importance">
+      <div><strong>Thing of Importance:</strong> {thingOfImportance}</div>
+    </div>
+    
     <br/>
-    <div><strong>Class:</strong> {className}</div>
-    <div><strong>HP:</strong> {classHp}</div>
-    <div><strong>Devil's Luck:</strong> {classDevilsLuck}</div>
-    <div><strong>Class Ability:</strong> {classAbility}</div>
-    <br/>
-    <div><strong>Strength:</strong> {strengthStat}</div>
-    <div><strong>Agility:</strong> {agilityStat}</div>
-    <div><strong>Presence:</strong> {presenceStat}</div>
-    <div><strong>Toughness:</strong> {toughnessStat}</div>
+    
+    
+    
+    
     <br/>
     {/* <div><strong>Enchanted Artifact:</strong> {enchantedArtifact}</div> */}
     {/* <div><strong>Mythic Artifact:</strong> {mythicArtifact}</div> */}
@@ -135,14 +185,13 @@ function App() {
     {/* <div>Bomb:</strong> {bomb}</div> */}
     {GearDisplay()}
     <br/>
-    <div><strong>Terrible Trait:</strong> {terribleTrait1}</div>
-    <div><strong>Terrible Trait:</strong> {terribleTrait2}</div>
-    <div><strong>Broken Body:</strong> {brokenBody}</div>
-    <div><strong>Bad Habit:</strong> {badHabit}</div>
-    <div><strong>Troubling Tale:</strong> {troublingTale}</div>
+    
+    
+    
+    
+    
     <div><strong>Place of Importance:</strong> {placeOfImportance}</div>
-    <div><strong>Thing of Importance:</strong> {thingOfImportance}</div>
-    <div><strong>Background:</strong> {background}</div>
+    
 
   </div>
   );
