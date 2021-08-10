@@ -78,15 +78,17 @@
 /* equipment text */
 .clothes-text {
     position: absolute;
-    top: 250px;
-    left: 805px;
+    top: 240px;
+    left: 810px;
+    width: 170px;
 }
 
 /* equipment text */
 .hat-text {
     position: absolute;
-    top: 250px;
-    left: 1005px;
+    top: 240px;
+    left: 1010px;
+    width: 170px;
 }
 
 /* equipment text */

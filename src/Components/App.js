@@ -48,10 +48,8 @@ function App() {
   const valuableGearValue = Math.floor((Math.random() * valuableGearTable.length));
   const petValue = Math.floor((Math.random() * petTable.length));
   const instrumentValue = Math.floor((Math.random() * instrumentTable.length));
-  // const enchantedArtifactValue = Math.floor((Math.random() * enchantedArtifactTable.length));
   const mythicArtifact1Value = Math.floor((Math.random() * mythicArtifactTable.length));
   const mythicArtifact2Value = Math.floor((Math.random() * (mythicArtifactTable.length - 1)) + mythicArtifact1Value + 1) % mythicArtifactTable.length;
-  // const bombValue = Math.floor((Math.random() * bombTable.length));
   const firstNamesValue = Math.floor((Math.random() * firstNamesTable.length));
   const nicknameValue = Math.floor((Math.random() * nicknameTable.length));
   const lastNameValue = Math.floor((Math.random() * lastNameTable.length));
@@ -70,7 +68,6 @@ function App() {
   const valuableGear = valuableGearTable[valuableGearValue];
   const pet = petTable[petValue];
   const instrument = instrumentTable[instrumentValue];
-  // const enchantedArtifact = enchantedArtifactTable[enchantedArtifactValue];
   const mythicArtifact1 = mythicArtifactTable[mythicArtifact1Value];
   const mythicArtifactDescription1 = mythicArtifactDescriptionTable[mythicArtifact1Value];
   const mythicArtifact2 = mythicArtifactTable[mythicArtifact2Value];
@@ -78,7 +75,6 @@ function App() {
   const clothing = clothingTable[classClothingValue];
   const hat = hatTable[classHatValue];
   const weapon = classValue === 2 /* Buccaneer */  ? weaponTable[9] /* Musket */ :  weaponTable[classWeaponValue];
-  // const bomb = bombTable[bombValue];
   const firstNames = firstNamesTable[firstNamesValue];
   const nickname = nicknameTable[nicknameValue];
   const lastName = lastNameTable[lastNameValue];
@@ -87,7 +83,7 @@ function App() {
     return (
       <div className="weapon">
         {classValue === 0 /* Brute */ 
-          ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
+          ? <div>Trusted Weapon</div> 
           : <div>{weapon}</div>}
       </div>
     )
@@ -130,6 +126,10 @@ function App() {
     <div className="class-and-abilities">
       <div><strong>Class:</strong> {className}</div>
       <div><strong>Class Ability:</strong> {classAbility}</div>
+      <br/>
+      {classValue === 0 /* Brute */ 
+          ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
+          : null}
     </div>
 
     <div className="hp">
