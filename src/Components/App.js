@@ -125,7 +125,7 @@ function App() {
     </div>
 
     <div className="character-name-text">
-      {firstNames + " " + nickname + " " + lastName}
+      {firstNames + " \"" + nickname + "\" " + lastName}
     </div>
     <div className="class-and-abilities">
       <div><strong>Class:</strong> {className}</div>
