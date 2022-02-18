@@ -48,7 +48,7 @@
     font-weight: bold;
 }
 
-/* strength stat text */
+/* agility stat text */
 .agility {
     position: absolute;
     top: 530px;
@@ -57,7 +57,7 @@
     font-weight: bold;
 }
 
-/* strength stat text */
+/* presence stat text */
 .presence {
     position: absolute;
     top: 620px;
@@ -66,11 +66,20 @@
     font-weight: bold;
 }
 
-/* strength stat text */
+/* toughness stat text */
 .toughness {
     position: absolute;
     top: 720px;
     left: 880px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* spirit stat text */
+.spirit {
+    position: absolute;
+    top: 800px;
+    left: 835px;
     font-size: xx-large;
     font-weight: bold;
 }

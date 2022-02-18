@@ -1,6 +1,6 @@
 import React from 'react';
-import {terribleTraitsTable, brokenBodyTable, badHabitTable, troublingTaleTable,
-        placeOfImportanceTable, thingOfImportanceTable, backgroundTable,
+import {terribleTraitsTable, brokenBodyTable, badHabitTable, 
+        troublingTaleTable, thingOfImportanceTable, backgroundTable,
         containerTable, cheapGearTable, valuableGearTable, petTable,
         instrumentTable, mythicArtifactTable, clothingTable,
         hatTable, weaponTable, firstNamesTable, nicknameTable, 
@@ -25,22 +25,23 @@ function App() {
   const classHatValue = Math.floor((Math.random() * classHatTable[classValue]));
   const classWeaponValue = Math.floor((Math.random() * classWeaponTable[classValue]));
 
-  const strengthStatRoll = Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + classStatsModifierTable[classValue][0];
-  const agilityStatRoll = Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + classStatsModifierTable[classValue][1];
-  const presenceStatRoll = Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + classStatsModifierTable[classValue][2];
-  const toughnessStatRoll = Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + Math.floor((Math.random() * 6)) + classStatsModifierTable[classValue][3];
+  const strengthStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
+  const agilityStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
+  const presenceStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
+  const toughnessStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
+  const spiritStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
 
-  const strengthStat = statLookupTable[strengthStatRoll];
-  const agilityStat = statLookupTable[agilityStatRoll];
-  const presenceStat = statLookupTable[presenceStatRoll];
-  const toughnessStat = statLookupTable[toughnessStatRoll];
+  const strengthStat = statLookupTable[strengthStatRoll] + classStatsModifierTable[classValue][0];
+  const agilityStat = statLookupTable[agilityStatRoll] + classStatsModifierTable[classValue][1];
+  const presenceStat = statLookupTable[presenceStatRoll] + classStatsModifierTable[classValue][2];
+  const toughnessStat = statLookupTable[toughnessStatRoll] + classStatsModifierTable[classValue][3];
+  const spiritStat = statLookupTable[spiritStatRoll] + classStatsModifierTable[classValue][4];
 
   const terribleTraitValue1 = Math.floor((Math.random() * terribleTraitsTable.length));
   const terribleTraitValue2 = Math.floor((Math.random() * (terribleTraitsTable.length - 1)) + terribleTraitValue1 + 1) % terribleTraitsTable.length;
   const brokenBodyValue = Math.floor((Math.random() * brokenBodyTable.length));
   const badHabitValue = Math.floor((Math.random() * badHabitTable.length));
   const troublingTaleValue = Math.floor((Math.random() * troublingTaleTable.length));
-  const placeOfImportanceValue = Math.floor((Math.random() * placeOfImportanceTable.length));
   const thingOfImportanceValue = Math.floor((Math.random() * thingOfImportanceTable.length));
   const backgroundValue = Math.floor((Math.random() * backgroundTable.length));
   const containerValue = Math.floor((Math.random() * containerTable.length));
@@ -59,7 +60,6 @@ function App() {
   const brokenBody = brokenBodyTable[brokenBodyValue];
   const badHabit = badHabitTable[badHabitValue];
   const troublingTale = troublingTaleTable[troublingTaleValue];
-  const placeOfImportance = placeOfImportanceTable[placeOfImportanceValue];
   const thingOfImportance = thingOfImportanceTable[thingOfImportanceValue];
   const background = backgroundTable[backgroundValue];
 
@@ -121,7 +121,7 @@ function App() {
     </div>
 
     <div className="character-name-text">
-      {firstNames + " \"" + nickname + "\" " + lastName}
+      {firstNames + " “" + nickname + "” " + lastName}
     </div>
     <div className="class-and-abilities">
       <div><strong>Class:</strong> {className}</div>
@@ -147,6 +147,9 @@ function App() {
     </div>
     <div className="toughness">
       {toughnessStat}
+    </div>    
+    <div className="spirit">
+      {spiritStat}
     </div>
     <div className="devils-luck">
       {classDevilsLuck}
@@ -182,7 +185,6 @@ function App() {
 
     {WeaponDisplay()}
     {GearDisplay()}
-    <div className="place-of-importance"><strong>Place of Importance:</strong> {placeOfImportance}</div>
   </div>
   );
 }
