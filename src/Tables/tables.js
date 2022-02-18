@@ -4081,7 +4081,7 @@ export const classTable =
     "Zealot",
     "Voudou Bokor"]
 
-export const classStatsModifierTable = [[2, 0, -2, 0, 0], [2, 0, -2, 0, 0], [0, -2, 2, 0, 0], [1, 1, -1, 0, -1], [-2, 0, 0, 0, 2], [0, 0, 0, -2, 2], ]
+export const classStatsModifierTable = [[1, 0, -1, 1, -1], [-1, 2, -1, 0, 0], [0, -1, 2, 0, -1], [1, 1, -1, 0, -1], [0, -1, 0, -1, 2], [-1, 0, 0, -1, 2], ]
 
 export const bruteAbilityTable = 
 ["You begin with a trusted weapon [d6]. It has a nickname (what is it?). It will never break (but can be dropped). DR10 to attack:"]
@@ -4144,9 +4144,9 @@ export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, b
 
 export const classDevilsLuckTable = ["d2", "d2", "d2", "d2", "d4", "d4"]
 
-export const classHpTable = [10, 6, 8, 8, 6, 6]
+export const classHpTable = [12, 8, 10, 10, 8, 8]
 
-export const classClothingTable = [10, 6, 10, 10, 10, 6]
+export const classClothingTable = [10, 6, 10, 10, 8, 6]
 
 export const classHatTable = [12, 10, 12, 12, 0, 0]
 

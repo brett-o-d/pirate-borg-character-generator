@@ -25,17 +25,17 @@ function App() {
   const classHatValue = Math.floor((Math.random() * classHatTable[classValue]));
   const classWeaponValue = Math.floor((Math.random() * classWeaponTable[classValue]));
 
-  const strengthStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
-  const agilityStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
-  const presenceStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
-  const toughnessStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
-  const spiritStatRoll = Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1) + Math.ceil((Math.random() * 6) + 1);
+  const strengthStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
+  const agilityStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
+  const presenceStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
+  const toughnessStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
+  const spiritStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
 
-  const strengthStat = statLookupTable[strengthStatRoll] + classStatsModifierTable[classValue][0];
-  const agilityStat = statLookupTable[agilityStatRoll] + classStatsModifierTable[classValue][1];
-  const presenceStat = statLookupTable[presenceStatRoll] + classStatsModifierTable[classValue][2];
-  const toughnessStat = statLookupTable[toughnessStatRoll] + classStatsModifierTable[classValue][3];
-  const spiritStat = statLookupTable[spiritStatRoll] + classStatsModifierTable[classValue][4];
+  const strengthStat = parseInt(statLookupTable[strengthStatRoll]) + classStatsModifierTable[classValue][0];
+  const agilityStat = parseInt(statLookupTable[agilityStatRoll]) + classStatsModifierTable[classValue][1];
+  const presenceStat = parseInt(statLookupTable[presenceStatRoll]) + classStatsModifierTable[classValue][2];
+  const toughnessStat = parseInt(statLookupTable[toughnessStatRoll]) + classStatsModifierTable[classValue][3];
+  const spiritStat = parseInt(statLookupTable[spiritStatRoll]) + classStatsModifierTable[classValue][4];
 
   const terribleTraitValue1 = Math.floor((Math.random() * terribleTraitsTable.length));
   const terribleTraitValue2 = Math.floor((Math.random() * (terribleTraitsTable.length - 1)) + terribleTraitValue1 + 1) % terribleTraitsTable.length;
