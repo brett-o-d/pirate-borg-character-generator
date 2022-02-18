@@ -7,7 +7,7 @@ import {terribleTraitsTable, brokenBodyTable, badHabitTable, troublingTaleTable,
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
         classHatTable, classHpTable, classDevilsLuckTable, classClothingTable, classWeaponTable, 
         bruteWeaponTable, mythicArtifactDescriptionTable} from '../Tables/tables.js';
-import PirateBorgBackground from '../Assets/PirateBorgBackground.png';
+import PirateBorgCharacterSheetv3 from '../Assets/PirateBorgCharacterSheetv3.jpg';
 import './css/App.css';
 
 function App() {
@@ -117,7 +117,7 @@ function App() {
   return (
   <div>
     <div className="container">
-      <img src={PirateBorgBackground} alt=""></img>
+      <img src={PirateBorgCharacterSheetv3} width="1690px" alt=""></img>
     </div>
 
     <div className="character-name-text">
