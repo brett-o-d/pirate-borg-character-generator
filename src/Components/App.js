@@ -1,13 +1,12 @@
 import React from 'react';
-import {terribleTraitsTable, brokenBodyTable, badHabitTable, 
-        troublingTaleTable, thingOfImportanceTable, backgroundTable,
+import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable, 
+        unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
         containerTable, cheapGearTable, valuableGearTable, petTable,
-        instrumentTable, mythicArtifactTable, clothingTable,
-        hatTable, weaponTable, firstNamesTable, nicknameTable, 
+        instrumentTable, clothingTable, hatTable, weaponTable, firstNamesTable, nicknameTable, 
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
         classHatTable, classHpTable, classDevilsLuckTable, classClothingTable, classWeaponTable, 
-        bruteWeaponTable, mythicArtifactDescriptionTable} from '../Tables/tables.js';
-import PirateBorgCharacterSheetv3 from '../Assets/PirateBorgCharacterSheetv3.jpg';
+        bruteWeaponTable, relicTable, relicDescriptionTable} from '../Tables/tables.js';
+import PirateBorgCharacterSheetv3NoLines from '../Assets/PirateBorgCharacterSheetv3NoLines.jpg';
 import './css/App.css';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
 
   const className = classTable[classValue];
 
-  const classHp = Math.floor((Math.random() * classHpTable[classValue])) + 1;
   const classDevilsLuck = classDevilsLuckTable[classValue];
 
   const classAbilityValue = Math.floor((Math.random() * classAbilityTables[classValue].length));
@@ -37,11 +35,12 @@ function App() {
   const toughnessStat = parseInt(statLookupTable[toughnessStatRoll]) + classStatsModifierTable[classValue][3];
   const spiritStat = parseInt(statLookupTable[spiritStatRoll]) + classStatsModifierTable[classValue][4];
 
-  const terribleTraitValue1 = Math.floor((Math.random() * terribleTraitsTable.length));
-  const terribleTraitValue2 = Math.floor((Math.random() * (terribleTraitsTable.length - 1)) + terribleTraitValue1 + 1) % terribleTraitsTable.length;
-  const brokenBodyValue = Math.floor((Math.random() * brokenBodyTable.length));
-  const badHabitValue = Math.floor((Math.random() * badHabitTable.length));
-  const troublingTaleValue = Math.floor((Math.random() * troublingTaleTable.length));
+  const classHp = Math.max(Math.floor((Math.random() * classHpTable[classValue])) + toughnessStat , 1);
+
+  const distinctiveFlawValue = Math.floor((Math.random() * distinctiveFlawsTable.length));
+  const physicalAilmentValue = Math.floor((Math.random() * physicalAilmentTable.length));
+  const idiosyncraciesValue = Math.floor((Math.random() * idiosyncraciesTable.length));
+  const unfortunateIncidentsValue = Math.floor((Math.random() * unfortunateIncidentsTable.length));
   const thingOfImportanceValue = Math.floor((Math.random() * thingOfImportanceTable.length));
   const backgroundValue = Math.floor((Math.random() * backgroundTable.length));
   const containerValue = Math.floor((Math.random() * containerTable.length));
@@ -49,17 +48,15 @@ function App() {
   const valuableGearValue = Math.floor((Math.random() * valuableGearTable.length));
   const petValue = Math.floor((Math.random() * petTable.length));
   const instrumentValue = Math.floor((Math.random() * instrumentTable.length));
-  const mythicArtifact1Value = Math.floor((Math.random() * mythicArtifactTable.length));
-  const mythicArtifact2Value = Math.floor((Math.random() * (mythicArtifactTable.length - 1)) + mythicArtifact1Value + 1) % mythicArtifactTable.length;
+  const relicValue = Math.floor((Math.random() * relicTable.length));
   const firstNamesValue = Math.floor((Math.random() * firstNamesTable.length));
   const nicknameValue = Math.floor((Math.random() * nicknameTable.length));
   const lastNameValue = Math.floor((Math.random() * lastNameTable.length));
 
-  const terribleTrait1 = terribleTraitsTable[terribleTraitValue1];
-  const terribleTrait2 = terribleTraitsTable[terribleTraitValue2];
-  const brokenBody = brokenBodyTable[brokenBodyValue];
-  const badHabit = badHabitTable[badHabitValue];
-  const troublingTale = troublingTaleTable[troublingTaleValue];
+  const distinctiveFlaw = distinctiveFlawsTable[distinctiveFlawValue];
+  const physicalAilment = physicalAilmentTable[physicalAilmentValue];
+  const idiosyncracies = idiosyncraciesTable[idiosyncraciesValue];
+  const unfortunateIncidents = unfortunateIncidentsTable[unfortunateIncidentsValue];
   const thingOfImportance = thingOfImportanceTable[thingOfImportanceValue];
   const background = backgroundTable[backgroundValue];
 
@@ -68,10 +65,8 @@ function App() {
   const valuableGear = valuableGearTable[valuableGearValue];
   const pet = petTable[petValue];
   const instrument = instrumentTable[instrumentValue];
-  const mythicArtifact1 = mythicArtifactTable[mythicArtifact1Value];
-  const mythicArtifactDescription1 = mythicArtifactDescriptionTable[mythicArtifact1Value];
-  const mythicArtifact2 = mythicArtifactTable[mythicArtifact2Value];
-  const mythicArtifactDescription2 = mythicArtifactDescriptionTable[mythicArtifact2Value];
+  const relic = relicTable[relicValue];
+  const relicDescription = relicDescriptionTable[relicValue];
   const clothing = clothingTable[classClothingValue];
   const hat = hatTable[classHatValue];
   const weapon = classValue === 2 /* Buccaneer */  ? weaponTable[9] /* Musket */ :  weaponTable[classWeaponValue];
@@ -100,12 +95,9 @@ function App() {
           {valuableGearValue === 11 ? <div><strong>Instrument:</strong> {instrument}</div> : null}
         </div>
         {valuableGearValue === 3 ? 
-          <div className="artifacts">
-            <div><strong>Mythic Artifact 1:</strong> {mythicArtifact1}</div>
-            <div><i>{mythicArtifactDescription1}</i></div>
-            <br/>
-            <div><strong>Mythic Artifact 2:</strong> {mythicArtifact2}</div>
-            <div><i>{mythicArtifactDescription2}</i></div>
+          <div className="relic">
+            <div><strong>{relic}</strong></div>
+            <div><i>{relicDescription}</i></div>
           </div> 
           : null}
 
@@ -117,15 +109,15 @@ function App() {
   return (
   <div>
     <div className="container">
-      <img src={PirateBorgCharacterSheetv3} width="1690px" alt=""></img>
+      <img src={PirateBorgCharacterSheetv3NoLines} width="1690px" alt=""></img>
     </div>
 
     <div className="character-name-text">
       {firstNames + " “" + nickname + "” " + lastName}
     </div>
-    <div className="class-and-abilities">
-      <div><strong>Class:</strong> {className}</div>
-      <div><strong>Class Ability:</strong> {classAbility}</div>
+    <div className='class-name'>{className}</div>
+    <div className="class-features">
+      <div>{classAbility}</div>
       <br/>
       {classValue === 0 /* Brute */ 
           ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
@@ -155,20 +147,17 @@ function App() {
       {classDevilsLuck}
     </div>
 
-    <div className="terrible-trait-1">
-      {terribleTrait1}
+    <div className="distinctive-flaw">
+      {distinctiveFlaw}
     </div>
-    <div className="terrible-trait-2">
-      {terribleTrait2}
+    <div className="physical-ailment">
+      {physicalAilment}
     </div>
-    <div className="broken-body">
-      {brokenBody}
+    <div className="idiosyncracies">
+      {idiosyncracies}
     </div>
-    <div className="bad-habit">
-      {badHabit}
-    </div>
-    <div className="troubling-tale">
-      {troublingTale}
+    <div className="unfortunate-incidents">
+      {unfortunateIncidents}
     </div>
     <div className="character-background">
       {background}
