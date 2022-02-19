@@ -4085,6 +4085,14 @@ export const rapscallionAbilityTable =
     "Grog Brewer. Each day you can brew d4 servings of potent grog. You can soak melee weapons in it to use as a poison (it will get you drunk, too). Grog in a wound:Toughness DR14 or -d6 HP."]
 
 export const buccaneerAbilityTable = 
+    ["Wildlife Tracker. You always know the direction that something you are tracking has headed from your current location, and can tell approximately how long ago it was here.",
+    "Crack Shot. All ranged attacks are DR8.",
+    "Fast Reloader. Reloading takes 1 round instead of 2.",
+    "Focused Aim. Every time you shoot an enemy you have already hit this combat, lower the DR by 2. This effect is cumulative.",
+    "Buccan Cook: Months of island life have taught you the fine art of cooking meats over the buccan fire. You start with d8 rations of exquisite smoked meat. Eating it immediately recovers d4 hp, and you can make d4 more rations from any edible animal you kill.",
+    "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. -2 DR to toughness checks."]
+
+export const buccaneerWeaponTable =
     ["You start with a musket, and your attacks with it are DR10 to hit. When you get better, roll for an additional feature."]
 
 export const swashbucklerAbilityTable = 

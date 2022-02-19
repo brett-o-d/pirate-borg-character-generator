@@ -5,7 +5,7 @@ import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         instrumentTable, clothingTable, hatTable, weaponTable, firstNamesTable, nicknameTable, 
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
         classHatTable, classHpTable, classDevilsLuckTable, classClothingTable, classWeaponTable, 
-        bruteWeaponTable, relicTable, relicDescriptionTable} from '../Tables/tables.js';
+        bruteWeaponTable, buccaneerWeaponTable, relicTable, relicDescriptionTable} from '../Tables/tables.js';
 import PirateBorgCharacterSheetv3NoLines from '../Assets/PirateBorgCharacterSheetv3NoLines.jpg';
 import './css/App.css';
 
@@ -35,7 +35,7 @@ function App() {
   const toughnessStat = parseInt(statLookupTable[toughnessStatRoll]) + classStatsModifierTable[classValue][3];
   const spiritStat = parseInt(statLookupTable[spiritStatRoll]) + classStatsModifierTable[classValue][4];
 
-  const classHp = Math.max(Math.floor((Math.random() * classHpTable[classValue])) + toughnessStat , 1);
+  const classHp = Math.max(Math.floor((Math.random() * classHpTable[classValue])) + toughnessStat, 1);
 
   const distinctiveFlawValue = Math.floor((Math.random() * distinctiveFlawsTable.length));
   const physicalAilmentValue = Math.floor((Math.random() * physicalAilmentTable.length));
@@ -117,6 +117,9 @@ function App() {
     </div>
     <div className='class-name'>{className}</div>
     <div className="class-features">
+      {classValue === 2 /* Buccaneer */
+            ? <div><div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}</div><br/></div>
+            : null}
       <div>{classAbility}</div>
       <br/>
       {classValue === 0 /* Brute */
