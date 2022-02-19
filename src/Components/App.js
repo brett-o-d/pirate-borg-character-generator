@@ -119,7 +119,7 @@ function App() {
     <div className="class-features">
       <div>{classAbility}</div>
       <br/>
-      {classValue === 0 /* Brute */ 
+      {classValue === 0 /* Brute */
           ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
           : null}
     </div>
