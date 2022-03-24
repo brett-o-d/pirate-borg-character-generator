@@ -1,23 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const TextStyles = makeStyles((theme) => ({
-    XXLargeText: {
-        [theme.breakpoints.up('lg')]: {
-            fontSize: "xxx-large",
-        },
-        [theme.breakpoints.down('lg')]: {
-            fontSize: "xx-large",
-        },
-        [theme.breakpoints.down('md')]: {
-            fontSize: "x-large",
-        },
-        [theme.breakpoints.down('sm')]: {
-            fontSize: "large",        
-        },
-        [theme.breakpoints.down('xs')]: {
-            fontSize: "medium",        
-        },
-    },
     extraLargeText: {
         [theme.breakpoints.up('lg')]: {
             fontSize: "xxx-large",
@@ -29,10 +12,10 @@ export const TextStyles = makeStyles((theme) => ({
             fontSize: "x-large",
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: "large",        
+            fontSize: "large",
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "medium",        
+            fontSize: "small",
         },
     },
     largeText: {
@@ -46,10 +29,10 @@ export const TextStyles = makeStyles((theme) => ({
             fontSize: "medium",
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: "small",        
+            fontSize: "small",
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "x-small",        
+            fontSize: "45%",
         },
     },
     mediumText: {
@@ -60,11 +43,94 @@ export const TextStyles = makeStyles((theme) => ({
             fontSize: "small",
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: "xx-small",        
+            fontSize: "xx-small",
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "xxx-small",        
+            fontSize: "30%",
         },
         },
+  }));
+
+  export const PositionStyles = makeStyles((theme) => ({
+    CharacterName: {
+        [theme.breakpoints.down('xs')]: {
+            top: "9%",
+            left: "6%",
+            lineHeight: "1",
+        },
+    },
+    ClassName: {
+        [theme.breakpoints.down('xs')]: {
+            top: "12.75%",
+            left: "9%",
+            lineHeight: "1.05",
+        },
+    },
+    ClassFeatures: {
+        [theme.breakpoints.down('xs')]: {
+            left: "6%",
+            width: "28%",
+            lineHeight: "1.05",
+        },
+    },
+    HitPoints: {
+        [theme.breakpoints.down('xs')]: {
+            top: "4%",
+            left: "48%",
+            lineHeight: "1.05",
+        },
+    },
+    Weapon: {
+        [theme.breakpoints.down('xs')]: {
+            top: "8.5%",
+            left: "58%",
+            maxWidth: "33%",
+            backgroundColor: "white",
+        },
+    },
+    Clothes: {
+        [theme.breakpoints.down('xs')]: {
+            top: "14%",
+            left: "58%",
+            maxWidth: "33%",
+        },
+    },
+    DevilsLuck: {
+        [theme.breakpoints.down('xs')]: {
+            top: "39.75%",
+            left: "43.5%",
+            lineHeight: "1.05",
+        },
+    },
+    Strength: {
+        [theme.breakpoints.down('xs')]: {
+            top: "17%",
+            left: "51.5%",
+        },
+    },
+    Agility: {
+        [theme.breakpoints.down('xs')]: {
+            top: "21.25%",
+            left: "51.75%",
+        },
+    },
+    Presence: {
+        [theme.breakpoints.down('xs')]: {
+            top: "24.75%",
+            left: "51.5%",
+        },
+    },
+    Toughness: {
+        [theme.breakpoints.down('xs')]: {
+            top: "29%",
+            left: "50.5%",
+        },
+    },
+    Spirit: {
+        [theme.breakpoints.down('xs')]: {
+            top: "32.25%",
+            left: "48%",
+        },
+    },
   }));
 

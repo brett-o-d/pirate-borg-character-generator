@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextStyles } from './styles.js'
+import { TextStyles, PositionStyles } from './styles.js'
 import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable, 
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
         containerTable, cheapGearTable, valuableGearTable, petTable,
@@ -76,11 +76,12 @@ function App() {
   const lastName = lastNameTable[lastNameValue];
 
   //Import (material-ui) text styles
-  const styleClasses = TextStyles();
+  const textStyleClasses = TextStyles();
+  const positionStyleClasses = PositionStyles();
 
   function WeaponDisplay(){
     return (
-      <div className={styleClasses.mediumText + " weapon"}>
+      <div className={textStyleClasses.mediumText + " weapon " + positionStyleClasses.Weapon}>
         {classValue === 0 /* Brute */ 
           ? <div>Trusted Weapon</div> 
           : <div>{weapon}</div>}
@@ -91,7 +92,7 @@ function App() {
   function GearDisplay(){
     return (
       <div>
-        <div className="equipment">
+        <div className={textStyleClasses.mediumText + " equipment"}>
           <div><strong>Container:</strong> {container}</div>
           <div><strong>Cheap Gear:</strong> {cheapGear}</div>
           {cheapGearValue === 11 ? <div><strong>Pet:</strong> {pet}</div> : null}
@@ -99,7 +100,7 @@ function App() {
           {valuableGearValue === 11 ? <div><strong>Instrument:</strong> {instrument}</div> : null}
         </div>
         {valuableGearValue === 3 ? 
-          <div className="relic">
+          <div className={textStyleClasses.mediumText + " relic"}>
             <div><strong>{relic}</strong></div>
             <div><i>{relicDescription}</i></div>
           </div> 
@@ -108,17 +109,27 @@ function App() {
       </div>
     ); 
   }
+
+  function ClothesDisplay(){
+    return (
+      <div className={textStyleClasses.mediumText + " clothes-text " + positionStyleClasses.Clothes}>
+        <strong>Clothes:</strong> {clothing}
+        <br/>
+        <strong>Hat:</strong> {hat}
+      </div>
+    );
+  }
   
   return (
   <div>
     <div className="container">
       <img src={PirateBorgCharacterSheetv3NoLines} className="character-sheet" alt=""></img>
 
-      <div className={styleClasses.largeText + " character-name-text"}>
+      <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
         {firstNames + " “" + nickname + "” " + lastName}
       </div>
-      <div className={styleClasses.largeText + " class-name"}>{className}</div>
-      <div className={styleClasses.mediumText + " class-features"}>
+      <div className={textStyleClasses.largeText + " class-name " + positionStyleClasses.ClassName}>{className}</div>
+      <div className={textStyleClasses.mediumText + " class-features " + positionStyleClasses.ClassFeatures}>
       {classValue === 2 /* Buccaneer */
             ? <div><div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}</div><br/></div>
             : null}
@@ -129,59 +140,54 @@ function App() {
           : null}
       </div>
 
-      <div className={styleClasses.extraLargeText + " hp"}>
+      <div className={textStyleClasses.extraLargeText + " hp " + positionStyleClasses.HitPoints}>
         <strong>{classHp}</strong>
       </div>
 
-      <div className={styleClasses.extraLargeText + " strength"}>
+      <div className={textStyleClasses.extraLargeText + " strength " + positionStyleClasses.Strength}>
         {(strengthStat >= 0)? "+"+strengthStat : strengthStat}
       </div>
-      <div className={styleClasses.extraLargeText + " agility"}>
+      <div className={textStyleClasses.extraLargeText + " agility " + positionStyleClasses.Agility}>
         {(agilityStat >= 0)? "+"+agilityStat : agilityStat}
       </div>
-      <div className={styleClasses.extraLargeText + " presence"}>
+      <div className={textStyleClasses.extraLargeText + " presence " + positionStyleClasses.Presence}>
         {(presenceStat >= 0)? "+"+presenceStat : presenceStat}
       </div>
-      <div className={styleClasses.extraLargeText + " toughness"}>
+      <div className={textStyleClasses.extraLargeText + " toughness " + positionStyleClasses.Toughness}>
         {(toughnessStat >= 0)? "+"+toughnessStat : toughnessStat}
       </div>    
-      <div className={styleClasses.extraLargeText + " spirit"}>
+      <div className={textStyleClasses.extraLargeText + " spirit " + positionStyleClasses.Spirit}>
         {(spiritStat >= 0)? "+"+spiritStat : spiritStat}
       </div>
-      <div className="devils-luck">
+      <div className={textStyleClasses.extraLargeText + " devils-luck " + positionStyleClasses.DevilsLuck}>
         {classDevilsLuck}
       </div>
 
       {WeaponDisplay()}
-    </div>
 
-    <div className="distinctive-flaw">
-      {distinctiveFlaw}
-    </div>
-    <div className="physical-ailment">
-      {physicalAilment}
-    </div>
-    <div className="idiosyncracies">
-      {idiosyncracies}
-    </div>
-    <div className="unfortunate-incidents">
-      {unfortunateIncidents}
-    </div>
-    <div className="character-background">
-      {background}
-    </div>
-    <div className="thing-of-importance">
-      {thingOfImportance}
-    </div>
-    <div className="clothes-text">
-      {clothing}
-    </div>
-    <div className="hat-text">
-      {hat}
-    </div>
 
-    
-    {GearDisplay()}
+      <div className={textStyleClasses.mediumText + " character-background"}>
+        {background}
+      </div>
+      <div className={textStyleClasses.mediumText + " distinctive-flaw"}>
+        {distinctiveFlaw}
+      </div>
+      <div className={textStyleClasses.mediumText + " physical-ailment"}>
+        {physicalAilment}
+      </div>
+      <div className={textStyleClasses.mediumText + " idiosyncracies"}>
+        {idiosyncracies}
+      </div>
+      <div className={textStyleClasses.mediumText + " unfortunate-incidents"}>
+        {unfortunateIncidents}
+      </div>
+      <div className={textStyleClasses.mediumText + " thing-of-importance"}>
+        {thingOfImportance}
+      </div>
+
+      {ClothesDisplay()}
+      {GearDisplay()}
+    </div>    
   </div>
   );
 }
