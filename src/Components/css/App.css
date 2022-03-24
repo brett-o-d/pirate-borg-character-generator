@@ -2,199 +2,177 @@
 .container {
     position: relative;
     text-align: left;
-    color: white;
+    background-color: white;
+    width: 100%;
+    aspect-ratio: 26 / 36;
+}
+
+/* Background character sheet image*/
+.character-sheet {
+    width: inherit;
 }
 
 /* Character Name text */
 .character-name-text {
-    position: absolute;
-    top: 250px;
-    left: 115px;
-    font-size: x-large;
+    position:absolute;
+    top: 10%;
+    left: 7%;
+    max-width: 28%;
     font-weight:bold;
 }
 
 /* Class name text */
 .class-name {
     position: absolute;
-    top: 315px;
-    left: 170px;
-    width: 300px;
-    font-size: x-large;
+    top: 13%;
+    left: 10%;
+    width: 20%;
 }
 
 /* Class and Abilities text */
 .class-features {
     position: absolute;
-    top: 400px;
-    left: 120px;
-    width: 400px;
+    top: 16%;
+    left: 8%;
+    width: 25%;
 }
 
 /* max hp text */
 .hp {
     position: absolute;
-    top: 120px;
-    left: 835px;
-    font-size: xxx-large;
+    top: 5%;
+    left: 48%;
     font-weight: bold;
 }
 
 /* weapon text */
 .weapon {
     position: absolute;
-    top: 120px;
-    left: 1035px;
-    width: 400px;
+    top: 8.5%;
+    left: 58%;
+    max-width: 28%;
 }
 
 /* strength stat text */
 .strength {
     position: absolute;
-    top: 435px;
-    left: 895px;
-    font-size: xx-large;
+    top: 17.75%;
+    left: 52%;
     font-weight: bold;
 }
 
 /* agility stat text */
 .agility {
     position: absolute;
-    top: 530px;
-    left: 895px;
-    font-size: xx-large;
+    top: 21.75%;
+    left: 52.25%;
     font-weight: bold;
 }
 
 /* presence stat text */
 .presence {
     position: absolute;
-    top: 620px;
-    left: 890px;
-    font-size: xx-large;
+    top: 25.25%;
+    left: 52%;
     font-weight: bold;
 }
 
 /* toughness stat text */
 .toughness {
     position: absolute;
-    top: 720px;
-    left: 880px;
-    font-size: xx-large;
+    top: 29.5%;
+    left: 51%;
     font-weight: bold;
 }
 
 /* spirit stat text */
 .spirit {
     position: absolute;
-    top: 800px;
-    left: 835px;
-    font-size: xx-large;
+    top: 33%;
+    left: 48.5%;
     font-weight: bold;
 }
 
 /* equipment text */
 .clothes-text {
     position: absolute;
-    top: 315px;
-    left: 1150px;
-    width: 350px;
-}
-
-/* equipment text */
-.hat-text {
-    position: absolute;
-    top: 365px;
-    left: 1150px;
-    width: 270px;
+    top: 14%;
+    left: 58%;
+    max-width: 30%;
+    line-height: 1.05;
+    background-color: white;
 }
 
 /* equipment text */
 .equipment {
     position: absolute;
-    top: 600px;
-    left: 1105px;
-    width: 600px;
-    font-size: large;
+    top: 25%;
+    left: 63%;
+    max-width: 30%;
 }
 
 /* devils luck text */
 .devils-luck {
     position: absolute;
-    top: 970px;
-    left: 755px;
-    font-size: xx-large;
+    top: 40.25%;
+    left: 44%;
     font-weight: bold;
 }
 
 /* distinctive flaw text */
 .distinctive-flaw {
     position: absolute;
-    top: 1490px;
-    left: 120px;
-    width: 300px;
-    font-size: large;
+    top: 62%;
+    left: 6%;
+    max-width: 20%;
 }
 
 /* Broken body text */
 .physical-ailment {
     position: absolute;
-    top: 1680px;
-    left: 120px;
-    width: 330px;
-    font-size: large;
+    top: 69.5%;
+    left: 6%;
+    max-width: 22%;
 }
 
 /* bad habit text */
 .idiosyncracies {
     position: absolute;
-    top: 1860px;
-    left: 120px;
-    width: 330px;
-    font-size: large;
+    top: 77.25%;
+    left: 5%;
+    max-width: 22%;
 }
 
 /* troubling tale text */
 .unfortunate-incidents {
     position: absolute;
-    top: 2020px;
-    left: 120px;
-    width: 320px;
-    font-size: large;
+    top: 84.5%;
+    left: 5%;
+    max-width: 23%;
 }
 
 /* terrible trait 1 text */
 .character-background {
     position: absolute;
-    top: 1290px;
-    left: 120px;
-    width: 325px;
+    top: 54%;
+    left: 5.5%;
+    max-width: 22%;
 }
 
 /* thing of importance text */
 .thing-of-importance {
     position: absolute;
-    top: 2230px;
-    left: 150px;
-    width: 300px;
-    font-size: large;
-}
-
-/* place of importance text */
-.place-of-importance {
-    position: absolute;
-    top: 2260px;
-    left: 170px;
-    width: 300px;
+    top: 93.25%;
+    left: 7%;
+    max-width: 20%;
 }
 
 /* relic text */
 .relic {
     position: absolute;
-    top: 750px;
-    left: 130px;
-    width: 400px;
-    font-size: large;
+    top: 31.5%;
+    left: 7%;
+    max-width: 24%;
 }
 
 /* Centered text */
