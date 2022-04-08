@@ -1,6 +1,5 @@
 import React from 'react';
 import { TextStyles, PositionStyles } from './styles.js'
-import { ThemeProvider } from '@material-ui/core/styles';
 import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable, 
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
         containerTable, cheapGearTable, valuableGearTable, petTable,
