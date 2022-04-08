@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { TextStyles, PositionStyles } from './styles.js'
 import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable, 
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
@@ -77,7 +78,7 @@ function App() {
   }
 
   const PrintDiv = (() => {
-    window.print();
+      window.print();
   });
 
   const NewPirate = (() => {
@@ -88,8 +89,13 @@ function App() {
   return (
     <div>
       <div className='no-print'>
-        <input type="button" value="Print this pirate" onClick={PrintDiv}></input>
-        <input type="button" value="To Davey Jones wit' ye" onClick={NewPirate}></input>
+        <BrowserView>
+          <input type="button" value="Print this pirate" onClick={PrintDiv}></input>
+          <input type="button" value="To Davey Jones wit' ye" onClick={NewPirate}></input>
+        </BrowserView>        
+        <MobileView>
+          <input type="button" value="To Davey Jones wit' ye" onClick={NewPirate}></input>
+        </MobileView>
       </div>
       <div className="container" id="print-content">
         <img src={PirateBorgCharacterSheetv3NoLines} className="character-sheet" alt=""></img>
