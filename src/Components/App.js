@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TextStyles, PositionStyles } from './styles.js'
 import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable, 
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
-        containerTable, cheapGearTable, valuableGearTable, petTable,
-        instrumentTable, clothingTable, hatTable, weaponTable, firstNamesTable, nicknameTable, 
+        clothingTable, hatTable, weaponTable, firstNamesTable, nicknameTable, 
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
         classHatTable, classHpTable, classDevilsLuckTable, classClothingTable, classWeaponTable, 
-        bruteWeaponTable, buccaneerWeaponTable, relicTable, relicDescriptionTable} from '../Tables/tables.js';
+        bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
 import PirateBorgCharacterSheetv3NoLines from '../Assets/PirateBorgCharacterSheetv3NoLines.jpg';
+import RollStat from '../Utilities/stat-roller.js';
+import WeaponDisplay from './weapons.js';
+import GearDisplay from './gear.js';
 import './css/App.css';
+import './css/print.css'
 
 function App() {
+  //Used to generate a new Pirate without refreshing the page
+  const [throwaway, setThrowaway] = useState([0]);
+
   const classValue = Math.floor((Math.random() * classTable.length));
 
   const className = classTable[classValue];
@@ -24,17 +30,11 @@ function App() {
   const classHatValue = Math.floor((Math.random() * classHatTable[classValue]));
   const classWeaponValue = Math.floor((Math.random() * classWeaponTable[classValue]));
 
-  const strengthStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
-  const agilityStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
-  const presenceStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
-  const toughnessStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
-  const spiritStatRoll = Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
-
-  const strengthStat = parseInt(statLookupTable[strengthStatRoll]) + classStatsModifierTable[classValue][0];
-  const agilityStat = parseInt(statLookupTable[agilityStatRoll]) + classStatsModifierTable[classValue][1];
-  const presenceStat = parseInt(statLookupTable[presenceStatRoll]) + classStatsModifierTable[classValue][2];
-  const toughnessStat = parseInt(statLookupTable[toughnessStatRoll]) + classStatsModifierTable[classValue][3];
-  const spiritStat = parseInt(statLookupTable[spiritStatRoll]) + classStatsModifierTable[classValue][4];
+  const strengthStat = parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][0];
+  const agilityStat = parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][1];
+  const presenceStat = parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][2];
+  const toughnessStat = parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][3];
+  const spiritStat = parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][4];
 
   const classHp = Math.max(Math.floor((Math.random() * classHpTable[classValue])) + toughnessStat, 1);
 
@@ -44,12 +44,6 @@ function App() {
   const unfortunateIncidentsValue = Math.floor((Math.random() * unfortunateIncidentsTable.length));
   const thingOfImportanceValue = Math.floor((Math.random() * thingOfImportanceTable.length));
   const backgroundValue = Math.floor((Math.random() * backgroundTable.length));
-  const containerValue = Math.floor((Math.random() * containerTable.length));
-  const cheapGearValue = Math.floor((Math.random() * cheapGearTable.length));
-  const valuableGearValue = Math.floor((Math.random() * valuableGearTable.length));
-  const petValue = Math.floor((Math.random() * petTable.length));
-  const instrumentValue = Math.floor((Math.random() * instrumentTable.length));
-  const relicValue = Math.floor((Math.random() * relicTable.length));
   const firstNamesValue = Math.floor((Math.random() * firstNamesTable.length));
   const nicknameValue = Math.floor((Math.random() * nicknameTable.length));
   const lastNameValue = Math.floor((Math.random() * lastNameTable.length));
@@ -61,13 +55,6 @@ function App() {
   const thingOfImportance = thingOfImportanceTable[thingOfImportanceValue];
   const background = backgroundTable[backgroundValue];
 
-  const container = containerTable[containerValue];
-  const cheapGear = cheapGearTable[cheapGearValue];
-  const valuableGear = valuableGearTable[valuableGearValue];
-  const pet = petTable[petValue];
-  const instrument = instrumentTable[instrumentValue];
-  const relic = relicTable[relicValue];
-  const relicDescription = relicDescriptionTable[relicValue];
   const clothing = clothingTable[classClothingValue];
   const hat = hatTable[classHatValue];
   const weapon = classValue === 2 /* Buccaneer */  ? weaponTable[9] /* Musket */ :  weaponTable[classWeaponValue];
@@ -79,37 +66,6 @@ function App() {
   const textStyleClasses = TextStyles();
   const positionStyleClasses = PositionStyles();
 
-  function WeaponDisplay(){
-    return (
-      <div className={textStyleClasses.mediumText + " weapon " + positionStyleClasses.Weapon}>
-        {classValue === 0 /* Brute */ 
-          ? <div>Trusted Weapon</div> 
-          : <div>{weapon}</div>}
-      </div>
-    )
-  }
-
-  function GearDisplay(){
-    return (
-      <div>
-        <div className={textStyleClasses.mediumText + " equipment"}>
-          <div><strong>Container:</strong> {container}</div>
-          <div><strong>Cheap Gear:</strong> {cheapGear}</div>
-          {cheapGearValue === 11 ? <div><strong>Pet:</strong> {pet}</div> : null}
-          <div><strong>Valuable Gear:</strong> {valuableGear}</div>
-          {valuableGearValue === 11 ? <div><strong>Instrument:</strong> {instrument}</div> : null}
-        </div>
-        {valuableGearValue === 3 ? 
-          <div className={textStyleClasses.mediumText + " relic"}>
-            <div><strong>{relic}</strong></div>
-            <div><i>{relicDescription}</i></div>
-          </div> 
-          : null}
-
-      </div>
-    ); 
-  }
-
   function ClothesDisplay(){
     return (
       <div className={textStyleClasses.mediumText + " clothes-text " + positionStyleClasses.Clothes}>
@@ -119,10 +75,23 @@ function App() {
       </div>
     );
   }
+
+  const PrintDiv = (() => {
+    window.print();
+  });
+
+  const NewPirate = (() => {
+    setThrowaway(Number(throwaway) + 1);
+    console.log(throwaway);
+  });
   
   return (
     <div>
-      <div className="container">
+      <div className='no-print'>
+        <input type="button" value="Print this pirate" onClick={PrintDiv}></input>
+        <input type="button" value="To Davey Jones wit' ye" onClick={NewPirate}></input>
+      </div>
+      <div className="container" id="print-content">
         <img src={PirateBorgCharacterSheetv3NoLines} className="character-sheet" alt=""></img>
 
         <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
@@ -163,7 +132,7 @@ function App() {
           {classDevilsLuck}
         </div>
 
-        {WeaponDisplay()}
+        {WeaponDisplay(weapon, classValue, textStyleClasses.mediumText, positionStyleClasses.Weapon)}
 
 
         <div className={textStyleClasses.mediumText + " character-background"}>
@@ -186,7 +155,7 @@ function App() {
         </div>
 
         {ClothesDisplay()}
-        {GearDisplay()}
+        {GearDisplay(textStyleClasses.mediumText)}
       </div>
     </div>
   );
