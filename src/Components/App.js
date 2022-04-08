@@ -1,5 +1,6 @@
 import React from 'react';
 import { TextStyles, PositionStyles } from './styles.js'
+import { ThemeProvider } from '@material-ui/core/styles';
 import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable, 
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
         containerTable, cheapGearTable, valuableGearTable, petTable,
@@ -121,74 +122,74 @@ function App() {
   }
   
   return (
-  <div>
-    <div className="container">
-      <img src={PirateBorgCharacterSheetv3NoLines} className="character-sheet" alt=""></img>
+    <div>
+      <div className="container">
+        <img src={PirateBorgCharacterSheetv3NoLines} className="character-sheet" alt=""></img>
 
-      <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
-        {firstNames + " “" + nickname + "” " + lastName}
-      </div>
-      <div className={textStyleClasses.largeText + " class-name " + positionStyleClasses.ClassName}>{className}</div>
-      <div className={textStyleClasses.mediumText + " class-features " + positionStyleClasses.ClassFeatures}>
-      {classValue === 2 /* Buccaneer */
-            ? <div><div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}</div><br/></div>
+        <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
+          <span>{firstNames + " “" + nickname + "” " + lastName}</span>
+        </div>
+        <div className={textStyleClasses.largeText + " class-name " + positionStyleClasses.ClassName}>{className}</div>
+        <div className={textStyleClasses.mediumText + " class-features " + positionStyleClasses.ClassFeatures}>
+        {classValue === 2 /* Buccaneer */
+              ? <div><div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}</div><br/></div>
+              : null}
+        <div>{classAbility}</div>
+        <br/>
+        {classValue === 0 /* Brute */
+            ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
             : null}
-      <div>{classAbility}</div>
-      <br/>
-      {classValue === 0 /* Brute */
-          ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
-          : null}
-      </div>
+        </div>
 
-      <div className={textStyleClasses.extraLargeText + " hp " + positionStyleClasses.HitPoints}>
-        <strong>{classHp}</strong>
-      </div>
+        <div className={textStyleClasses.extraLargeText + " hp " + positionStyleClasses.HitPoints}>
+          <strong>{classHp}</strong>
+        </div>
 
-      <div className={textStyleClasses.extraLargeText + " strength " + positionStyleClasses.Strength}>
-        {(strengthStat >= 0)? "+"+strengthStat : strengthStat}
-      </div>
-      <div className={textStyleClasses.extraLargeText + " agility " + positionStyleClasses.Agility}>
-        {(agilityStat >= 0)? "+"+agilityStat : agilityStat}
-      </div>
-      <div className={textStyleClasses.extraLargeText + " presence " + positionStyleClasses.Presence}>
-        {(presenceStat >= 0)? "+"+presenceStat : presenceStat}
-      </div>
-      <div className={textStyleClasses.extraLargeText + " toughness " + positionStyleClasses.Toughness}>
-        {(toughnessStat >= 0)? "+"+toughnessStat : toughnessStat}
-      </div>    
-      <div className={textStyleClasses.extraLargeText + " spirit " + positionStyleClasses.Spirit}>
-        {(spiritStat >= 0)? "+"+spiritStat : spiritStat}
-      </div>
-      <div className={textStyleClasses.extraLargeText + " devils-luck " + positionStyleClasses.DevilsLuck}>
-        {classDevilsLuck}
-      </div>
+        <div className={textStyleClasses.extraLargeText + " strength " + positionStyleClasses.Strength}>
+          {(strengthStat >= 0)? "+"+strengthStat : strengthStat}
+        </div>
+        <div className={textStyleClasses.extraLargeText + " agility " + positionStyleClasses.Agility}>
+          {(agilityStat >= 0)? "+"+agilityStat : agilityStat}
+        </div>
+        <div className={textStyleClasses.extraLargeText + " presence " + positionStyleClasses.Presence}>
+          {(presenceStat >= 0)? "+"+presenceStat : presenceStat}
+        </div>
+        <div className={textStyleClasses.extraLargeText + " toughness " + positionStyleClasses.Toughness}>
+          {(toughnessStat >= 0)? "+"+toughnessStat : toughnessStat}
+        </div>    
+        <div className={textStyleClasses.extraLargeText + " spirit " + positionStyleClasses.Spirit}>
+          {(spiritStat >= 0)? "+"+spiritStat : spiritStat}
+        </div>
+        <div className={textStyleClasses.extraLargeText + " devils-luck " + positionStyleClasses.DevilsLuck}>
+          {classDevilsLuck}
+        </div>
 
-      {WeaponDisplay()}
+        {WeaponDisplay()}
 
 
-      <div className={textStyleClasses.mediumText + " character-background"}>
-        {background}
-      </div>
-      <div className={textStyleClasses.mediumText + " distinctive-flaw"}>
-        {distinctiveFlaw}
-      </div>
-      <div className={textStyleClasses.mediumText + " physical-ailment"}>
-        {physicalAilment}
-      </div>
-      <div className={textStyleClasses.mediumText + " idiosyncracies"}>
-        {idiosyncracies}
-      </div>
-      <div className={textStyleClasses.mediumText + " unfortunate-incidents"}>
-        {unfortunateIncidents}
-      </div>
-      <div className={textStyleClasses.mediumText + " thing-of-importance"}>
-        {thingOfImportance}
-      </div>
+        <div className={textStyleClasses.mediumText + " character-background"}>
+          {background}
+        </div>
+        <div className={textStyleClasses.mediumText + " distinctive-flaw"}>
+          {distinctiveFlaw}
+        </div>
+        <div className={textStyleClasses.mediumText + " physical-ailment"}>
+          {physicalAilment}
+        </div>
+        <div className={textStyleClasses.mediumText + " idiosyncracies"}>
+          {idiosyncracies}
+        </div>
+        <div className={textStyleClasses.mediumText + " unfortunate-incidents"}>
+          {unfortunateIncidents}
+        </div>
+        <div className={textStyleClasses.mediumText + " thing-of-importance"}>
+          {thingOfImportance}
+        </div>
 
-      {ClothesDisplay()}
-      {GearDisplay()}
-    </div>    
-  </div>
+        {ClothesDisplay()}
+        {GearDisplay()}
+      </div>
+    </div>
   );
 }
 

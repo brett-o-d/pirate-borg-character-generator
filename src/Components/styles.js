@@ -2,12 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const TextStyles = makeStyles((theme) => ({
     extraLargeText: {
-        [theme.breakpoints.up('lg')]: {
-            fontSize: "xxx-large",
-        },
-        [theme.breakpoints.down('lg')]: {
-            fontSize: "xx-large",
-        },
+        fontSize: "xx-large",
         [theme.breakpoints.down('md')]: {
             fontSize: "x-large",
         },
@@ -15,30 +10,23 @@ export const TextStyles = makeStyles((theme) => ({
             fontSize: "large",
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "small",
+            fontSize: "80%",
         },
     },
     largeText: {
-        [theme.breakpoints.up('lg')]: {
-            fontSize: "x-large",
-        },
-        [theme.breakpoints.down('lg')]: {
+        fontSize: "x-large",
+        [theme.breakpoints.down('md')]: {
             fontSize: "large",
         },
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('sm')]: {
             fontSize: "medium",
         },
-        [theme.breakpoints.down('sm')]: {
-            fontSize: "small",
-        },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "45%",
+            fontSize: "50%",
         },
     },
     mediumText: {
-        [theme.breakpoints.up('md')]: {
-            fontSize: "medium",
-        },
+        fontSize: "medium",
         [theme.breakpoints.down('md')]: {
             fontSize: "small",
         },
@@ -46,15 +34,15 @@ export const TextStyles = makeStyles((theme) => ({
             fontSize: "xx-small",
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "30%",
+            fontSize: "25%",
         },
-        },
-  }));
+    },
+}));
 
-  export const PositionStyles = makeStyles((theme) => ({
+export const PositionStyles = makeStyles((theme) => ({
     CharacterName: {
         [theme.breakpoints.down('xs')]: {
-            top: "9%",
+            top: "8%",
             left: "6%",
             lineHeight: "1",
         },
@@ -132,5 +120,5 @@ export const TextStyles = makeStyles((theme) => ({
             left: "48%",
         },
     },
-  }));
+}));
 
