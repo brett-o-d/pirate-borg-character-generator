@@ -34,7 +34,7 @@ export const TextStyles = makeStyles((theme) => ({
             fontSize: "xx-small",
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "25%",
+            fontSize: "4px",
         },
     },
 }));
