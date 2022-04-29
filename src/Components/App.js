@@ -5,7 +5,8 @@ import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
         clothingTable, hatTable, weaponTable, firstNamesTable, nicknameTable, 
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
-        classHatTable, classHpTable, classDevilsLuckTable, classClothingTable, classWeaponTable, 
+        classHatTable, classHpTable, classDevilsLuckCircleFillTable, 
+        classClothingTable, classWeaponTable, 
         bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
 import PirateBorgCharacterSheetv3NoLines from '../Assets/PirateBorgCharacterSheetv3NoLines.jpg';
 import RollStat from '../Utilities/stat-roller.js';
@@ -22,7 +23,7 @@ function App() {
 
   const className = classTable[classValue];
 
-  const classDevilsLuck = classDevilsLuckTable[classValue];
+  const devilsLuck = classDevilsLuckCircleFillTable[classValue];
 
   const classAbilityValue = Math.floor((Math.random() * classAbilityTables[classValue].length));
   const classAbility = classAbilityTables[classValue][classAbilityValue];
@@ -73,6 +74,22 @@ function App() {
         <strong>Clothes:</strong> {clothing}
         <br/>
         <strong>Hat:</strong> {hat}
+      </div>
+    );
+  }
+
+  function DevilsLuckCircles(){
+    return (
+      <div>
+        <div className={'devils-luck-circle-one ' + textStyleClasses.largeText}>
+          {(devilsLuck > 0) ? "X" : ""}
+        </div>
+        <div className={'devils-luck-circle-two ' + textStyleClasses.largeText}>
+          {(devilsLuck > 1) ? "X" : ""}
+        </div>
+        <div className={'devils-luck-circle-three ' + textStyleClasses.largeText}>
+          {(devilsLuck > 2) ? "X" : ""}
+        </div>
       </div>
     );
   }
@@ -134,9 +151,7 @@ function App() {
         <div className={textStyleClasses.extraLargeText + " spirit " + positionStyleClasses.Spirit}>
           {(spiritStat >= 0)? "+"+spiritStat : spiritStat}
         </div>
-        <div className={textStyleClasses.extraLargeText + " devils-luck " + positionStyleClasses.DevilsLuck}>
-          {classDevilsLuck}
-        </div>
+        {DevilsLuckCircles()}
 
         {WeaponDisplay(weapon, classValue, textStyleClasses.mediumText, positionStyleClasses.Weapon)}
 

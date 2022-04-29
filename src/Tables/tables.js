@@ -4128,6 +4128,7 @@ export const voudouBokorAbilityTable = ["Commune with the Lwa. Ask the spirits a
 export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, voudouBokorAbilityTable]
 
 export const classDevilsLuckTable = ["d2", "d2", "d2", "d2", "d4", "d4"]
+export const classDevilsLuckCircleFillTable = ["1", "1", "1", "1", "2", "2"]
 
 export const classHpTable = [12, 8, 10, 10, 8, 8]
 

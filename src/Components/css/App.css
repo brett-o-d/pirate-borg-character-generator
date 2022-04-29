@@ -129,6 +129,30 @@
     font-weight: bold;
 }
 
+/* devils luck circles */
+.devils-luck-circle-one {
+    position: absolute;
+    top: 44.1%;
+    left: 36.2%;
+    font-weight: bold;
+}
+
+/* devils luck circles */
+.devils-luck-circle-two {
+    position: absolute;
+    top: 44%;
+    left: 38.9%;
+    font-weight: bold;
+}
+
+/* devils luck circles */
+.devils-luck-circle-three {
+    position: absolute;
+    top: 44%;
+    left: 41.5%;
+    font-weight: bold;
+}
+
 /* distinctive flaw text */
 .distinctive-flaw {
     position: absolute;
