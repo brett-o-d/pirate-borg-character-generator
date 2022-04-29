@@ -82,13 +82,13 @@ function App() {
     return (
       <div>
         <div className={'devils-luck-circle-one ' + textStyleClasses.largeText}>
-          {(devilsLuck > 0) ? "X" : ""}
+          {(devilsLuck == 1) ? "⬤" : ""}
         </div>
         <div className={'devils-luck-circle-two ' + textStyleClasses.largeText}>
-          {(devilsLuck > 1) ? "X" : ""}
+          {(devilsLuck == 2) ? "⬤" : ""}
         </div>
         <div className={'devils-luck-circle-three ' + textStyleClasses.largeText}>
-          {(devilsLuck > 2) ? "X" : ""}
+          {(devilsLuck == 3) ? "⬤" : ""}
         </div>
       </div>
     );
