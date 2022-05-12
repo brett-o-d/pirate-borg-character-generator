@@ -44,7 +44,7 @@ export const physicalAilmentTable =
 
 export const idiosyncraciesTable = 
     ["Smokes constantly. Coughs even more.",
-    "\"Functioning\" alcoholic. You're probably drunk right now.",
+    "“Functioning” alcoholic. You’re probably drunk right now.",
     "You bet on everything possible.",
     "O.C.D. Constantly counting. Teeth, cannon balls...",
     "Eating rats is your favorite past time.",
@@ -58,9 +58,9 @@ export const idiosyncraciesTable =
     "You collect something. You talk to your collection. They are your friends.",
     "Always trying to trick your crew mates, just for fun.",
     "Why pay for anything when you can steal it?",
-    "Talk to yourself when alone, but you often think you are alone when you aren't.",
+    "Talk to yourself when alone, but you often think you are alone when you aren’t.",
     "You secretly enjoy the taste of human flesh.",
-    "You always say you \"know the right way\", but are prone to getting lost.",
+    "You always say you “know the right way”, but are prone to getting lost.",
     "You blame others for every mistake.",
     "Extremely obsessive with tasks and relationships."]
 
@@ -75,16 +75,16 @@ export const unfortunateIncidentsTable =
     "The last three ships you crewed all sank.",
     "Your last crew was killed by undead. They let you live on purpose.",
     "Political leaders hold your loved one(s) captive.",
-    "A Vodou Lwa spirit you don't like possesses you regularly.",
+    "An undead spirit you don't like possesses you regularly.",
     "You wronged an infamous pirate lord.",
-    "You narrowly escaped a cannibalistic ending, but you didn't escape that smell.",
+    "You narrowly escaped a cannibalistic ending, but you didn’t escape that smell.",
     "You slaughtered them. Like animals.",
     "You are the mysterious lone survivor of a treasure expedition gone awry.",
     "[d2] 1: Failed mutineer. 2: Successful mutineer.",
     "A silent ghost haunts you. It is always there, but only you can see it.",
-    "You deserted the military, but you're not sure who knows so.",
+    "You deserted the military, but you’re not sure who knows so.",
     "You have no memory before a few days ago.",
-    "You died once already, but Hell didn't want you."]
+    "You died once already, but Hell didn’t want you."]
 
 export const thingOfImportanceTable = 
     ["an animal pelt",
@@ -125,15 +125,15 @@ export const thingOfImportanceTable =
     "a small, cast bronze owl figurine",
     "a collection of sea shells and rocks",
     "a necklace carved from jade",
-    "a recently deceased relative's will, naming you as the sole heir",
+    "a recently deceased relative’s will, naming you as the sole heir",
     "a drawing of a loved one",
     "a bag of white powder you believe may be magical",
     "an old rusted key with a blue gem that glows in the moonlight",
-    "a compass that doesn't point north",
+    "a compass that doesn’t point north",
     "a clay jar you are using as an urn",
-    "definitive proof of an enemy's (or loved one's) crime",
+    "definitive proof of an enemy’s (or loved one’s) crime",
     "a small golden bell",
-    "a old bottle of red wine (Bordeaux, incredible vintage)",
+    "an old bottle of red wine (Bordeaux, incredible vintage)",
     "a jar of dried jellyfish dust",
     "a multi-colored feather from an exotic bird",
     "a necklace from a loved one",
@@ -147,7 +147,7 @@ export const thingOfImportanceTable =
     "a gem that glows when submerged in seawater",
     "a dinosaur or monster bone or claw",
     "a jar of fireflies",
-    "a leather-bound tome in a language you don't recognize",
+    "a leather-bound tome in a language you don’t recognize",
     "blueprints to a new type of ship",
     "a carved arrowhead",
     "a stone tablet inscribed with ancient pictographs or hieroglyphs",
@@ -175,7 +175,7 @@ export const thingOfImportanceTable =
     "a magnifying lens (glass only)",
     "the cork from a bottle, from a special occasion",
     "a cannonball",
-    "a deck of cards with 1d4 cards missing and 1d6 \"extra\" cards",
+    "a deck of cards with 1d4 cards missing and 1d6 “extra” cards",
     "a garment from someone special",
     "a wanted poster, d4:1 legend, 2 loved one, 3 enemy, 4 stranger",
     "a fancy wig",
@@ -240,7 +240,7 @@ export const backgroundTable =
     "heretic: 2d4 x 10s & a blasphemous disposition",
     "homemaker: 2d6 x 10s & a loved one back home",
     "hunter: 2d6 x 10s & a hunting knife",
-    "indentured servant: 2d4 x 10s & someone looking for you",
+    "former servant: 2d4 x 10s & someone looking for you",
     "innkeeper: 3d4 x 10s & a small inn somewhere",
     "landowner: 3d6 x 10s & property somewhere",
     "loner: 2d6 x 10s & a dislike of others",
@@ -255,6 +255,7 @@ export const backgroundTable =
     "native: 2d4 x 10s & something from your homeland",
     "navigator: 2d6 x 10s & a compass",
     "noble: 3d6 x 10s & good manners",
+    "nobody 2d4 x 10s & a desire for a purpose",
     "nurse: 2d6 x 10s & a medical kit",
     "officer: 2d8 x 10s & a cutlass and military training",
     "orphan: 2d4 x 10s & a longing for new parental figures",
@@ -265,7 +266,7 @@ export const backgroundTable =
     "politician: 2d6 x 10s & skill a deception",
     "priest: 2d6 x 10s & a holy symbol and scripture",
     "privateer: 2d6 x 10s & a letter of marque [roll Faction d4 pg.4]",
-    "quartermaster: 2d6 x 10s & the respect of a ship's crew",
+    "quartermaster: 2d6 x 10s & the respect of a ship’s crew",
     "refugee: 2d4 x 10s & strong survival instincts",
     "religious follower: 2d4 x 10s & a strong sense of faith",
     "revolutionary: 2d6 x 10s & bold plans and a few allies",
@@ -277,7 +278,6 @@ export const backgroundTable =
     "scout: 2d6 x 10s & keen senses and a map",
     "shaman: 2d4 x 10s & herbs and mystic knowledge",
     "shipwright: 2d6 x 10s & skill with woodworking",
-    "slave: 2d4 x 10s & a seething desire for revenge",
     "smuggler: 2d6 x 10s & a bounty on your head",
     "soldier: 2d6 x 10s & a tactical mind",
     "spy: 2d6 x 10s & a dark cloak",
@@ -339,7 +339,7 @@ export const petTable =
     "a fish in a jar"]
 
 export const instrumentTable = 
-    ["concertian ",
+    ["concertina ",
     "drum",
     "flute",
     "fiddle",
@@ -354,13 +354,13 @@ export const relicTable =
     ["Cross of the Paragon",
     "Conch Shell from the Abyss",
     "Map Inked in Ectoplasm",
-    "Will-o'-the-wisp Lantern",
+    "Will-o’-the-wisp Lantern",
     "Pages from the Necronomicon",
     "Rune Encrusted Flintlock Pistol",
     "Jade Die",
     "Undead Bird",
     "Mermaid Scales",
-    "Charon's Obol",
+    "Charon’s Obol",
     "Cup of the Carpenter",
     "Heart of the Sea",
     "Necklace of Eyeballs",
@@ -379,7 +379,7 @@ export const relicDescriptionTable =
     "15' of light or darkness for d6+SPIRIT rounds.",
     "d4 creatures test DR14 or lose d6+SPIRIT hp.",
     "One creature loses d6+SPIRIT hp.",
-    "Roll a d6. Odd: you gain 1d10 temporary hp. Even: Choose a creature. It gets +d8 on its next damage roll.",
+    "Roll a d6. Odd: you gain d10 temporary hp. Even: Choose a creature. It gets +d8 on its next damage roll.",
     "Speak with animals (dead or alive) for d6+SPIRIT rounds.",
     "Breath underwater for d4 hours.",
     "If you are killed, return to life the next round with 1 hp. Disappears after one use.",
@@ -395,19 +395,19 @@ export const relicDescriptionTable =
     "The compass points in the direction of an object you know for 1+SPIRIT rounds."]
 
 export const clothingTable = 
-    ["rags ",
+    ["rags",
     "rags",
     "common clothes",
     "common clothes",
     "old uniform",
-    "fancy clothes",
+    "fancy clothes (You look amazing)",
     "leather armor (-d2 damage)",
     "hide armor (-d2 damage)",
-    "chain shirt (-d4 damage,DR +2 on Agility tests)",
-    "conquistador breastplate (-d6 damage,DR +4 on Agility tests, defense DR +2, sink in water)"]
+    "chain shirt (-d4 damage, DR +2 on AGILITY tests including defense)",
+    "conquistador armor (-d6 damage, DR +4 on AGILITY tests, defense is DR +2. You’ll most likely sink and drown in water.)"]
 
 export const hatTable = 
-    ["none ",
+    ["none",
     "none",
     "none",
     "none",
@@ -415,16 +415,16 @@ export const hatTable =
     "bandanna",
     "cavalier",
     "bicorne",
-    "tricorne",
-    "fancy bandanna",
-    "metal lined cavalier (-1 damage)",
-    "conquistador helmet (-1 damage & you can choose to ignore all damage from one attack but helmet breaks"]
+    "plain tricorne",
+    "fancy tricorne",
+    "metal lined hat (-1 damage)",
+    "conquistador helmet (-1 damage. You can choose to ignore all damage from one attack but the helmet breaks."]
 
 export const weaponTable = 
     ["Marlinspike or Belaying Pin [d4] ",
     "Knife or Bayonet [d4]",
     "Smallsword or Machete [d4]",
-    "Cat O' Nine Tails [d4]",
+    "Cat O’ Nine Tails [d4]",
     "Boarding Axe [d6]",
     "Cutlass [d6]",
     "Flintlock Pistol [2d4, reload 2, range 30ft, Presence + 10 shots]",
@@ -1051,7 +1051,7 @@ export const firstNamesTable =
     "Raymond"]
 
 export const nicknameTable = 
-    ["Capin' ",
+    ["Capin’ ",
     "Dirty",
     "Squidlips",
     "Fish Face",
@@ -1225,7 +1225,7 @@ export const nicknameTable =
     "Crabs",
     "Turtle",
     "Sea Turtle",
-    "Cat's Meow",
+    "Cat’s Meow",
     "Queen Anders",
     "The Bride",
     "The Fisherman",
@@ -3993,7 +3993,7 @@ export const lastNameTable =
     "de Villequier",
     "des Chasteliers",
     "Desiré",
-    "d'Espesse",
+    "d’Espesse",
     "Des-prez",
     "du Guet",
     "du Mesnil",
@@ -4063,7 +4063,8 @@ export const classTable =
     "Zealot",
     "Voudou Bokor"]
 
-export const classStatsModifierTable = [[1, 0, -1, 1, -1], [-1, 2, -1, 0, 0], [0, -1, 2, 0, -1], [1, 1, -1, 0, -1], [0, -1, 0, -1, 2], [-1, 0, 0, -1, 2], ]
+// strength, agility, presence, toughness, spirit
+export const classStatsModifierTable = [[1, 0, -1, 1, -1], [-1, 2, 0, -1, 0], [0, -1, 2, 0, -1], [1, 1, -1, 0, -1], [0, -1, 0, -1, 2], [-1, 0, 0, -1, 2], ]
 
 export const bruteAbilityTable = 
 ["You begin with a trusted weapon [d6]. It has a nickname (what is it?). It will never break (but can be dropped). DR10 to attack:"]
@@ -4085,15 +4086,15 @@ export const rapscallionAbilityTable =
     "Grog Brewer. Each day you can brew d4 servings of potent grog. You can soak melee weapons in it to use as a poison (it will get you drunk, too). Grog in a wound:Toughness DR14 or -d6 HP."]
 
 export const buccaneerAbilityTable = 
-    ["Wildlife Tracker. You always know the direction that something you are tracking has headed from your current location, and can tell approximately how long ago it was here.",
-    "Crack Shot. All ranged attacks are DR8.",
-    "Fast Reloader. Reloading takes 1 round instead of 2.",
-    "Focused Aim. Every time you shoot an enemy you have already hit this combat, lower the DR by 2. This effect is cumulative.",
+    ["Wildlife Tracker. When tracking, you always know your target’s direction from your current location, and can tell approximately how long ago it left.",
+    "Crack Shot. All ranged attacks are DR10.",
+    "Fast Reloader. You can reload and shoot in the same turn.",
+    "Focused Aim. Attacks to hit an enemy you have already shot at this combat are DR8.",
     "Buccan Cook: Months of island life have taught you the fine art of cooking meats over the buccan fire. You start with d8 rations of exquisite smoked meat. Eating it immediately recovers d4 hp, and you can make d4 more rations from any edible animal you kill.",
     "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. -2 DR to toughness checks."]
 
 export const buccaneerWeaponTable =
-    ["You start with a musket, and your attacks with it are DR10 to hit. When you get better, roll for an additional feature."]
+    ["You start with a musket, and reloading takes 1 round instead of 2."]
 
 export const swashbucklerAbilityTable = 
     ["Ostentatious Fencer: Your melee Attack/Defense is DR10 when wielding a rapier or cutlass. When dueling one-on-one, you deal +1 damage.",
@@ -4101,29 +4102,29 @@ export const swashbucklerAbilityTable =
     "Scurvy Scallywag: You don’t fight fair. -2 DR when attacking an enemy that has already been attacked this turn.",
     "Inspiring Leader. Once a combat, roll a d4. Everyone else may add or subtract that value from any roll during this combat.",
     "Knife Knave. You start with 2 knives, and when you attack with them you can make two attacks a turn. They are DR10 to hit, and if the first attack hits, the 2nd is an auto-hit.",
-    "Black Powder Poet. Your DR when throwing bombs and grenades is DR10. You start with explosives: iron grenade, smoke bomb, smoke bomb, smoke bomb"]
+    "Black Powder Poet. Your DR when throwing bombs and grenades is DR10. You start with explosives."]
 
 export const zealotAbilityTable = 
-    ["Heal. Heal thyself or another for d6 HP.",
-    "Curse. Test Presence DR10: deal d8 + Presence damage to an enemy thy can see that has already been hurt in this fight.",
-    "Death Ward. Touch the corpse of someone that has just died and test Presence DR10: they come back to life with 1 HP. Crit: Full HP. Fumble: They come back as a zombie and attack thee!",
-    "Influence Weather. Test Presence DR10 to change the direction of thy wind. If thee succeedth by 5 or more thee can also conjure or repel precipitation. Crit: Lighting strike d12. Fumble: Lighting strikes thee: d6",
+    ["Heal. Heal thyself or another for d8 HP.",
+    "Curse. Test Spirit DR10: deal d8 + Presence damage to an enemy thou canst see. DR8 if it has already been hurt in this fight.",
+    "Death Ward. Touch the corpse of ~~someone that has~~ **one who hath** just died and test Presence DR10: they return to life with 1 HP. Crit: Full HP. Fumble: They come back as a zombie and attacketh thee!",
+    "Influence Weather. Test Spirit DR10 to change the direction of the wind. If thou succeedth by 5 or more, thou may also conjure or repel precipitation. Crit: Lighting strike d12. Fumble: Lighting striketh thee for d6",
     "Blessed Guidance. Thee may add d4 to any roll thee or another player maketh.",
-    "Holy Protection. Thee or an ally gets -4 to DRs to defend for one attack. This may be applied after dice are rolled.",
+    "Holy Protection. Thou or thine ally gets -4 to DRs to defend for one attack. This may be applied after the dice are rolled.",
     "Divine Light. Bright light radiates from thee for up to d6 x 10 minutes.",
-    "Silence. For the next 2d6 x 10 minutes, everything within 25 feet of thee makes no sound. The effect only ends when the time doth expire.",
-    "Turn Undead. Check morale (add or subtract thy Presence modifier) to attempt to place an undead creature under thy command.",
-    "Commune. Test Presence DR8: Ask thy deity a single  “yes” or “no” question. The answer may be “unclear” or thee may receiveth no answer at all."]
+    "Silence. For the next 2d6 x 10 minutes, everything within 25 feet of thee makes no sound. The effect only ends when the time doth expire",
+    "Turn Undead. Check morale (add or subtract thy Spirit modifier) to attempt to force undead creatures to flee.",
+    "Commune. Test Spirit DR8: Asketh thy deity a singular “yay” or “nay” query. The answer Thy response may be “unclear” or thou may receiveth no answer at all."]
 
 export const zealotWorshipTable = 
-    ["THE ONE TRUE GOD", "THE CHURCH", "MOTHER NATURE", "THE GREAT OLD ONE", "THE ANCIENT GODS OF MESOA", "THE PRINCE OF DARKNESS"]
+    ["THE ONE TRUE GOD", "THE CHURCH", "MOTHER NATURE", "THE GREAT OLD ONE", "THE ANCIENT GODS", "THE PRINCE OF DARKNESS"]
 
-export const voudouBokorAbilityTable = ["Commune with the Lwa. Ask the spirits a question about an adjacent room, though they may lie. Test Presence DR12 to know if they are telling the truth but after failing you cannot test again until sunrise.",
-    "Lwa Possession. Once per combat, one random creature is possessed by a Lwa for d2 rounds. Friends: -2 DR to attack and defense. Foes: -2 DR to attack or defend against it. Any fumbles related to this creature cause the Lwa to leave, stunning the host for 1 round",
-    "Protection. Each day you can cast a ritual, summoning Papa Legba to watch over the soul of you or an ally. (+d2 Armor for the day)",
-    "Hand of Samedi. You can summon a ghostly, purple hand. It obeys your commands, but will attack on a Fumble. 2d4 damage",
-    "\"Zombie\" Powder. A taste of this white powder appears to kill a living creature, but when they awake they'll remember everything. Once a combat, test Presence DR 12 to see if it falls \"dead\" asleep for d2 rounds",
-    "Raise the Dead: Once a day, you can create 1 skeletal thrall from a nearby corpse. They tumble into bones at dawn. HP 4 Morale - Claw/Bite d4"]
+export const voudouBokorAbilityTable = ["Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12 II.DR10 III.DR8",
+"Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds II.d4 III.Until combat ends",
+"Protection. You summon a ghost or spirit to watch over the souls of you and your allies. Everyone who is protected gets -d2 protection for one hour as if wearing extra armor (does not affect penalties to Strength and Agility, not affected by Fumbles). I.1 soul II.2 souls III.3 souls",
+"Dead Head. You can summon a flying, ghostly skull which appears for d2+SPIRIT rounds. It obeys your commands, but will attack you on a Fumble. It can bite: I.2d4 II.2d4+1 III.2d4+2",
+"NECRO-SLEEP. A living creature appears to fall over dead, but when they awake they will remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds II.d6 rounds III.d6 days",
+"Raise the Dead. You can create skeletal thralls from nearby corpses. They are stupid, but obey you verbal commands. They tumble into bones at sunrise. I.1 thrall II.2 thralls III.d2+2 thralls"]
 
 export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, voudouBokorAbilityTable]
 
@@ -4137,3 +4138,5 @@ export const classClothingTable = [10, 6, 10, 10, 8, 6]
 export const classHatTable = [12, 10, 12, 12, 0, 0]
 
 export const classWeaponTable = [0, 6, 0, 10, 8, 0]
+
+export const motivations = ["Escape", "Happiness", "Recovery", "Pleasure", "Exploration", "Love or Sex", "Revenge", "Fear", "Wealth", "Hunger", "Reputation", "Aggression", "Adventure", "Guilt", "Leisure", "Protection", "Intoxication", "Family", "Religion", "Occult"]
