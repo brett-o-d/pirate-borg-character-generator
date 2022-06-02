@@ -4061,7 +4061,7 @@ export const classTable =
     "Buccaneer",
     "Swashbuckler",
     "Zealot",
-    "Voudou Bokor"]
+    "Sorcerer"]
 
 // strength, agility, presence, toughness, spirit
 export const classStatsModifierTable = [[1, 0, -1, 1, -1], [-1, 2, 0, -1, 0], [0, -1, 2, 0, -1], [1, 1, -1, 0, -1], [0, -1, 0, -1, 2], [-1, 0, 0, -1, 2], ]
@@ -4119,14 +4119,14 @@ export const zealotAbilityTable =
 export const zealotWorshipTable = 
     ["THE ONE TRUE GOD", "THE CHURCH", "MOTHER NATURE", "THE GREAT OLD ONE", "THE ANCIENT GODS", "THE PRINCE OF DARKNESS"]
 
-export const voudouBokorAbilityTable = ["Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12 II.DR10 III.DR8",
+export const sorcererAbilityTable = ["Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12 II.DR10 III.DR8",
 "Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds II.d4 III.Until combat ends",
 "Protection. You summon a ghost or spirit to watch over the souls of you and your allies. Everyone who is protected gets -d2 protection for one hour as if wearing extra armor (does not affect penalties to Strength and Agility, not affected by Fumbles). I.1 soul II.2 souls III.3 souls",
 "Dead Head. You can summon a flying, ghostly skull which appears for d2+SPIRIT rounds. It obeys your commands, but will attack you on a Fumble. It can bite: I.2d4 II.2d4+1 III.2d4+2",
 "NECRO-SLEEP. A living creature appears to fall over dead, but when they awake they will remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds II.d6 rounds III.d6 days",
 "Raise the Dead. You can create skeletal thralls from nearby corpses. They are stupid, but obey you verbal commands. They tumble into bones at sunrise. I.1 thrall II.2 thralls III.d2+2 thralls"]
 
-export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, voudouBokorAbilityTable]
+export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, sorcererAbilityTable]
 
 export const classDevilsLuckTable = ["d2", "d2", "d2", "d2", "d4", "d4"]
 export const classDevilsLuckCircleFillTable = ["1", "1", "1", "1", "2", "2"]
