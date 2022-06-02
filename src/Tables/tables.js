@@ -291,12 +291,12 @@ export const backgroundTable =
     "writer: 2d6 x 10s & ink, quills, and parchment"]
 
 export const containerTable = 
-    ["bucket",
-    "belt pouch",
-    "sack",
-    "small sea chest",
-    "backpack",
-    "large sea chest"]
+    ["bucket for 4 normal-sized items",
+    "belt pouch for 10 small-sized items",
+    "sack for 7 normal-sized items",
+    "backpack 10 normal-sized items",
+    "large sea chest for 20 normal-sized items or one of the above of your choice",
+    "a dinghy (pg. 92) or one of the above of your choice"]
 
 export const cheapGearTable = 
     ["lantern (d6 hours of oil)",
