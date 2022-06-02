@@ -295,8 +295,8 @@ export const containerTable =
     "belt pouch for 10 small-sized items",
     "sack for 7 normal-sized items",
     "backpack 10 normal-sized items",
-    "large sea chest for 20 normal-sized items or one of the above of your choice",
-    "a dinghy (pg. 92) or one of the above of your choice"]
+    "large sea chest for 20 normal-sized items or one other container of your choice",
+    "a dinghy (pg. 92) or one other container of your choice"]
 
 export const cheapGearTable = 
     ["lantern (d6 hours of oil)",
