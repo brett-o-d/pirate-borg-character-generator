@@ -44,6 +44,7 @@
     left: 6.5%;
     width: 27%;
     line-height: 1.05;
+    white-space: pre-line;
 }
 
 /* max hp text */

@@ -32,11 +32,11 @@ function App() {
   const classHatValue = Math.floor((Math.random() * classHatTable[classValue]));
   const classWeaponValue = Math.floor((Math.random() * classWeaponTable[classValue]));
 
-  const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][0], 3);
-  const agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][1], 3);
-  const presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][2], 3);
-  const toughnessStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][3], 3);
-  const spiritStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][4], 3);
+  const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][0], -3);
+  const agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][1], -3);
+  const presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][2], -3);
+  const toughnessStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][3], -3);
+  const spiritStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][4], -3);
 
   const classHp = Math.max(Math.floor((Math.random() * classHpTable[classValue])) + toughnessStat, 1);
 

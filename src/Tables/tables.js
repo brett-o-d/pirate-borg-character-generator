@@ -4082,7 +4082,7 @@ export const rapscallionAbilityTable =
     "Burglar. You begin with lock picks. Pickpocket, disarm an enemy, or disable a trap: -2 to DR.",
     "Rope Monkey. You’re as nimble in the rigging as you are on the deck. If you attack after swinging, jumping, or making an acrobatic maneuver, test Agility DR10 to automatically hit and deal +2 damage.",
     "Sneaky Bastard. You can hide, sneak, and disappear into the shadows. DR14 to notice you.",
-    "Lucky Devil. When you use the Devil’s Luck, draw a playing card: 8+: Regain 1 Luck. Joker: Roll on the Joker Table.",
+    "Lucky Devil. When you use the Devil’s Luck, draw a playing card: 8+: Regain 1 Luck. Joker: Roll on the Joker Table. \nJOKER TABLE[d20]: 1. The Devil comes for your soul. You are sucked into a fiery portal. This is the end of your story. 2-9. Lose all of your remaining luck points. 10-19. Regain 2 luck points. 20. Gain 4 Luck points (max 4)",
     "Grog Brewer. Each day you can brew d4 servings of potent grog. You can soak melee weapons in it to use as a poison (it will get you drunk, too). Grog in a wound:Toughness DR14 or -d6 HP."]
 
 export const buccaneerAbilityTable = 
