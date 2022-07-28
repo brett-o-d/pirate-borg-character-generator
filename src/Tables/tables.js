@@ -4070,16 +4070,16 @@ export const bruteAbilityTable =
 ["You begin with a trusted weapon [d6]. It has a nickname (what is it?). It will never break (but can be dropped). DR10 to attack:"]
 
 export const bruteWeaponTable = 
-    ["Iron Anchor. Requires two hands,d8 damage. Reduces armor by -d2.",
+    ["Brass Anchor. Requires two hands, d8 damage. Reduces target's armor by one tier (-d2) during the attack.",
     "Whaling Harpoon. d8 damage and can be thrown by testing Agility DR12.",
     "Meat Cleaver. It’s caked in layers of dried blood. d4 damage; on a 1 a disease from one of its prior victims infects the target. It dies in d6 hours unless cured.",
     "Part of a Broken Mast. It has a rusted nail protruding from one end. d8 damage, plus an extra d4 on a critical hit.",
     "Large, Rusted Machete. d6 damage. Great for chopping down vines and fopdoodles. It glows in the dark if there are snakes nearby.",
-    "Rotten Cargo Net. Throw it at someone (or something) by testing Agility DR8 to stop them from moving for d2 rounds. Trapped targets take 1 damage each round."]
+    "Rotten Cargo Net. Throw it at someone (or something) to stop them from moving for d2 rounds by testing Agility DR8. Trapped targets take 1 damage each round."]
 
 export const rapscallionAbilityTable = 
     ["Back Stabber. If you attack by surprise (from hiding, distracted enemy, etc.) lower the attack DR by 2 and deal d2 extra damage.",
-    "Burglar.You begin with lock picks. Pickpocket, disarm an enemy, or disable a trap: -2 to DR.",
+    "Burglar. You begin with lock picks. Pickpocket, disarm an enemy, or disable a trap: -2 to DR.",
     "Rope Monkey. You’re as nimble in the rigging as you are on the deck. If you attack after swinging, jumping, or making an acrobatic maneuver, test Agility DR10 to automatically hit and deal +2 damage.",
     "Sneaky Bastard. You can hide, sneak, and disappear into the shadows. DR14 to notice you.",
     "Lucky Devil. When you use the Devil’s Luck, draw a playing card: 8+: Regain 1 Luck. Joker: Roll on the Joker Table.",
@@ -4087,11 +4087,11 @@ export const rapscallionAbilityTable =
 
 export const buccaneerAbilityTable = 
     ["Wildlife Tracker. When tracking, you always know your target’s direction from your current location, and can tell approximately how long ago it left.",
-    "Crack Shot. All ranged attacks are DR10.",
-    "Fast Reloader. You can reload and shoot in the same turn.",
-    "Focused Aim. Attacks to hit an enemy you have already shot at this combat are DR8.",
+    "Crack Shot. All ranged attacks are -2 DR.",
+    "Fix Bayonets! Your musket has a bayonet. You can attack with it and reload on the same turn.",
+    "Focused Aim. Attacks to hit an enemy you have already shot at this combat are -4 DR.",
     "Buccan Cook: Months of island life have taught you the fine art of cooking meats over the buccan fire. You start with d8 rations of exquisite smoked meat. Eating it immediately recovers d4 hp, and you can make d4 more rations from any edible animal you kill.",
-    "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. -2 DR to toughness checks."]
+    "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. -2 DR to toughness checks. You can't become infected/sick/poisoned. Your max HP incresases by d4."]
 
 export const buccaneerWeaponTable =
     ["You start with a musket, and reloading takes 1 round instead of 2."]
@@ -4106,15 +4106,15 @@ export const swashbucklerAbilityTable =
 
 export const zealotAbilityTable = 
     ["Heal. Heal thyself or another for d8 HP.",
-    "Curse. Test Spirit DR10: deal d8 + Presence damage to an enemy thou canst see. DR8 if it has already been hurt in this fight.",
-    "Death Ward. Touch the corpse of ~~someone that has~~ **one who hath** just died and test Presence DR10: they return to life with 1 HP. Crit: Full HP. Fumble: They come back as a zombie and attacketh thee!",
-    "Influence Weather. Test Spirit DR10 to change the direction of the wind. If thou succeedth by 5 or more, thou may also conjure or repel precipitation. Crit: Lighting strike d12. Fumble: Lighting striketh thee for d6",
-    "Blessed Guidance. Thee may add d4 to any roll thee or another player maketh.",
-    "Holy Protection. Thou or thine ally gets -4 to DRs to defend for one attack. This may be applied after the dice are rolled.",
-    "Divine Light. Bright light radiates from thee for up to d6 x 10 minutes.",
-    "Silence. For the next 2d6 x 10 minutes, everything within 25 feet of thee makes no sound. The effect only ends when the time doth expire",
-    "Turn Undead. Check morale (add or subtract thy Spirit modifier) to attempt to force undead creatures to flee.",
-    "Commune. Test Spirit DR8: Asketh thy deity a singular “yay” or “nay” query. The answer Thy response may be “unclear” or thou may receiveth no answer at all."]
+    "Curse. Test Spirit DR10: deal d8 + Spirit damage to an enemy that thou cannot see. DR8 if it has already been hurt in this fight.",
+    "Death Ward. Touch the corpse of one who hath just died and test Spirit DR10: they return to life with 1 HP. Crit: Full HP. Fumble: They come back as a zombie and attacketh thee!",
+    "Weathercraft. Test Spirit DR10 to change the direction of the wind. If thou succeedth by 5 or more, thou can also conjure or repel precipitation. Crit: Lightning striketh d12. Fumble: Lightning strikes thee for d6.",
+    "Blessed Guidance. Thou may add d4 to any roll thee or another player maketh. Use this at any time.",
+    "Holy Protection. Thou or thine ally gets -4 to DRs to defend for one attack. This may be applied after the dice are rolled. Use this at any time.",
+    "Divine Light. Bright light radiates from thee for up to d6 x 10 minutes. Enemies that see it are -2 DR to defend against.",
+    "Silence. For the next 2d6 x 10 minutes, everything within 25 feet of thee makes no sound. The effect only ends when the time doth expire.",
+    "Sanctuary. All thy brethren in sight heal d4 HP.",
+    "Commune. Test Spirit DR8: Asketh thy deity a singular “yay” or “nay” query. Thy response may be  “unclear” or thou may receiveth no answer at all."]
 
 export const zealotWorshipTable = 
     ["THE ONE TRUE GOD", "THE CHURCH", "MOTHER NATURE", "THE GREAT OLD ONE", "THE ANCIENT GODS", "THE PRINCE OF DARKNESS"]
@@ -4123,7 +4123,7 @@ export const sorcererAbilityTable = ["Clairvoyance. Ask the spirits a question a
 "Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds II.d4 III.Until combat ends",
 "Protection. You summon a ghost or spirit to watch over the souls of you and your allies. Everyone who is protected gets -d2 protection for one hour as if wearing extra armor (does not affect penalties to Strength and Agility, not affected by Fumbles). I.1 soul II.2 souls III.3 souls",
 "Dead Head. You can summon a flying, ghostly skull which appears for d2+SPIRIT rounds. It obeys your commands, but will attack you on a Fumble. It can bite: I.2d4 II.2d4+1 III.2d4+2",
-"NECRO-SLEEP. A living creature appears to fall over dead, but when they awake they will remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds II.d6 rounds III.d6 days",
+"Necro-Sleep. A living creature appears to fall over dead, but when they awake they will remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds II.d6 rounds III.d6 days",
 "Raise the Dead. You can create skeletal thralls from nearby corpses. They are stupid, but obey you verbal commands. They tumble into bones at sunrise. I.1 thrall II.2 thralls III.d2+2 thralls"]
 
 export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, sorcererAbilityTable]
