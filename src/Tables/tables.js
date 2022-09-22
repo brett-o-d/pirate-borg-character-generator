@@ -2,11 +2,11 @@ export const distinctiveFlawsTable =
     ["Drunken Lush",
     "Stubborn",
     "Mocking sardonic cheer",
-    "Loud",
+    "Way too loud",
     "Stupid",
     "Coward",
     "Cocky",
-    "Slightly insane",
+    "Slightly deranged",
     "Aggressive",
     "Anxious",
     "Cheater",
@@ -21,38 +21,38 @@ export const distinctiveFlawsTable =
     "Disloyal"]
 
 export const physicalAilmentTable = 
-    ["Missing an eye",
-    "Missing an ear",
+    ["Cursed: visibly part skeleton ghost/water/flames/coral",
+    "Missing an eye",
     "Matted, dreaded hair",
-    "Missing a leg: peg leg or crutch",
-    "Missing a hand: hook or claw instead [d4 dmg].",
-    "Putrid, bilge stench",
+    "Missing a leg: pegleg or crutch",
+    "Missing a hand: hook or claw instead.",
+    "Missing an ear",
     "Many, many tattoos",
     "Never blinks. Ever.",
     "Rotten or broken teeth",
     "Twitches constantly, especially trigger finger",
     "A nigh incurable case of scurvy: permanently bleeding gums",
     "Infested with bugs",
-    "Tongue has been cut out",
-    "Hideously ugly ",
-    "Obese",
-    "Bad gas",
-    "Syphilis",
-    "Gout",
-    "Gaunt",
+    "Gnarly facial scar",
+    "Hideously ugly",
+    "Corpulent",
+    "Increasingly gangrenous",
+    "Putrid, bilge stench",
+    "Contagious",
+    "Gaunt & frail",
     "So good looking people are jealous"]
 
 export const idiosyncraciesTable = 
-    ["Smokes constantly. Coughs even more.",
+    ["You smokes constantly, and cough even more.",
     "“Functioning” alcoholic. You’re probably drunk right now.",
     "You bet on everything possible.",
-    "O.C.D. Constantly counting. Teeth, cannon balls...",
-    "Eating rats is your favorite past time.",
+    "Constantly counting. Teeth, cannon balls... everything",
+    "Rats are your favorite meal.",
     "You know every tall tale ever told. You make sure everyone else knows you know them.",
-    "Afraid of prime numbers larger than 3. d20 rolls of 5, 7, 11, 13, and 17 fill you with superstitious terror.",
+    "You are afraid of prime numbers larger than 3. d20 rolls of 5, 7, 11, 13, and 17 fill you with superstitious terror.",
     "You become a murderous grump when hungry.",
     "Habitual procrastinator... if you even finish the task.",
-    "Voluntary insomniac. Sleep is for the dead.",
+    "You are a voluntary insomniac. Sleep is for the dead.",
     "You prefer to shoot first and never ask questions.",
     "Overly, annoyingly religious.",
     "You collect something. You talk to your collection. They are your friends.",
@@ -61,7 +61,7 @@ export const idiosyncraciesTable =
     "Talk to yourself when alone, but you often think you are alone when you aren’t.",
     "You secretly enjoy the taste of human flesh.",
     "You always say you “know the right way”, but are prone to getting lost.",
-    "You blame others for every mistake.",
+    "You blame everyone but yourself for all of your mistakes.",
     "Extremely obsessive with tasks and relationships."]
 
 export const unfortunateIncidentsTable = 
@@ -292,42 +292,42 @@ export const backgroundTable =
 
 export const containerTable = 
     ["bucket for 4 normal-sized items",
-    "belt pouch for 10 small-sized items",
-    "sack for 7 normal-sized items",
+    "bandolier for 6 small-sized items",
+    "satchel for 8 normal-sized items",
     "backpack 10 normal-sized items",
     "large sea chest for 20 normal-sized items or one other container of your choice",
-    "a dinghy (pg. 92) or one other container of your choice"]
+    "a dinghy (pg.80) or one of the above of your choice"]
 
 export const cheapGearTable = 
     ["lantern (d6 hours of oil)",
-    "d4 candles (6 hours each)",
-    "30 ft of rope",
+    "d4 candles (1 hours each)",
+    "30’ of rope",
     "shovel",
-    "tankard",
+    "medical kit: (stops bleeding/poison/infection and heals d6 HP, Presence + 4 uses)",
     "weighted dice",
-    "flint and steel",
+    "flint & steel",
     "hammer & nails",
     "mess kit",
     "pipe & tobacco pouch",
-    "d6 torches",
+    "d6 torches (1 hour each)",
     "a pet [d10]"]
 
 export const valuableGearTable = 
-    ["compass ",
+    ["compass",
     "spyglass",
     "fishing rod",
-    "1 random relic",
+    "1 random Ancient Relic",
     "bottle of fine rum",
     "old pocket watch",
-    "blanket and pillow",
+    "blanket & pillow",
     "ink, quill, parchment",
     "worn out book",
-    "first aid kit",
+    "tent",
     "whetstone",
     "instrument [d10]"]
 
 export const petTable = 
-    ["snake ",
+    ["snake",
     "rat",
     "lizard",
     "monkey",
@@ -339,7 +339,7 @@ export const petTable =
     "a fish in a jar"]
 
 export const instrumentTable = 
-    ["concertina ",
+    ["concertina",
     "drum",
     "flute",
     "fiddle",
@@ -370,29 +370,29 @@ export const relicTable =
     "Skeleton Key",
     "Mummified Monkey Head",
     "Great Old One Figurine",
-    "Broken Compass "]
+    "Broken Compass"]
 
 export const relicDescriptionTable = 
     ["One ally gets +1 to attack and +1 to damage for d6 turns.",
-    "Ask a nearby corpse (or any creature that died at sea) one question.",
-    "Know the location of all traps and secret doors for d6+SPIRIT rounds.",
-    "15' of light or darkness for d6+SPIRIT rounds.",
-    "d4 creatures test DR14 or lose d6+SPIRIT hp.",
-    "One creature loses d6+SPIRIT hp.",
-    "Roll a d6. Odd: you gain d10 temporary hp. Even: Choose a creature. It gets +d8 on its next damage roll.",
-    "Speak with animals (dead or alive) for d6+SPIRIT rounds.",
-    "Breath underwater for d4 hours.",
-    "If you are killed, return to life the next round with 1 hp. Disappears after one use.",
-    "Choose a creature to regain d6+SPIRIT hp",
-    "Create or destroy 15 gallons water or 30 square feet of fog.",
-    "Become invisible for d6+SPIRIT rounds or until you attacks or take damage. Attack & defend with DR6.",
-    "A water shield surrounds you. -d2 to armor for d2+SPIRIT rounds",
-    "The skull can hear & repeat the thoughts of a nearby creature for SPIRIT + d6 minutes.",
-    "Read and understand any language, glyphs, or runes for 1+ SPIRIT rounds.",
-    "Open or lock any door or lock.",
-    "Head One creature tests DR12 or must obey a one word command (spoken from the head).",
-    "One human is terrorized for d4 rounds unless they succeed a DR14 test. They can test each round.", 
-    "The compass points in the direction of an object you know for 1+SPIRIT rounds."]
+    "Ask a nearby corpse (or any creature that died at sea within 100 miles) one question.",
+    "Learn the location of all traps and secret doors within 30' for d4+SPIRIT rounds.",
+    "Emit 15' of light or darkness for d6+SPIRIT rounds.",
+    "All creatures that can hear your voice test DR14 or lose d4+SPIRIT HP (ignore armor).",
+    "One creature you see loses d6+SPIRIT HP (ignore armor). Takes 1 action to reload.",
+    "Roll a die. Odd: you gain d8 temporary HP. Even: Choose a creature. It gets +d8 on its next damage roll.",
+    "It can speak with animals (dead or alive) for d6+SPIRIT rounds. ",
+    "Eat a scale: breathe underwater for d4 hours.",
+    "If you are killed, return to life the next round with 1 HP. Disappears after one use.",
+    "Choose a creature to regain d6+SPIRIT HP",
+    "Create or destroy 15 gallons water or 30 cubic feet of fog.",
+    "Become invisible for d6+SPIRIT rounds or until you attack or take damage. Attack and defend with DR6.",
+    "A water shield surrounds you. -d2 protection for d2+SPIRIT rounds (in addition to armor).",
+    "The skull can hear & repeat the thoughts of a nearby creature for d6+SPIRIT minutes.",
+    "Read and understand any language, glyphs, or runes for 1+SPIRIT rounds.",
+    "Open any door or lock. Crumbles after 1 use.",
+    "The head speaks: 1 creature tests SPIRIT DR12 or must obey a 1 word command.",
+    "One human is terrorized for d4 rounds unless they succeed a PRESENCE DR14 test. They can test each round.", 
+    "The compass points in the direction of an object you know of for 1+SPIRIT rounds."]
 
 export const clothingTable = 
     ["rags",
@@ -4071,27 +4071,27 @@ export const bruteAbilityTable =
 
 export const bruteWeaponTable = 
     ["Brass Anchor. Requires two hands, d8 damage. Reduces target's armor by one tier (-d2) during the attack.",
-    "Whaling Harpoon. d8 damage and can be thrown by testing Agility DR12.",
-    "Meat Cleaver. It’s caked in layers of dried blood. d4 damage; on a 1 a disease from one of its prior victims infects the target. It dies in d6 hours unless cured.",
-    "Part of a Broken Mast. It has a rusted nail protruding from one end. d8 damage, plus an extra d4 on a critical hit.",
-    "Large, Rusted Machete. d6 damage. Great for chopping down vines and fopdoodles. It glows in the dark if there are snakes nearby.",
-    "Rotten Cargo Net. Throw it at someone (or something) to stop them from moving for d2 rounds by testing Agility DR8. Trapped targets take 1 damage each round."]
+    "Whaling Harpoon. d8 damage, can be thrown by testing agility DR10.",
+    "Meat Cleaver. Caked in layers of dried blood. d4 damage, and on a damage roll of 1 it spreads a disease from one of its prior victims: the target loses d6 HP at the start of its next two turns.",
+    "Part of a Broken Mast. It has a rusted nail protruding from one end. d8 damage, plus an extra d6 on a critical hit.",
+    "Large, Rusted Machete. d6 damage. Great for chopping down vines and fopdoodles. It glows in the dark if there are undead nearby.",
+    "Rotten Cargo Net. Test agility dr12 to throw it at something and stop it from moving for d2 rounds. Trapped targets take d2 damage/round."]
 
 export const rapscallionAbilityTable = 
-    ["Back Stabber. If you attack by surprise (from hiding, distracted enemy, etc.) lower the attack DR by 2 and deal d2 extra damage.",
-    "Burglar. You begin with lock picks. Pickpocket, disarm an enemy, or disable a trap: -2 to DR.",
+    ["Back Stabber. If you attack by surprise (from hiding, distracted enemy, etc.) lower the attack DR by 2 and deal d2 extra damage. If taken again, draw a card. Black: Lower DR by 1 more. Red: Increase damage die [d2>d4>d6>d8]. Joker: Both.",
+    "Burglar. You begin with lock picks. Pickpocket, disarm an enemy, or disable a trap: -4 to DR.",
     "Rope Monkey. You’re as nimble in the rigging as you are on the deck. If you attack after swinging, jumping, or making an acrobatic maneuver, test Agility DR10 to automatically hit and deal +2 damage.",
-    "Sneaky Bastard. You can hide, sneak, and disappear into the shadows. DR14 to notice you.",
-    "Lucky Devil. When you use the Devil’s Luck, draw a playing card: 8+: Regain 1 Luck. Joker: Roll on the Joker Table. \nJOKER TABLE[d20]: 1. The Devil comes for your soul. You are sucked into a fiery portal. This is the end of your story. 2-9. Lose all of your remaining luck points. 10-19. Regain 2 luck points. 20. Gain 4 Luck points (max 4)",
-    "Grog Brewer. Each day you can brew d4 servings of potent grog. You can soak melee weapons in it to use as a poison (it will get you drunk, too). Grog in a wound:Toughness DR14 or -d6 HP."]
+    "Sneaky Bastard. When striking from the shadows or while sneaking, test Agility DR12. On a success you automatically deal a critical hit.",
+    "Lucky Devil. Whenever you use the Devil’s Luck, draw a card: 9+: Regain 1 Luck. Joker: Roll on the Joker Table (page 37).",
+    "Grog Brewer. Each day you can brew d4 servings of potent grog. You can soak melee weapons in it to use as a poison Grog in a wound: Test Toughness DR14 or -d6 HP"]
 
 export const buccaneerAbilityTable = 
-    ["Wildlife Tracker. When tracking, you always know your target’s direction from your current location, and can tell approximately how long ago it left.",
+    ["Wildlife Tracker. Ability tests related to mapping, navigating, treasure hunting, finding & disarming traps, and tracking prey are -3 DR.", 
     "Crack Shot. All ranged attacks are -2 DR.",
-    "Fix Bayonets! Your musket has a bayonet. You can attack with it and reload on the same turn.",
-    "Focused Aim. Attacks to hit an enemy you have already shot at this combat are -4 DR.",
-    "Buccan Cook: Months of island life have taught you the fine art of cooking meats over the buccan fire. You start with d8 rations of exquisite smoked meat. Eating it immediately recovers d4 hp, and you can make d4 more rations from any edible animal you kill.",
-    "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. -2 DR to toughness checks. You can't become infected/sick/poisoned. Your max HP incresases by d4."]
+    "Fix Bayonets! You now have a bayonet (d4). You can attack with it on the same turn you reload.",
+    "Focused Aim. Attacks against enemies you have already shot at during this combat are -4 DR to hit",
+    "Buccan Cook: Months of island life have taught you the art of cooking meats over the buccan fire. You start with d8 rations of exquisite smoked meat. Eating it immediately recovers d4 HP, and you can make d4 more rations from any edible animal you kill.",
+    "Survivalist: Your body has developed into a finely tuned machine for existing in the wild. Gain +1 Toughness. You cannot become infected, sick, or poisoned, and your maximum HP increases by d4."]
 
 export const buccaneerWeaponTable =
     ["You start with a musket, and reloading takes 1 round instead of 2."]
@@ -4100,42 +4100,42 @@ export const swashbucklerAbilityTable =
     ["Ostentatious Fencer: Your melee Attack/Defense is DR10 when wielding a rapier or cutlass. When dueling one-on-one, you deal +1 damage.",
     "Flintlock Fanatic. You can attack with up to three pistols on your turn (if you have them). Reloading one pistol only takes you one round.",
     "Scurvy Scallywag: You don’t fight fair. -2 DR when attacking an enemy that has already been attacked this turn.",
-    "Inspiring Leader. Once a combat, roll a d4. Everyone else may add or subtract that value from any roll during this combat.",
-    "Knife Knave. You start with 2 knives, and when you attack with them you can make two attacks a turn. They are DR10 to hit, and if the first attack hits, the 2nd is an auto-hit.",
-    "Black Powder Poet. Your DR when throwing bombs and grenades is DR10. You start with explosives."]
+    "Inspiring Leader. Once each combat, roll a d4. Each of your allies may add or subtract that value from any one roll during this combat.",
+    "Knife Knave. You start with 2 knives, and when attacking with them you can make two attacks a turn. They are DR10 to hit, and if the first attack hits, the 2nd is an auto-hit.",
+    "Black Powder Poet. You start with explosives. Roll d4 times on the Bombs table (pg. 53). Your DR is -2 when throwing bombs."]
 
 export const zealotAbilityTable = 
     ["Heal. Heal thyself or another for d8 HP.",
     "Curse. Test Spirit DR10: deal d8 + Spirit damage to an enemy that thou cannot see. DR8 if it has already been hurt in this fight.",
     "Death Ward. Touch the corpse of one who hath just died and test Spirit DR10: they return to life with 1 HP. Crit: Full HP. Fumble: They come back as a zombie and attacketh thee!",
-    "Weathercraft. Test Spirit DR10 to change the direction of the wind. If thou succeedth by 5 or more, thou can also conjure or repel precipitation. Crit: Lightning striketh d12. Fumble: Lightning strikes thee for d6.",
-    "Blessed Guidance. Thou may add d4 to any roll thee or another player maketh. Use this at any time.",
-    "Holy Protection. Thou or thine ally gets -4 to DRs to defend for one attack. This may be applied after the dice are rolled. Use this at any time.",
+    "Control Weather. Test Spirit DR10 to change the direction of the wind. If thou succeedeth by 5 or more, thou can also conjure or repel precipitation. Crit: Lightning striketh thine enemy, d12. Fumble: Lightning strikes thee for d6.",
+    "Blessed Guidance. Thou may add d4 to any roll thee or another player maketh. Use this at any time, including after a roll (does not taketh thy action).",
+    "Holy Protection. Thou or thine ally gets -4 to DRs to defend for one attack. Use this at any time, including after a roll (does not taketh thy action).",
     "Divine Light. Bright light radiates from thee for up to d6 x 10 minutes. Enemies that see it are -2 DR to defend against.",
-    "Silence. For the next 2d6 x 10 minutes, everything within 25 feet of thee makes no sound. The effect only ends when the time doth expire.",
+    "Silence. For the next 2d6 x 10 minutes, everything within 25' of thee maketh no sound. The effect only ends when the time doth expire.",
     "Sanctuary. All thy brethren in sight heal d4 HP.",
-    "Commune. Test Spirit DR8: Asketh thy deity a singular “yay” or “nay” query. Thy response may be  “unclear” or thou may receiveth no answer at all."]
+    "Commune. Test Spirit DR8: Asketh thy deity a singular “yay” or “nay” query. Thy response may be “unclear” or thou may receiveth no answer."]
 
 export const zealotWorshipTable = 
-    ["THE ONE TRUE GOD", "THE CHURCH", "MOTHER NATURE", "THE GREAT OLD ONE", "THE ANCIENT GODS", "THE PRINCE OF DARKNESS"]
+    ["THE ONE TRUE GOD", "MOTHER NATURE", "THE ANCIENT GODS", "CHAOS", "THE DEEP", "THE DARK ONE", "THE CHURCH", "THE GREAT OLD ONE"]
 
-export const sorcererAbilityTable = ["Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12 II.DR10 III.DR8",
-"Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds II.d4 III.Until combat ends",
+export const sorcererAbilityTable = ["Dead Head. You summon a flying, ghostly skull. You may spend your action and test SPIRIT DR12 to have it deal damage to 1 target. It disapates after 1 minute or if it deals any damage. Fumble: it attacks you. It ignores armor and deals:",
+"Spiritual Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any Fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds II.d4 III.Until combat ends",
 "Protection. You summon a ghost or spirit to watch over the souls of you and your allies. Everyone who is protected gets -d2 protection for one hour as if wearing extra armor (does not affect penalties to Strength and Agility, not affected by Fumbles). I.1 soul II.2 souls III.3 souls",
-"Dead Head. You can summon a flying, ghostly skull which appears for d2+SPIRIT rounds. It obeys your commands, but will attack you on a Fumble. It can bite: I.2d4 II.2d4+1 III.2d4+2",
-"Necro-Sleep. A living creature appears to fall over dead, but when they awake they will remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds II.d6 rounds III.d6 days",
-"Raise the Dead. You can create skeletal thralls from nearby corpses. They are stupid, but obey you verbal commands. They tumble into bones at sunrise. I.1 thrall II.2 thralls III.d2+2 thralls"]
+"Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12 II.DR10 III.DR8",
+"Necro-Sleep. A living creature appears to fall over dead, but when they awake they remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds II.d6 rounds III.d8 hours",
+"Raise the Dead. You can create skeletal thralls from nearby corpses. They are stupid, but obey your verbal commands. They tumble into bones at sunrise. I.1 thrall II.2 thralls III.d2+2 thralls"]
 
 export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, sorcererAbilityTable]
 
 export const classDevilsLuckTable = ["d2", "d2", "d2", "d2", "d4", "d4"]
 export const classDevilsLuckCircleFillTable = ["1", "1", "1", "1", "2", "2"]
 
-export const classHpTable = [12, 8, 10, 10, 8, 8]
+export const classHpTable = [12, 8, 8, 10, 8, 8]
 
 export const classClothingTable = [10, 6, 10, 10, 8, 6]
 
-export const classHatTable = [12, 10, 12, 12, 0, 0]
+export const classHatTable = [12, 6, 12, 12, 0, 0]
 
 export const classWeaponTable = [0, 6, 0, 10, 8, 0]
 
