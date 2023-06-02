@@ -43,7 +43,7 @@ export const physicalAilmentTable =
     "So good looking people are jealous"]
 
 export const idiosyncraciesTable = 
-    ["You smokes constantly, and cough even more.",
+    ["You smoke constantly, and cough even more.",
     "“Functioning” alcoholic. You’re probably drunk right now.",
     "You bet on everything possible.",
     "Constantly counting. Teeth, cannon balls... everything",
@@ -95,7 +95,7 @@ export const thingOfImportanceTable =
     "a pipe carved from bone",
     "a small jade figurine",
     "a shard of crystal",
-    "a ancient gold coin",
+    "an ancient gold coin",
     "a ruined piece of a treasure map",
     "a treasure map of an unknown place",
     "a diary written by an ancestor",
@@ -217,8 +217,8 @@ export const backgroundTable =
     "barkeep: 2d6 x 10s & a flask of fine rum",
     "blacksmith: 2d6 x 10s & a set of files and tools",
     "bosun: 2d6 x 10s & the respect of some crew",
-    "business man: 3d6 x 10s & a profitable past",
-    "cabin boy: 2d4 x 10s & a small toy or trinket",
+    "business person: 3d6 x 10s & a profitable past",
+    "cabin boy/girl: 2d4 x 10s & a small toy or trinket",
     "captain: 2d8 x 10s & a spyglass",
     "former captive: 2d4 x 10s & your freedom",
     "castaway: 2d4 x 10s & a keepsake from the island",
@@ -251,8 +251,8 @@ export const backgroundTable =
     "military: 2d6 x 10s & combat training",
     "missionary: 2d4 x 10s & a holy symbol and scripture",
     "monk: 2d6 x 10s & a holy symbol and scripture",
-    "musician: 2d6 x 10s & [roll on instrument table on page 7]",
-    "native: 2d4 x 10s & something from your homeland",
+    "musician: 2d6 x 10s & [roll on instrument table on page 27]",
+    "naval deserter: 2d4 x 10s & a price on your head",
     "navigator: 2d6 x 10s & a compass",
     "noble: 3d6 x 10s & good manners",
     "nobody 2d4 x 10s & a desire for a purpose",
@@ -263,7 +263,7 @@ export const backgroundTable =
     "philosopher: 2d6 x 10s & a book and a puzzling disposition",
     "pilot: 2d6 x 10s & a compass",
     "pirate: 2d6 x 10s & an empty bottle of rum",
-    "politician: 2d6 x 10s & skill a deception",
+    "politician: 2d6 x 10s & skill at deception",
     "priest: 2d6 x 10s & a holy symbol and scripture",
     "privateer: 2d6 x 10s & a letter of marque [roll Faction d4 pg.4]",
     "quartermaster: 2d6 x 10s & the respect of a ship’s crew",
@@ -300,7 +300,7 @@ export const containerTable =
 
 export const cheapGearTable = 
     ["lantern (d6 hours of oil)",
-    "d4 candles (1 hours each)",
+    "d4 candles (1 hour each)",
     "30’ of rope",
     "shovel",
     "medical kit: (stops bleeding/poison/infection and heals d6 HP, Presence + 4 uses)",
@@ -424,13 +424,13 @@ export const weaponTable =
     ["Marlinspike or Belaying Pin [d4] ",
     "Knife or Bayonet [d4]",
     "Smallsword or Machete [d4]",
-    "Cat O’ Nine Tails [d4]",
+    "Cat O’ Nine Tails [d4] 10' reach",
     "Boarding Axe [d6]",
     "Cutlass [d6]",
-    "Flintlock Pistol [2d4, reload 2, range 30ft, Presence + 10 shots]",
+    "Flintlock Pistol [2d4, reload 2 actions, range 30', Presence + 10 shots]",
     "Finely Crafted Rapier [d8]",
-    "Boarding Pike [d10, 10ft reach]",
-    "Musket [2d6, reload 2, range 150ft, Presence + 10 Shots]"]
+    "Boarding Pike [d10, 10' reach]",
+    "Musket [2d6, reload 2 actions, range 150', Presence + 10 Shots]"]
 
 export const bombTable = 
     ["smoke bomb ",
@@ -4074,13 +4074,13 @@ export const bruteWeaponTable =
     "Whaling Harpoon. d8 damage, can be thrown by testing agility DR10.",
     "Meat Cleaver. Caked in layers of dried blood. d4 damage, and on a damage roll of 1 it spreads a disease from one of its prior victims: the target loses d6 HP at the start of its next two turns.",
     "Part of a Broken Mast. It has a rusted nail protruding from one end. d8 damage, plus an extra d6 on a critical hit.",
-    "Large, Rusted Machete. d6 damage. Great for chopping down vines and fopdoodles. It glows in the dark if there are undead nearby.",
-    "Rotten Cargo Net. Test agility dr12 to throw it at something and stop it from moving for d2 rounds. Trapped targets take d2 damage/round."]
+    "Large, Runic Machete. d6 damage. Great for chopping down vines and fopdoodles. It glows in the dark if there are undead nearby.",
+    "Rotten Cargo Net. Test Agility DR12 to throw it at something and stop it from moving for d2 rounds. Trapped targets take d2 damage/round."]
 
 export const rapscallionAbilityTable = 
-    ["Back Stabber. If you attack by surprise (from hiding, distracted enemy, etc.) lower the attack DR by 2 and deal d2 extra damage. If taken again, draw a card. Black: Lower DR by 1 more. Red: Increase damage die [d2>d4>d6>d8]. Joker: Both.",
+    ["Back Stabber. If you attack by surprise (from hiding, distracted enemy, etc.) lower the attack DR by 2 and deal d2 extra damage.",
     "Burglar. You begin with lock picks. Pickpocket, disarm an enemy, or disable a trap: -4 to DR.",
-    "Rope Monkey. You’re as nimble in the rigging as you are on the deck. If you attack after swinging, jumping, or making an acrobatic maneuver, test Agility DR10 to automatically hit and deal +2 damage.",
+    "Skylarker. You’re as nimble in the rigging as you are on the deck. If you attack after swinging, jumping, or making an acrobatic maneuver, test Agility DR10 to automatically hit and deal +2 damage.",
     "Sneaky Bastard. When striking from the shadows or while sneaking, test Agility DR12. On a success you automatically deal a critical hit.",
     "Lucky Devil. Whenever you use the Devil’s Luck, draw a card: 9+: Regain 1 Luck. Joker: Roll on the Joker Table (page 37).",
     "Grog Brewer. Each day you can brew d4 servings of potent grog. You can soak melee weapons in it to use as a poison Grog in a wound: Test Toughness DR14 or -d6 HP"]
@@ -4110,7 +4110,7 @@ export const zealotAbilityTable =
     "Death Ward. Touch the corpse of one who hath just died and test Spirit DR10: they return to life with 1 HP. Crit: Full HP. Fumble: They come back as a zombie and attacketh thee!",
     "Control Weather. Test Spirit DR10 to change the direction of the wind. If thou succeedeth by 5 or more, thou can also conjure or repel precipitation. Crit: Lightning striketh thine enemy, d12. Fumble: Lightning strikes thee for d6.",
     "Blessed Guidance. Thou may add d4 to any roll thee or another player maketh. Use this at any time, including after a roll (does not taketh thy action).",
-    "Holy Protection. Thou or thine ally gets -4 to DRs to defend for one attack. Use this at any time, including after a roll (does not taketh thy action).",
+    "Holy Protection. Thou or thine ally gets -4 to DR to defend for one attack. Use this at any time, including after a roll (does not taketh thy action).",
     "Divine Light. Bright light radiates from thee for up to d6 x 10 minutes. Enemies that see it are -2 DR to defend against.",
     "Silence. For the next 2d6 x 10 minutes, everything within 25' of thee maketh no sound. The effect only ends when the time doth expire.",
     "Sanctuary. All thy brethren in sight heal d4 HP.",
@@ -4119,7 +4119,7 @@ export const zealotAbilityTable =
 export const zealotWorshipTable = 
     ["THE ONE TRUE GOD", "MOTHER NATURE", "THE ANCIENT GODS", "CHAOS", "THE DEEP", "THE DARK ONE", "THE CHURCH", "THE GREAT OLD ONE"]
 
-export const sorcererAbilityTable = ["Dead Head. You summon a flying, ghostly skull. You may spend your action and test SPIRIT DR12 to have it deal damage to 1 target. It disapates after 1 minute or if it deals any damage. Fumble: it attacks you. It ignores armor and deals:",
+export const sorcererAbilityTable = ["Dead Head. You summon a flying, ghostly skull. You may spend your action and test SPIRIT DR12 to have it deal damage to 1 target. It disapates after 1 minute or if it deals any damage. Fumble: it attacks you. It ignores armor and deals: I.2d4 II.2d6 III.2d8",
 "Spiritual Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any Fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds II.d4 III.Until combat ends",
 "Protection. You summon a ghost or spirit to watch over the souls of you and your allies. Everyone who is protected gets -d2 protection for one hour as if wearing extra armor (does not affect penalties to Strength and Agility, not affected by Fumbles). I.1 soul II.2 souls III.3 souls",
 "Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12 II.DR10 III.DR8",
