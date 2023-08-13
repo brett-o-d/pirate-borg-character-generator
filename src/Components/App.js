@@ -8,7 +8,7 @@ import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         classHatTable, classHpTable, classDevilsLuckCircleFillTable, 
         classClothingTable, classWeaponTable, 
         bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
-import PirateBorgCharacterSheetv3NoLines from '../Assets/PirateBorgCharacterSheetv3NoLines.jpg';
+import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
 import RollStat from '../Utilities/stat-roller.js';
 import WeaponDisplay from './weapons.js';
 import GearDisplay from './gear.js';
@@ -115,7 +115,7 @@ function App() {
         </MobileView>
       </div>
       <div className="container" id="print-content">
-        <img src={PirateBorgCharacterSheetv3NoLines} className="character-sheet" alt=""></img>
+        <img src={PirateBorgCharacterSheetv3p1} className="character-sheet" alt=""></img>
 
         <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
           <span>{firstNames + " “" + nickname + "” " + lastName}</span>
@@ -123,12 +123,11 @@ function App() {
         <div className={textStyleClasses.largeText + " class-name " + positionStyleClasses.ClassName}>{className}</div>
         <div className={textStyleClasses.mediumText + " class-features " + positionStyleClasses.ClassFeatures}>
         {classValue === 2 /* Buccaneer */
-              ? <div><div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}</div><br/></div>
+              ? <div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}<br/><br/></div>
               : null}
         <div>{classAbility}</div>
-        <br/>
         {classValue === 0 /* Brute */
-            ? <div>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
+            ? <div><br/>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
             : null}
         </div>
 

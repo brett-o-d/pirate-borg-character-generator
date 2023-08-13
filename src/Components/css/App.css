@@ -42,9 +42,10 @@
     position: absolute;
     top: 16%;
     left: 6.5%;
-    width: 27%;
+    width: 19%;
     line-height: 1.05;
     white-space: pre-line;
+    background-color: white;
 }
 
 /* max hp text */
@@ -108,10 +109,10 @@
 .clothes-text {
     position: absolute;
     top: 14%;
-    left: 58%;
-    max-width: 30%;
+    left: 60%;
+    max-width: 23.5%;
     line-height: 1.05;
-    /* background-color: white; */
+    background-color: white;
 }
 
 /* equipment text */
