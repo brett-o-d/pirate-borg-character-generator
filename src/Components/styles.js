@@ -4,10 +4,10 @@ export const TextStyles = makeStyles((theme) => ({
     extraLargeText: {
         fontSize: "250%",
         [theme.breakpoints.down('md')]: {
-            fontSize: "x-large",
+            fontSize: "xx-large",
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: "large",
+            fontSize: "x-large",
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: "80%",
