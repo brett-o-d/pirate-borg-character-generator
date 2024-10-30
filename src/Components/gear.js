@@ -22,11 +22,11 @@ export function GearDisplay(textStyleClass){
     return (
       <div>
         <div className={textStyleClass + " equipment"}>
-          <div><strong>Container:</strong> {container}</div>
-          <div><strong>Cheap Gear:</strong> {cheapGear}</div>
-          {cheapGearValue === 11 ? <div><strong>Pet:</strong> {pet}</div> : null}
-          <div><strong>Valuable Gear:</strong> {valuableGear}</div>
-          {valuableGearValue === 11 ? <div><strong>Instrument:</strong> {instrument}</div> : null}
+          <div>{container}</div>
+          <div>{cheapGear}</div>
+          {cheapGearValue === 11 ? <div> {pet}</div> : null}
+          <div>{valuableGear}</div>
+          {valuableGearValue === 11 ? <div> {instrument}</div> : null}
         </div>
         {valuableGearValue === 3 ? 
           <div className={textStyleClass + " relic"}>

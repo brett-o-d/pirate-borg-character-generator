@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const TextStyles = makeStyles((theme) => ({
     extraLargeText: {
-        fontSize: "xx-large",
+        fontSize: "250%",
         [theme.breakpoints.down('md')]: {
             fontSize: "x-large",
         },
