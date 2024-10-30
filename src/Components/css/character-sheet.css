@@ -24,7 +24,7 @@
 
     /* max hp text */
     .hp {
-        top: 5.2%;
+        top: 4.8%;
         left: 48.8%;
     }
 
@@ -37,32 +37,32 @@
 
     /* strength stat text */
     .strength {
-        top: 17.75%;
+        top: 17.25%;
         left: 52%;
     }
 
     /* agility stat text */
     .agility {
-        top: 21.75%;
+        top: 21.25%;
         left: 52.25%;
     }
 
     /* presence stat text */
     .presence {
-        top: 25.25%;
+        top: 24.9%;
         left: 52%;
     }
 
     /* toughness stat text */
     .toughness {
-        top: 29.5%;
+        top: 29.0%;
         left: 51%;
     }
 
     /* spirit stat text */
     .spirit {
-        top: 33%;
-        left: 48.5%;
+        top: 32.5%;
+        left: 48.4%;
     }
 
     /* equipment text */
