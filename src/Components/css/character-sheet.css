@@ -79,6 +79,13 @@
         max-width: 30%;
     }
 
+    /* relic text */
+    .relic {
+        top: 31.5%;
+        left: 7%;
+        max-width: 24%;
+    }
+
     /* devils luck circles */
     .devils-luck-circle-one {
         top: 43.9%;
@@ -138,16 +145,158 @@
         left: 7%;
         max-width: 20%;
     }
-
-    /* relic text */
-    .relic {
-        top: 31.5%;
-        left: 7%;
-        max-width: 24%;
-    }
 }
 
 .us-letter {
+    aspect-ratio: 17 / 22;
+
+    /* Character Name text */
+    .character-name-text {
+        top: 9.2%;
+        left:6.8%;
+        max-width: 26.6%;
+    }
+
+    /* Class name text */
+    .class-name {
+        top: 13.8%;
+        left: 10.0%;
+        width: 19%;
+    }
+
+    /* Class and Abilities text */
+    .class-features {
+        top: 16.3%;
+        left: 7.2%;
+        width: 20%;
+    }
+
+    /* max hp text */
+    .hp {
+        top: 5%;
+        left: 47.8%;
+    }
+
+    /* weapon text */
+    .weapon {
+        top: 4.5%;
+        left: 54.2%;
+        max-width: 35%;
+    }
+
+    /* strength stat text */
+    .strength {
+        top: 18.4%;
+        left: 51.0%;
+    }
+
+    /* agility stat text */
+    .agility {
+        top: 22.6%;
+        left: 51.5%;
+    }
+
+    /* presence stat text */
+    .presence {
+        top: 26.4%;
+        left: 51.2%;
+    }
+
+    /* toughness stat text */
+    .toughness {
+        top: 30.6%;
+        left: 50.2%;
+    }
+
+    /* spirit stat text */
+    .spirit {
+        top: 34.0%;
+        left: 47.8%;
+    }
+
+    /* equipment text */
+    .clothes-text {
+        top: 14.8%;
+        left: 57.5%;
+        max-width: 23.7%;
+    }
+
+    /* equipment text */
+    .equipment {
+        top: 26%;
+        left: 61.4%;
+        max-width: 31%;
+    }
+
+    /* relic text */
+    .relic {
+        top: 32.5%;
+        left: 7.5%;
+        max-width: 23.5%;
+    }
+
+    /* devils luck circles */
+    .devils-luck-circle-one {
+        top: 46.0%;
+        left: 36.0%;
+    }
+
+    /* devils luck circles */
+    .devils-luck-circle-two {
+        top: 45.8%;
+        left: 38.6%;
+    }
+
+    /* devils luck circles */
+    .devils-luck-circle-three {
+        top: 45.8%;
+        left: 41.1%;
+    }
+
+    /* terrible trait 1 text */
+    .character-background {
+        top: 54%;
+        left: 6.0%;
+        max-width: 22%;
+    }
+
+    /* distinctive flaw text */
+    .distinctive-flaw {
+        top: 62.5%;
+        left: 6.0%;
+        max-width: 20%;
+    }
+
+    /* Broken body text */
+    .physical-ailment {
+        top: 70.2%;
+        left: 6.0%;
+        max-width: 22%;
+    }
+
+    /* bad habit text */
+    .idiosyncracies {
+        top: 78.2%;
+        left: 6.0%;
+        max-width: 22%;
+    }
+
+    /* troubling tale text */
+    .unfortunate-incidents {
+        top: 85.8%;
+        left: 5.8%;
+        max-width: 23%;
+    }
+
+    /* thing of importance text */
+    .thing-of-importance {
+        top: 94.6%;
+        left: 8.2%;
+        max-width: 20%;
+    }
+}
+
+.us-letter.printer-friendly {
     aspect-ratio: 17 / 22;
 
     /* Character Name text */
@@ -227,6 +376,13 @@
         max-width: 30%;
     }
 
+    /* relic text */
+    .relic {
+        top: 32.5%;
+        left: 8%;
+        max-width: 24%;
+    }
+
     /* devils luck circles */
     .devils-luck-circle-one {
         top: 45%;
@@ -285,13 +441,6 @@
         top: 95.4%;
         left: 8.2%;
         max-width: 20%;
-    }
-
-    /* relic text */
-    .relic {
-        top: 32.5%;
-        left: 8%;
-        max-width: 24%;
     }
 }
 
