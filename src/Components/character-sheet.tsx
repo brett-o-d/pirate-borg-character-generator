@@ -7,12 +7,12 @@ import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         classHatTable, classHpTable, classDevilsLuckCircleFillTable, 
         classClothingTable, classWeaponTable, 
         bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
-import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_cropped.jpg';
+import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
 import PirateBorgCharacterSheetBWLetter from '../Assets/Pirate_Borg_Character_Sheet_BW_Letter_cropped.jpg';
 import RollStat from '../Utilities/stat-roller.js';
 import WeaponDisplay from './weapons.js';
-import GearDisplay from './gear.js';
+import EquipmentDisplay from './equipment.js';
 import './css/character-sheet.css';
 import './css/print.css';
 
@@ -113,7 +113,7 @@ function CharacterSheet(props) {
   }
   
   return (
-    <div className={'container ' + (settings.includes('us-letter') ? 'us-letter' : 'a4')} id="print-content">
+    <div className={'container ' + (settings.includes('us-letter') ? 'us-letter' : 'a4') + (settings.includes('printer-friendly') ? ' printer-friendly' : '')} id="print-content">
         <BackgroundImage/>
 
         <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
@@ -174,7 +174,7 @@ function CharacterSheet(props) {
         </div>
 
         {ClothesDisplay()}
-        {GearDisplay(textStyleClasses.mediumText)}
+        {EquipmentDisplay(textStyleClasses.mediumText)}
     </div>
   );
 }

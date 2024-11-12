@@ -2,7 +2,7 @@ import React from 'react';
 import { containerTable, cheapGearTable, valuableGearTable, petTable,
     instrumentTable, relicTable, relicDescriptionTable} from '../Tables/tables.js';
 
-export function GearDisplay(textStyleClass){
+export function EquipmentDisplay(textStyleClass){
 
     const containerValue = Math.floor((Math.random() * containerTable.length));
     const cheapGearValue = Math.floor((Math.random() * cheapGearTable.length));
@@ -23,10 +23,8 @@ export function GearDisplay(textStyleClass){
       <div>
         <div className={textStyleClass + " equipment"}>
           <div>{container}</div>
-          <div>{cheapGear}</div>
-          {cheapGearValue === 11 ? <div> {pet}</div> : null}
-          <div>{valuableGear}</div>
-          {valuableGearValue === 11 ? <div> {instrument}</div> : null}
+          {cheapGearValue === 11 ? <div>{pet}</div> : <div>{cheapGear}</div>}
+          {valuableGearValue === 11 ? <div>{instrument}</div> : <div>{valuableGear}</div>}
         </div>
         {valuableGearValue === 3 ? 
           <div className={textStyleClass + " relic"}>
@@ -39,4 +37,4 @@ export function GearDisplay(textStyleClass){
     ); 
 }
 
-export default GearDisplay
+export default EquipmentDisplay
