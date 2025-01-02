@@ -51,15 +51,6 @@ export default function TemporaryDrawer(props) {
       </PBSettingListItem>
       <Divider />
       <PBSettingListItem>
-        <ListItemText primary="Tall Tale" secondary='coming soon'/>
-        <Switch
-          edge="end"
-          disabled={true}
-          onChange={handleToggle('tall-tale')}
-          checked={settings.includes('tall-tale')}
-        />
-      </PBSettingListItem>
-      <PBSettingListItem>
         <ListItemText primary="Haunted Soul" secondary='coming soon'/>
         <Switch
           edge="end"
@@ -68,7 +59,6 @@ export default function TemporaryDrawer(props) {
           checked={settings.includes('haunted-soul')}
         />
       </PBSettingListItem>
-      <Divider />
       <PBSettingListItem>
         <ListItemText primary="Tall Tale" secondary='coming soon'/>
         <Switch
@@ -78,11 +68,11 @@ export default function TemporaryDrawer(props) {
           checked={settings.includes('tall-tale')}
         />
       </PBSettingListItem>
+      <Divider />
       <PBSettingListItem>
-        <ListItemText primary="Cabin Fever" secondary='coming soon'/>
+        <ListItemText primary="Cabin Fever" secondary='Beta'/>
         <Switch
           edge="end"
-          disabled={true}
           onChange={handleToggle('cabin-fever')}
           checked={settings.includes('cabin-fever')}
         />

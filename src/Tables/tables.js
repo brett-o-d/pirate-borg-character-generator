@@ -1,3 +1,33 @@
+export const classTable = [
+    "Brute",
+    "Rapscallion",
+    "Buccaneer",
+    "Swashbuckler",
+    "Zealot",
+    "Sorcerer" ]
+
+export const statLookupTable = {
+    "1":"-3",
+    "2":"-3",
+    "3":"-3",
+    "4":"-3",
+    "5":"-2",
+    "6":"-2",
+    "7":"-1",
+    "8":"-1",
+    "9":"0",
+    "10":"0",
+    "11":"0",
+    "12":"0",
+    "13":"+1",
+    "14":"+1",
+    "15":"+2",
+    "16":"+2",
+    "17":"+3",
+    "18":"+3",
+    "19":"+3",
+    "20":"+3" }
+    
 export const distinctiveFlawsTable = 
     ["Drunken Lush",
     "Stubborn",
@@ -18,7 +48,7 @@ export const distinctiveFlawsTable =
     "Paranoid",
     "Pretentious",
     "Sadistic",
-    "Disloyal"]
+    "Disloyal" ]
 
 export const physicalAilmentTable = 
     ["Cursed: visibly part skeleton ghost/water/flames/coral",
@@ -4033,36 +4063,6 @@ export const lastNameTable =
     "Vigneron",
     "Violet"]
 
-export const statLookupTable = 
-    {"1":"-3",
-    "2":"-3",
-    "3":"-3",
-    "4":"-3",
-    "5":"-2",
-    "6":"-2",
-    "7":"-1",
-    "8":"-1",
-    "9":"0",
-    "10":"0",
-    "11":"0",
-    "12":"0",
-    "13":"+1",
-    "14":"+1",
-    "15":"+2",
-    "16":"+2",
-    "17":"+3",
-    "18":"+3",
-    "19":"+3",
-    "20":"+3"}
-
-export const classTable = 
-    ["Brute",
-    "Rapscallion",
-    "Buccaneer",
-    "Swashbuckler",
-    "Zealot",
-    "Sorcerer"]
-
 // strength, agility, presence, toughness, spirit
 export const classStatsModifierTable = [[1, 0, -1, 1, -1], [-1, 2, 0, -1, 0], [0, -1, 2, 0, -1], [1, 1, -1, 0, -1], [0, -1, 0, -1, 2], [-1, 0, 0, -1, 2], ]
 
@@ -4119,16 +4119,15 @@ export const zealotAbilityTable =
 export const zealotWorshipTable = 
     ["THE ONE TRUE GOD", "MOTHER NATURE", "THE ANCIENT GODS", "CHAOS", "THE DEEP", "THE DARK ONE", "THE CHURCH", "THE GREAT OLD ONE"]
 
-export const sorcererAbilityTable = ["Dead Head. You summon a flying, ghostly skull. You may spend your action and test SPIRIT DR12 to have it deal damage to 1 target. It disapates after 1 minute or if it deals any damage. Fumble: it attacks you. It ignores armor and deals: I.2d4 II.2d6 III.2d8",
-"Spiritual Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any Fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds II.d4 III.Until combat ends",
-"Protection. You summon a ghost or spirit to watch over the souls of you and your allies. Everyone who is protected gets -d2 protection for one hour as if wearing extra armor (does not affect penalties to Strength and Agility, not affected by Fumbles). I.1 soul II.2 souls III.3 souls",
-"Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12 II.DR10 III.DR8",
-"Necro-Sleep. A living creature appears to fall over dead, but when they awake they remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds II.d6 rounds III.d8 hours",
-"Raise the Dead. You can create skeletal thralls from nearby corpses. They are stupid, but obey your verbal commands. They tumble into bones at sunrise. I.1 thrall II.2 thralls III.d2+2 thralls"]
+export const sorcererAbilityTable = ["Dead Head. You summon a flying, ghostly skull. You may spend your action and test SPIRIT DR12 to have it deal damage to 1 target. It disapates after 1 minute or if it deals any damage. Fumble: it attacks you. It ignores armor and deals: I.2d4",
+"Spiritual Possession. One random creature is possessed by a spirit or ghost. Ally: -2 DR to attack and defense. Enemy: -2 DR to attack or defend against it. Any Fumbles related to this creature cause the spirit to leave, stunning the host for 1 round. I.Lasts for d2 rounds",
+"Protection. You summon a ghost or spirit to watch over the souls of you and your allies. Everyone who is protected gets -d2 protection for one hour as if wearing extra armor (does not affect penalties to Strength and Agility, not affected by Fumbles). I.1 soul",
+"Clairvoyance. Ask the spirits a question about an adjacent room or area, though their answer may be a lie. Test SPIRIT to know if they are telling the truth. I.DR12",
+"Necro-Sleep. A living creature appears to fall over dead, but when they awake they remember everything. Test SPIRIT DR12 to see if it falls “dead” asleep for: I.d2 rounds",
+"Raise the Dead. You can create skeletal thralls from nearby corpses. They are stupid, but obey your verbal commands. They tumble into bones at sunrise. I.1 thrall"]
 
 export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, sorcererAbilityTable]
 
-export const classDevilsLuckTable = ["d2", "d2", "d2", "d2", "d4", "d4"]
 export const classDevilsLuckCircleFillTable = ["1", "1", "1", "1", "2", "2"]
 
 export const classHpTable = [12, 8, 8, 10, 8, 8]
