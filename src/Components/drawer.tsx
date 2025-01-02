@@ -70,7 +70,7 @@ export default function TemporaryDrawer(props) {
       </PBSettingListItem>
       <Divider />
       <PBSettingListItem>
-        <ListItemText primary="Cabin Fever" secondary='coming soon'/>
+        <ListItemText primary="Cabin Fever" secondary='Beta'/>
         <Switch
           edge="end"
           onChange={handleToggle('cabin-fever')}

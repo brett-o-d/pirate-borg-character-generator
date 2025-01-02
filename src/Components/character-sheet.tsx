@@ -1,17 +1,19 @@
 import React from 'react';
-import { TextStyles, PositionStyles } from './styles.js'
-import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable, 
+import { TextStyles, PositionStyles } from './styles.js';
+import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
-        clothingTable, hatTable, weaponTable, firstNamesTable, nicknameTable, 
+        clothingTable, hatTable, firstNamesTable, nicknameTable,
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
-        classHatTable, classHpTable, classDevilsLuckCircleFillTable, 
-        classClothingTable, classWeaponTable, 
-        bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
+        classHatTable, classHpTable, classDevilsLuckCircleFillTable,
+        classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
+import { CabinFeverClassTable, cabinFeverClassAbilityTables, CabinFeverClassStatsModifierTable,
+         CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable,
+         CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
 import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
 import PirateBorgCharacterSheetBWLetter from '../Assets/Pirate_Borg_Character_Sheet_BW_Letter_cropped.jpg';
 import RollStat from '../Utilities/stat-roller.js';
-import WeaponDisplay from './weapons.js';
+import { WeaponDisplay, DetermineWeapon } from './weapons.tsx';
 import EquipmentDisplay from './equipment.js';
 import './css/character-sheet.css';
 import './css/print.css';
@@ -19,26 +21,44 @@ import './css/print.css';
 function CharacterSheet(props) {
   const settings = props.settings;
 
-  const classValue = Math.floor((Math.random() * classTable.length));
+  let combinedClassTable = classTable;
+  let combinedDevilsLuckTable = classDevilsLuckCircleFillTable;
+  let combinedClassAbilityTables = classAbilityTables;
+  let combinedClassClothingTable = classClothingTable;
+  let combinedClassHatTable = classHatTable;
+  let combinedClassStatsModifierTable = classStatsModifierTable;
+  let combinedClassHpTable = classHpTable;
 
-  const className = classTable[classValue];
+  if (settings.includes('cabin-fever')){
+    combinedClassTable = combinedClassTable.concat(CabinFeverClassTable);
+    combinedDevilsLuckTable = combinedDevilsLuckTable.concat(CabinFeverClassDevilsLuckCircleFillTable);
+    combinedClassAbilityTables = combinedClassAbilityTables.concat(cabinFeverClassAbilityTables);
+    combinedClassClothingTable = combinedClassClothingTable.concat(CabinFeverClassClothingTable);
+    combinedClassHatTable = combinedClassHatTable.concat(CabinFeverClassHatTable);
+    combinedClassStatsModifierTable = combinedClassStatsModifierTable.concat(CabinFeverClassStatsModifierTable);
+    combinedClassHpTable = combinedClassHpTable.concat(CabinFeverClassHpTable);
+  }
 
-  const devilsLuck = classDevilsLuckCircleFillTable[classValue];
+  const classValue = Math.floor((Math.random() * combinedClassTable.length));
 
-  const classAbilityValue = Math.floor((Math.random() * classAbilityTables[classValue].length));
-  const classAbility = classAbilityTables[classValue][classAbilityValue];
+  const className = combinedClassTable[classValue];
 
-  const classClothingValue = Math.floor((Math.random() * classClothingTable[classValue]));
-  const classHatValue = Math.floor((Math.random() * classHatTable[classValue]));
-  const classWeaponValue = Math.floor((Math.random() * classWeaponTable[classValue]));
+  const devilsLuck = combinedDevilsLuckTable[classValue];
 
-  const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][0], -3);
-  const agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][1], -3);
-  const presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][2], -3);
-  const toughnessStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][3], -3);
-  const spiritStat = Math.max(parseInt(statLookupTable[RollStat()]) + classStatsModifierTable[classValue][4], -3);
+  const classAbilityValue = Math.floor((Math.random() * combinedClassAbilityTables[classValue].length));
+  const classAbility = combinedClassAbilityTables[classValue][classAbilityValue];
 
-  const classHp = Math.max(Math.floor((Math.random() * classHpTable[classValue])) + toughnessStat, 1);
+  const classClothingValue = Math.floor((Math.random() * combinedClassClothingTable[classValue]));
+  const classHatValue = Math.floor((Math.random() * combinedClassHatTable[classValue]));
+
+
+  const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][0], -3);
+  const agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][1], -3);
+  const presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][2], -3);
+  const toughnessStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][3], -3);
+  const spiritStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][4], -3);
+
+  const classHp = Math.max(Math.floor((Math.random() * combinedClassHpTable[classValue])) + toughnessStat, 1);
 
   const distinctiveFlawValue = Math.floor((Math.random() * distinctiveFlawsTable.length));
   const physicalAilmentValue = Math.floor((Math.random() * physicalAilmentTable.length));
@@ -59,7 +79,7 @@ function CharacterSheet(props) {
 
   const clothing = clothingTable[classClothingValue];
   const hat = hatTable[classHatValue];
-  const weapon = classValue === 2 /* Buccaneer */  ? weaponTable[9] /* Musket */ :  weaponTable[classWeaponValue];
+  const weapon = DetermineWeapon(className, classValue, settings);
   const firstNames = firstNamesTable[firstNamesValue];
   const nickname = nicknameTable[nicknameValue];
   const lastName = lastNameTable[lastNameValue];
@@ -151,7 +171,7 @@ function CharacterSheet(props) {
         </div>
         {DevilsLuckCircles()}
 
-        {WeaponDisplay(weapon, classValue, textStyleClasses.mediumText, positionStyleClasses.Weapon)}
+        {WeaponDisplay(weapon, classValue)}
 
 
         <div className={textStyleClasses.mediumText + " character-background"}>

@@ -1,13 +1,13 @@
-export const classTable = 
-    ["Brute",
+export const classTable = [
+    "Brute",
     "Rapscallion",
     "Buccaneer",
     "Swashbuckler",
     "Zealot",
-    "Sorcerer"]
+    "Sorcerer" ]
 
-export const statLookupTable = 
-    {"1":"-3",
+export const statLookupTable = {
+    "1":"-3",
     "2":"-3",
     "3":"-3",
     "4":"-3",
@@ -26,7 +26,7 @@ export const statLookupTable =
     "17":"+3",
     "18":"+3",
     "19":"+3",
-    "20":"+3"}
+    "20":"+3" }
     
 export const distinctiveFlawsTable = 
     ["Drunken Lush",
@@ -48,7 +48,7 @@ export const distinctiveFlawsTable =
     "Paranoid",
     "Pretentious",
     "Sadistic",
-    "Disloyal"]
+    "Disloyal" ]
 
 export const physicalAilmentTable = 
     ["Cursed: visibly part skeleton ghost/water/flames/coral",
@@ -4128,7 +4128,6 @@ export const sorcererAbilityTable = ["Dead Head. You summon a flying, ghostly sk
 
 export const classAbilityTables = [bruteAbilityTable, rapscallionAbilityTable, buccaneerAbilityTable, swashbucklerAbilityTable, zealotAbilityTable, sorcererAbilityTable]
 
-// export const classDevilsLuckTable = ["d2", "d2", "d2", "d2", "d4", "d4"]
 export const classDevilsLuckCircleFillTable = ["1", "1", "1", "1", "2", "2"]
 
 export const classHpTable = [12, 8, 8, 10, 8, 8]
