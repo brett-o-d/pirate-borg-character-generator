@@ -462,13 +462,14 @@ export const weaponTable =
     "Boarding Pike [d10, 10' reach]",
     "Musket [2d6, reload 2 actions, range 150', Presence + 10 Shots]"]
 
-export const bombTable = 
-    ["smoke bomb ",
-    "improvised grenade",
-    "clay grenade",
-    "iron grenade",
-    "fire pot",
-    "stink ball"]
+export const bombTable = [
+    "smoke bomb -, smoke cloud, blind for d4 rounds",
+    "improvised grenade d10",
+    "clay grenade 2d8",
+    "iron grenade 3d6",
+    "fire pot d6, roll d6 each turn: 1-2 it spreads, 6 the fire goes out",
+    "stink ball 2d4, Toughness DR12 or poisoned."
+    ]
 
 export const firstNamesTable = 
     ["Albert ",
@@ -4137,5 +4138,3 @@ export const classClothingTable = [10, 6, 10, 10, 8, 6]
 export const classHatTable = [12, 6, 12, 12, 0, 0]
 
 export const classWeaponTable = [0, 6, 0, 10, 8, 0]
-
-export const motivations = ["Escape", "Happiness", "Recovery", "Pleasure", "Exploration", "Love or Sex", "Revenge", "Fear", "Wealth", "Hunger", "Reputation", "Aggression", "Adventure", "Guilt", "Leisure", "Protection", "Intoxication", "Family", "Religion", "Occult"]

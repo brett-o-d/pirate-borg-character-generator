@@ -23,15 +23,14 @@ export function DetermineWeapon(className: string, classValue: number, settings:
   }
   const classWeaponValue = Math.floor((Math.random() * combinedClassWeaponTable[classValue]));
 
-  // Buccaneer
-  if (className === 'Buccaneer'){
-    // Musket
-    return weaponTable[9];
+  switch (className) {
+    case 'Brute':
+      return 'Trusted Weapon';
+    case 'Buccaneer':
+        return weaponTable[9];
+    case 'The Mess':
+      return 'Trusty Cleaver (d6)';
+    default:
+      return weaponTable[classWeaponValue];
   }
-  // The Mess
-  if (className === 'The Mess'){
-    // Doesn't start with a weapon?
-    return ''
-  }
-  return weaponTable[classWeaponValue];
 }

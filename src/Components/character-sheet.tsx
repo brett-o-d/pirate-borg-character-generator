@@ -14,7 +14,7 @@ import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1
 import PirateBorgCharacterSheetBWLetter from '../Assets/Pirate_Borg_Character_Sheet_BW_Letter_cropped.jpg';
 import RollStat from '../Utilities/stat-roller.js';
 import { WeaponDisplay, DetermineWeapon } from './weapons.tsx';
-import EquipmentDisplay from './equipment.js';
+import EquipmentDisplay from './equipment.tsx';
 import './css/character-sheet.css';
 import './css/print.css';
 
@@ -194,7 +194,7 @@ function CharacterSheet(props) {
         </div>
 
         {ClothesDisplay()}
-        {EquipmentDisplay(textStyleClasses.mediumText)}
+        {EquipmentDisplay(className)}
     </div>
   );
 }
