@@ -463,12 +463,12 @@ export const weaponTable =
     "Musket [2d6, reload 2 actions, range 150', Presence + 10 Shots]"]
 
 export const bombTable = [
-    "smoke bomb -, smoke cloud, blind for d4 rounds",
-    "improvised grenade d10",
-    "clay grenade 2d8",
-    "iron grenade 3d6",
-    "fire pot d6, roll d6 each turn: 1-2 it spreads, 6 the fire goes out",
-    "stink ball 2d4, Toughness DR12 or poisoned."
+    "smoke bomb (-), smoke cloud, blind for d4 rounds",
+    "improvised grenade (d10)",
+    "clay grenade (2d8)",
+    "iron grenade (3d6)",
+    "fire pot (d6), roll d6 each turn: 1-2 it spreads, 6 the fire goes out",
+    "stink ball (2d4), Toughness DR12 or poisoned."
     ]
 
 export const firstNamesTable = 

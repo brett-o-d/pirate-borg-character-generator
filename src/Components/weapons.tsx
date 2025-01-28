@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextStyles, PositionStyles } from './styles.js';
-import { classWeaponTable, weaponTable } from '../Tables/tables.js';
+import { bombTable, classWeaponTable, weaponTable } from '../Tables/tables.js';
 import { CabinFeverClassWeaponTable } from '../Tables/cabin-fever-tables.ts';
 
 export function WeaponDisplay(weapon: string, classValue: number ): any {
@@ -30,6 +30,8 @@ export function DetermineWeapon(className: string, classValue: number, settings:
         return weaponTable[9];
     case 'The Mess':
       return 'Trusty Cleaver (d6)';
+    case 'Powder Keg':
+      return Math.ceil((Math.random() * 4)) + ' ' + bombTable[1];
     default:
       return weaponTable[classWeaponValue];
   }
