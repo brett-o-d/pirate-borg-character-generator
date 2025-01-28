@@ -3,7 +3,7 @@ import { TextStyles } from './styles.js';
 import { containerTable, cheapGearTable, valuableGearTable, petTable,
     instrumentTable, relicTable, relicDescriptionTable, bombTable} from '../Tables/tables.js';
 
-export function EquipmentDisplay(className: string){
+export function EquipmentDisplay(className: string, clothesValue: number, hatValue: number ){
 
   const textStyleClasses = TextStyles();
 
@@ -29,6 +29,7 @@ export function EquipmentDisplay(className: string){
         {cheapGearValue === 11 ? <div>{pet}</div> : <div>{cheapGear}</div>}
         {valuableGearValue === 11 ? <div>{instrument}</div> : <div>{valuableGear}</div>}
         {className === 'The Sulphur' ? getTwoBombs(): null}
+        {className === 'Powder Keg' && clothesValue < 2 && hatValue < 4 ? <div>{bombTable[5]}</div> : null}
       </div>
       {valuableGearValue === 3 ? 
         <div className={"relic"}>

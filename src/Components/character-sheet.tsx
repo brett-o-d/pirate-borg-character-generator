@@ -194,7 +194,7 @@ function CharacterSheet(props) {
         </div>
 
         {ClothesDisplay()}
-        {EquipmentDisplay(className)}
+        {EquipmentDisplay(className, classClothingValue, classHatValue)}
     </div>
   );
 }

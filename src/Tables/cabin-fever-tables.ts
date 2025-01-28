@@ -2,7 +2,7 @@ export const CabinFeverClassTable = [
   "The Mess",
   "The Barnacle",
   "The Sulphur",
-  // "Powder Keg",
+  "Powder Keg",
   // "Privateer",
   // "Angler",
   // "Coagulant",
@@ -75,11 +75,11 @@ export const sulphurAbilityTable = [
   "Keep Your Powder Dry: You can fire your black powder weapons while swimming or in the rain. If taken again, you take d6 less from explosions." ]
 
 export const powderKegAbilityTable = [
-  "POWDER FLASK PUNK Add +1 PRESENCE when throwing bombs. You can throw 2 bombs per turn, even if you also move. Also, you can make bombs at half the cost. Bombs are only made while in port. Limit: d4 per stay.",
-  "RIGGING RAT Add +1 to AGILITY when maneuvering on a ship. Your movement speed goes up to 40’ (or eight 5-foot squares) while aboard a ship. UNLOCK #6.",
-  "COCKROACH Your Devil’s Luck increases by 1. You can only get this Feature 3 times. Whenever you would die, instead stay at 1 HP and permanently reduce your Devil’s Luck by 1. You cannot go below 0.",
-  "OLD SALT CHUM Each voyage, select another crew member. If you are near them, both of you add d4 to 1 test each day. Each time you get this Feature, the die increase (d4>d6>d8). If both of you choose to take the same Crew Action during combat, you can reroll a test once.",
-  "GUNPOWDER HIGH In combat, whenever you fire a gun* or throw a bomb, check a box. 3 boxes = your next attack with a gun/bomb crits on a 16-20. 🔲🔲🔲" ]
+  "Starts with 1 Devils Luck\n\nPOWDER FLASK PUNK Add +1 PRESENCE when throwing bombs. You can throw 2 bombs per turn, even if you also move. Also, you can make bombs at half the cost. Bombs are only made while in port. Limit: d4 per stay.",
+  "Starts with 1 Devils Luck\n\nRIGGING RAT Add +1 to AGILITY when maneuvering on a ship. Your movement speed goes up to 40’ (or eight 5-foot squares) while aboard a ship. UNLOCK #6 (CANNONEER).",
+  "Starts with 1 Devils Luck\n\nCOCKROACH Your Devil’s Luck increases by 1. You can only get this Feature 3 times. Whenever you would die, instead stay at 1 HP and permanently reduce your Devil’s Luck by 1. You cannot go below 0.",
+  "Starts with 1 Devils Luck\n\nOLD SALT CHUM Each voyage, select another crew member. If you are near them, both of you add d4 to 1 test each day. Each time you get this Feature, the die increase (d4>d6>d8). If both of you choose to take the same Crew Action during combat, you can reroll a test once.",
+  "Starts with 1 Devils Luck\n\nGUNPOWDER HIGH In combat, whenever you fire a gun* or throw a bomb, check a box. 3 boxes = your next attack with a gun/bomb crits on a 16-20. 🔲🔲🔲" ]
   // "[locked] CANNONEER Attack DR is reduced by 2 when you FIRE BROADSIDES in naval combat. If not unlocked, take #2 instead."
 
 // Well funded, you roll additional starting gear, depending on where your allegiance lies: (d3)
