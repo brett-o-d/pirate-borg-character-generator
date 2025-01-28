@@ -1,7 +1,7 @@
 export const CabinFeverClassTable = [
   "The Mess",
   "The Barnacle",
-  // "The Sulphur",
+  "The Sulphur",
   // "Powder Keg",
   // "Privateer",
   // "Angler",
