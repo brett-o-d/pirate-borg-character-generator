@@ -32,6 +32,8 @@ export function DetermineWeapon(className: string, classValue: number, settings:
       return 'Trusty Cleaver (d6)';
     case 'Powder Keg':
       return Math.ceil((Math.random() * 4)) + ' ' + bombTable[1];
+    case 'Privateer':
+      return weaponTable[classWeaponValue + 2]
     default:
       return weaponTable[classWeaponValue];
   }

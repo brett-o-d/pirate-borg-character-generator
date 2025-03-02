@@ -48,8 +48,12 @@ function CharacterSheet(props) {
   const classAbilityValue = Math.floor((Math.random() * combinedClassAbilityTables[classValue].length));
   const classAbility = combinedClassAbilityTables[classValue][classAbilityValue];
 
-  const classClothingValue = Math.floor((Math.random() * combinedClassClothingTable[classValue]));
-  const classHatValue = Math.floor((Math.random() * combinedClassHatTable[classValue]));
+  let classClothingValue = Math.floor((Math.random() * combinedClassClothingTable[classValue]));
+  let classHatValue = Math.floor((Math.random() * combinedClassHatTable[classValue]));
+  if (className === 'Privateer'){
+    classClothingValue = classClothingValue + 2;
+    classHatValue = classHatValue + 4;
+  }
 
 
   const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][0], -3);

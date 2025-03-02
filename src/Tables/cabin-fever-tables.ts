@@ -3,7 +3,7 @@ export const CabinFeverClassTable = [
   "The Barnacle",
   "The Sulphur",
   "Powder Keg",
-  // "Privateer",
+  "Privateer",
   // "Angler",
   // "Coagulant",
   // "Reaper",
@@ -21,7 +21,7 @@ export const CabinFeverClassStatsModifierTable = [
   [0, 0, -1, 2, -1], [0, -2, 0, -2, 0], [0, 0, 2, -2, 0], [-1, 0, 2, -1, 0], [0, 0, -2, 1, 1], [-1, -1, 0, 0, 2] ]
 
  export const CabinFeverClassDevilsLuckCircleFillTable = [
-  // "The Mess", "The Barnacle" (TODO + 1), The Sulphur", "Powder Keg" (1), "Privateer", "Angler"
+  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg" (1), "Privateer", "Angler"
   "1", "1", "2", "0", "1", "1",
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
   "1", "1", "1", "2", "0", "0" ]
@@ -33,13 +33,13 @@ export const CabinFeverClassStatsModifierTable = [
   2, 6, 6, 8, 12, 8 ]
 
  export const CabinFeverClassClothingTable = [
-  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg" (TODO rags), "Privateer" (TODO + 2), "Angler"
+  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer" (TODO + 2), "Angler"
   6, 10, 6, 4, 8, 4, 
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed" (TODO none), "The Griot"
   6, 10, 10, 8, 0, 6 ]
 
  export const CabinFeverClassHatTable = [
-  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg" (TODO no hat), "Privateer" (TODO + 4), "Angler"
+  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer" (TODO + 4), "Angler"
   12, 12, 12, 6, 6, 6,
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer" (TODO + 1), "The Tattooed", "The Griot"
   10, 6, 10, 10, 10, 10 ]

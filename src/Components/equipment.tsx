@@ -30,6 +30,7 @@ export function EquipmentDisplay(className: string, clothesValue: number, hatVal
         {valuableGearValue === 11 ? <div>{instrument}</div> : <div>{valuableGear}</div>}
         {className === 'The Sulphur' ? getTwoBombs(): null}
         {className === 'Powder Keg' && clothesValue < 2 && hatValue < 4 ? <div>{bombTable[5]}</div> : null}
+        {className === 'Privateer' ? 'Letter of marque': null}
       </div>
       {valuableGearValue === 3 ? 
         <div className={"relic"}>
