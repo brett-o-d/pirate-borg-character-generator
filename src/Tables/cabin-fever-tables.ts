@@ -4,8 +4,8 @@ export const CabinFeverClassTable = [
   "The Sulphur",
   "Powder Keg",
   "Privateer",
-  // "Angler",
-  // "Coagulant",
+  "Angler",
+  "Coagulant",
   // "Reaper",
   // "Shipwright",
   // "ASH Dealer",
@@ -30,22 +30,22 @@ export const CabinFeverClassStatsModifierTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   12, 8, 8, 4, 10, 8,
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
-  2, 6, 6, 8, 12, 8 ]
+  6, 6, 6, 8, 12, 8 ]
 
  export const CabinFeverClassClothingTable = [
-  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer" (TODO + 2), "Angler"
+  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   6, 10, 6, 4, 8, 4, 
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed" (TODO none), "The Griot"
-  6, 10, 10, 8, 0, 6 ]
+  2, 10, 10, 8, 0, 6 ]
 
  export const CabinFeverClassHatTable = [
-  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer" (TODO + 4), "Angler"
+  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   12, 12, 12, 6, 6, 6,
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer" (TODO + 1), "The Tattooed", "The Griot"
-  10, 6, 10, 10, 10, 10 ]
+  6, 6, 10, 10, 10, 10 ]
 
  export const CabinFeverClassWeaponTable = [
-  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer" (TODO + 2), "Angler"
+  // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   0, 10, 10, 0, 8, 2,
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
   8, 10, 8, 10, 6, 6 ]
@@ -96,7 +96,11 @@ export const anglerAbilityTable = [
   "TIGHT PACKER You can store double the usual amount of things in containers and cargo holds.",
   "COLD STORAGE You gain a never-melting ice block, which prevents fish stored near it from spoiling for 1 week." ]
 
-// You can fuse your body with another creature, becoming as one. The target must be of a similar size to you and both humanoid and alive. If unwilling, they may make a DR14 Toughness test to avoid the fusion
+export const anglerWeaponTable = [
+  "Fish-Filled Net (D4 damage)",
+  "Harpoon (D8 damage)" ]
+
+export const coagulantAbilityFusion = "You can fuse your body with another creature, becoming as one. The target must be of a similar size to you and both humanoid and alive. If unwilling, they may make a DR14 Toughness test."; //to avoid the fusion
 export const coagulantAbilityTable = [
   "Grafted Arms You gain 2 extra arms, taken from another creature to further transcend one’s own flesh. If taken again: D2 more arms",
   "Leftover Residue You’ve still got some odd bits of flesh from a messy fusion. Once per day, you can absorb these to regain D4 HP. If taken again: regain D6 HP, then D8, etc.",
