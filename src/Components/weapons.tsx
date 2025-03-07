@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextStyles, PositionStyles } from './styles.js';
 import { bombTable, classWeaponTable, weaponTable } from '../Tables/tables.js';
-import { CabinFeverClassWeaponTable } from '../Tables/cabin-fever-tables.ts';
+import { CabinFeverClassWeaponTable, anglerWeaponTable } from '../Tables/cabin-fever-tables.ts';
 
 export function WeaponDisplay(weapon: string, classValue: number ): any {
   const textStyleClasses = TextStyles();
@@ -34,6 +34,8 @@ export function DetermineWeapon(className: string, classValue: number, settings:
       return Math.ceil((Math.random() * 4)) + ' ' + bombTable[1];
     case 'Privateer':
       return weaponTable[classWeaponValue + 2]
+    case 'Angler':
+      return anglerWeaponTable[classWeaponValue]
     default:
       return weaponTable[classWeaponValue];
   }
