@@ -6,8 +6,8 @@ export const CabinFeverClassTable = [
   "Privateer",
   "Angler",
   "Coagulant",
-  // "Reaper",
-  // "Shipwright",
+  "Reaper",
+  "Shipwright",
   // "ASH Dealer",
   // "The Tattooed",
   // "The Griot"
@@ -18,7 +18,7 @@ export const CabinFeverClassStatsModifierTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   [0, 0, -1, 2, -1], [2, -2, 0, 0, 0], [0, 1, 1, -1, -1], [0, 1, 1, -2, 0], [0, -1, 2, -1, 0], [0, 0, 1, 1, -2],
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
-  [0, 0, -1, 2, -1], [0, -2, 0, -2, 0], [0, 0, 2, -2, 0], [-1, 0, 2, -1, 0], [0, 0, -2, 1, 1], [-1, -1, 0, 0, 2] ]
+  [0, 0, -1, 2, -1], [0, 2, 0, -2, 0], [0, 0, 2, 0, -2], [-1, 0, 2, -1, 0], [0, 0, -2, 1, 1], [-1, -1, 0, 0, 2] ]
 
  export const CabinFeverClassDevilsLuckCircleFillTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg" (1), "Privateer", "Angler"
@@ -30,19 +30,19 @@ export const CabinFeverClassStatsModifierTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   12, 8, 8, 4, 10, 8,
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
-  6, 6, 6, 8, 12, 8 ]
+  6, 8, 6, 8, 12, 8 ]
 
  export const CabinFeverClassClothingTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   6, 10, 6, 4, 8, 4, 
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed" (TODO none), "The Griot"
-  2, 10, 10, 8, 0, 6 ]
+  2, 6, 10, 8, 0, 6 ]
 
  export const CabinFeverClassHatTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   12, 12, 12, 6, 6, 6,
   // "Coagulant", "Reaper", "Shipwright", "ASH Dealer" (TODO + 1), "The Tattooed", "The Griot"
-  6, 6, 10, 10, 10, 10 ]
+  6, 10, 10, 10, 10, 10 ]
 
  export const CabinFeverClassWeaponTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
@@ -58,13 +58,14 @@ export const messAbilityTable = [
   "Limey: As long as they’re eatin’ yer cookin’, ain’t no one gettin’ scurvy. You and your allies get +4 DR against becoming infected or sick.",
   "Special Grog: Keepin' spirits high with a good swill. Your ship’s crew morale tests are +4." ]
 
+const barnacleDevilsLuckAbility = "Regains +1 Devils Luck";
 export const barnacleAbilityTable = [
-  "Regains +1 Devils Luck\n\nGain A flintlock pistol and 40 rounds of shot\n\nGain +1 Presence (Not yet adjusted).",
-  "Regains +1 Devils Luck\n\nGain 20s, a hat (d12), shovel, and medical kit\n\nGain +1 Presence (Not yet adjusted).",
-  "Regains +1 Devils Luck\n\nGain Twenty dried food, two tobacco, and d10 + Presence throwing knives\n\nGain +1 Agility (Not yet adjusted).",
-  "Regains +1 Devils Luck\n\nGain d6 + Presence improvised grenades\n\nGain +1 Agility (Not yet adjusted).",
-  "Regains +1 Devils Luck\n\nGain A ritual dagger (d4 damage) and a STOLEN Ancient Relic (d20) you don't understand\n\nGain +1 Spirit (Not yet adjusted).",
-  "Regains +1 Devils Luck\n\nGain d4 ASH\n\nGain +1 Spirit (Not yet adjusted).\n\nAdd Spirit (minimum +1) when rolling for ASH effects." ]
+  barnacleDevilsLuckAbility + "\n\nGain A flintlock pistol and 40 rounds of shot\n\nGain +1 Presence (Not yet adjusted).",
+  barnacleDevilsLuckAbility + "\n\nGain 20s, a hat (d12), shovel, and medical kit\n\nGain +1 Presence (Not yet adjusted).",
+  barnacleDevilsLuckAbility + "\n\nGain Twenty dried food, two tobacco, and d10 + Presence throwing knives\n\nGain +1 Agility (Not yet adjusted).",
+  barnacleDevilsLuckAbility + "\n\nGain d6 + Presence improvised grenades\n\nGain +1 Agility (Not yet adjusted).",
+  barnacleDevilsLuckAbility + "\n\nGain A ritual dagger (d4 damage) and a STOLEN Ancient Relic (d20) you don't understand\n\nGain +1 Spirit (Not yet adjusted).",
+  barnacleDevilsLuckAbility + "\n\nGain d4 ASH\n\nGain +1 Spirit (Not yet adjusted).\n\nAdd Spirit (minimum +1) when rolling for ASH effects." ]
 
 export const sulphurAbilityTable = [
   "Black Powder Blessing: If you or a nearby ally fumbles with a black powder weapon, you can spend a Devil’s Luck to make it a hit instead. If taken again, it’s a CRIT.",
@@ -74,12 +75,13 @@ export const sulphurAbilityTable = [
   "ASH CHYMIST: During a long rest, you can craft 1d4+Presence improvised bombs from ASH. If taken again, you craft 2d4+Presence bombs instead.",
   "Keep Your Powder Dry: You can fire your black powder weapons while swimming or in the rain. If taken again, you take d6 less from explosions." ]
 
+const powderKegDevilsLuckAbility = "Starts with 1 Devils Luck";
 export const powderKegAbilityTable = [
-  "Starts with 1 Devils Luck\n\nPOWDER FLASK PUNK Add +1 PRESENCE when throwing bombs. You can throw 2 bombs per turn, even if you also move. Also, you can make bombs at half the cost. Bombs are only made while in port. Limit: d4 per stay.",
-  "Starts with 1 Devils Luck\n\nRIGGING RAT Add +1 to AGILITY when maneuvering on a ship. Your movement speed goes up to 40’ (or eight 5-foot squares) while aboard a ship. UNLOCK #6 (CANNONEER).",
-  "Starts with 1 Devils Luck\n\nCOCKROACH Your Devil’s Luck increases by 1. You can only get this Feature 3 times. Whenever you would die, instead stay at 1 HP and permanently reduce your Devil’s Luck by 1. You cannot go below 0.",
-  "Starts with 1 Devils Luck\n\nOLD SALT CHUM Each voyage, select another crew member. If you are near them, both of you add d4 to 1 test each day. Each time you get this Feature, the die increase (d4>d6>d8). If both of you choose to take the same Crew Action during combat, you can reroll a test once.",
-  "Starts with 1 Devils Luck\n\nGUNPOWDER HIGH In combat, whenever you fire a gun* or throw a bomb, check a box. 3 boxes = your next attack with a gun/bomb crits on a 16-20. 🔲🔲🔲" ]
+  powderKegDevilsLuckAbility + "POWDER FLASK PUNK Add +1 PRESENCE when throwing bombs. You can throw 2 bombs per turn, even if you also move. Also, you can make bombs at half the cost. Bombs are only made while in port. Limit: d4 per stay.",
+  powderKegDevilsLuckAbility + "RIGGING RAT Add +1 to AGILITY when maneuvering on a ship. Your movement speed goes up to 40’ (or eight 5-foot squares) while aboard a ship. UNLOCK #6 (CANNONEER).",
+  powderKegDevilsLuckAbility + "COCKROACH Your Devil’s Luck increases by 1. You can only get this Feature 3 times. Whenever you would die, instead stay at 1 HP and permanently reduce your Devil’s Luck by 1. You cannot go below 0.",
+  powderKegDevilsLuckAbility + "OLD SALT CHUM Each voyage, select another crew member. If you are near them, both of you add d4 to 1 test each day. Each time you get this Feature, the die increase (d4>d6>d8). If both of you choose to take the same Crew Action during combat, you can reroll a test once.",
+  powderKegDevilsLuckAbility + "GUNPOWDER HIGH In combat, whenever you fire a gun* or throw a bomb, check a box. 3 boxes = your next attack with a gun/bomb crits on a 16-20. 🔲🔲🔲" ]
   // "[locked] CANNONEER Attack DR is reduced by 2 when you FIRE BROADSIDES in naval combat. If not unlocked, take #2 instead."
 
 // Well funded, you roll additional starting gear, depending on where your allegiance lies: (d3)
@@ -100,13 +102,13 @@ export const anglerWeaponTable = [
   "Fish-Filled Net (D4 damage)",
   "Harpoon (D8 damage)" ]
 
-export const coagulantAbilityFusion = "You can fuse your body with another creature, becoming as one. The target must be of a similar size to you and both humanoid and alive. If unwilling, they may make a DR14 Toughness test."; //to avoid the fusion
+const coagulantAbilityFusion = "You can fuse your body with another creature, becoming as one. The target must be of a similar size to you and both humanoid and alive. If unwilling, they may make a DR14 Toughness test."; //to avoid the fusion
 export const coagulantAbilityTable = [
-  "Grafted Arms You gain 2 extra arms, taken from another creature to further transcend one’s own flesh. If taken again: D2 more arms",
-  "Leftover Residue You’ve still got some odd bits of flesh from a messy fusion. Once per day, you can absorb these to regain D4 HP. If taken again: regain D6 HP, then D8, etc.",
-  "Suture Needle You gain a suture needle and string, which deals D4 damage, can be thrown, and pulls in creatures it hits. If taken again: damage becomes D6, then D8, etc.",
-  "Eyes in the Back of Your Head Literally. You can see in all directions, giving +2 Presence for observing. If taken again: +1 to your side’s initiative",
-  "Best Served Raw You can eat raw meat with no chance of food poisoning, but only raw meat. If taken again: the curse spreads to another PC" ]
+  coagulantAbilityFusion + "\n\nGrafted Arms You gain 2 extra arms, taken from another creature to further transcend one’s own flesh. If taken again: D2 more arms",
+  coagulantAbilityFusion + "\n\nLeftover Residue You’ve still got some odd bits of flesh from a messy fusion. Once per day, you can absorb these to regain D4 HP. If taken again: regain D6 HP, then D8, etc.",
+  coagulantAbilityFusion + "\n\nSuture Needle You gain a suture needle and string, which deals D4 damage, can be thrown, and pulls in creatures it hits. If taken again: damage becomes D6, then D8, etc.",
+  coagulantAbilityFusion + "\n\nEyes in the Back of Your Head Literally. You can see in all directions, giving +2 Presence for observing. If taken again: +1 to your side’s initiative",
+  coagulantAbilityFusion + "\n\nBest Served Raw You can eat raw meat with no chance of food poisoning, but only raw meat. If taken again: the curse spreads to another PC" ]
 
 export const reaperAbilityTable = [
   "Slip Through You can light a match from your matchbox to disappear and instantly travel through the nearest ventilation or sewage system to a different exit of that system. Deal 3D10 damage to displaced creatures.",
@@ -116,14 +118,14 @@ export const reaperAbilityTable = [
   "ASH Burner You immolate any ASH you find. The fumes deal D4 damage and cause undead to flee.",
   "Limbo When you reduce a creature to 0 hit points or less, you can choose to leave them in a catatonic state instead of killing them. They remain alive at 0 hit points, but need to heal to return to life, and die upon taking any more damage." ]
 
-// You can restore D10 hit points to a ship over an hour spent repairing it, disregarding the limit of half the ship’s hit points.
+const shipwrightRepairOrders = "You can restore D10 hit points to a ship over an hour spent repairing it, disregarding the limit of half the ship’s hit points."
 export const shipwrightAbilityTable = [
-  "Ship Optimizer: Once per naval combat, you can take a second Crew action, even if that action has already been taken this round.",
-  "Ship Maker: You can create your own ships, requiring enough raw materials and a week of time. You cannot create Man-O-Wars or Ships of the Line.",
-  "Ship Breaker: You carry a special hull-smashing cannon, which deals D10 damage in ship combat, but is too unwieldy to wield in melee combat.",
-  "Ship Commander: While you are on a ship, its attacks land critical hits on rolls of 19 or 20.",
-  "Ship Improviser: Any large-enough piece of wood with two smaller sticks to steer counts as a dinghy when you pilot it. Dinghies you pilot move twice as fast.",
-  "Ship Duplicator: In lack of engineering artistry lies the “skill” of plagiarism. Over 1 day with enough raw materials, you can create an exact copy of another ship, as long as you can easily access that ship during that time." ]
+  shipwrightRepairOrders + "\n\nShip Optimizer: Once per naval combat, you can take a second Crew action, even if that action has already been taken this round.",
+  shipwrightRepairOrders + "\n\nShip Maker: You can create your own ships, requiring enough raw materials and a week of time. You cannot create Man-O-Wars or Ships of the Line.",
+  shipwrightRepairOrders + "\n\nShip Breaker: You carry a special hull-smashing cannon, which deals D10 damage in ship combat, but is too unwieldy to wield in melee combat.",
+  shipwrightRepairOrders + "\n\nShip Commander: While you are on a ship, its attacks land critical hits on rolls of 19 or 20.",
+  shipwrightRepairOrders + "\n\nShip Improviser: Any large-enough piece of wood with two smaller sticks to steer counts as a dinghy when you pilot it. Dinghies you pilot move twice as fast.",
+  shipwrightRepairOrders + "\n\nShip Duplicator: In lack of engineering artistry lies the “skill” of plagiarism. Over 1 day with enough raw materials, you can create an exact copy of another ship, as long as you can easily access that ship during that time." ]
 
 export const ashDealerAbilityTable = [
   "CRIME PAYS Gain a permanent 25% discount when trading. Ability tests related to negotiation, intimidation or bribery are -2 DR",
