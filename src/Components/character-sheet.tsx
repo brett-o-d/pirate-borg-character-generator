@@ -7,7 +7,7 @@ import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         classHatTable, classHpTable, classDevilsLuckCircleFillTable,
         classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
 import { CabinFeverClassTable, cabinFeverClassAbilityTables, CabinFeverClassStatsModifierTable,
-         CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable,
+         CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable, tattooedUsesPerDayText,
          CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
 import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
@@ -46,14 +46,21 @@ function CharacterSheet(props) {
   const devilsLuck = combinedDevilsLuckTable[classValue];
 
   const classAbilityValue = Math.floor((Math.random() * combinedClassAbilityTables[classValue].length));
-  const classAbility = combinedClassAbilityTables[classValue][classAbilityValue];
-
+  let classAbility = combinedClassAbilityTables[classValue][classAbilityValue];
+  if (className === 'The Tattooed'){
+    const d12TattooValue = Math.floor((Math.random() * 12));
+    const d12Tattoo = combinedClassAbilityTables[classValue][d12TattooValue];
+    classAbility = classAbility + '\n\n' + d12Tattoo + '\n\n' + tattooedUsesPerDayText;
+  }
 
   let classClothingValue = Math.floor((Math.random() * combinedClassClothingTable[classValue]));
   let classHatValue = Math.floor((Math.random() * combinedClassHatTable[classValue]));
   if (className === 'Privateer'){
     classClothingValue = classClothingValue + 2;
     classHatValue = classHatValue + 4;
+  }
+  if (className === 'ASH Dealer'){
+    classHatValue = classHatValue + 1;
   }
 
 

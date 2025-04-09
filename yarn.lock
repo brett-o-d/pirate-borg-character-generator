@@ -3172,9 +3172,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^16.2.0":
-  version: 16.2.0
-  resolution: "@testing-library/react@npm:16.2.0"
+"@testing-library/react@npm:^16.3.0":
+  version: 16.3.0
+  resolution: "@testing-library/react@npm:16.3.0"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
@@ -3188,7 +3188,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 4a687200e4d5dc7c7bd83c01f847a26e2c78f08acf54e5dbde8132969221401c6c595f624f5bd47e758346edc5f516d0bb07bffaae8a2e149910343eed4ae39f
+  checksum: 85728ea8a1bcc9d865782a3d3bcc1db6632cb77907b47fb99c7f338e3ebdfc74dc6d21dfc5526a215a4f4f7b7d8a6392de87f48da3848866ab088f327ebb3e92
   languageName: node
   linkType: hard
 
@@ -3505,12 +3505,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.0.4":
-  version: 19.0.4
-  resolution: "@types/react-dom@npm:19.0.4"
+"@types/react-dom@npm:^19.1.1":
+  version: 19.1.1
+  resolution: "@types/react-dom@npm:19.1.1"
   peerDependencies:
     "@types/react": ^19.0.0
-  checksum: 2d0c74769ddcb4a9f404a62b3241d3e550ca962ff80c8c5b624f6626cd39f8b18aadee8e447424b52cffdd9165b1f02eb51020fc486584c8395236d97d4abedf
+  checksum: 32385c414a43e33ef1b53228361be8a39025bd3abddcb0d716500006742693c8e5d62e21fc51101a2113a5d75dbcc1daa8598874b32a7770456a3b0ad342d0d1
   languageName: node
   linkType: hard
 
@@ -3543,12 +3543,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.0.12":
-  version: 19.0.12
-  resolution: "@types/react@npm:19.0.12"
+"@types/react@npm:^19.1.0":
+  version: 19.1.0
+  resolution: "@types/react@npm:19.1.0"
   dependencies:
     csstype: ^3.0.2
-  checksum: 795f27287e44ef5f81ef9e8439ede54c16d692eb7aadcfc314a2e2de6160033e32d3ee9ce7027e05417e9d80f57a4eb22a6a9cbc40a0a12346c71a1fce939956
+  checksum: 7dd7e021897509a68672ab38c268d2f1f519306ade66cc12ffce4dd46e9d2b4224ab49e0b1191b17ac5eceafc65d76e987d6c5b0679224ddbb46f8debce5decc
   languageName: node
   linkType: hard
 
@@ -4910,9 +4910,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001317, caniuse-lite@npm:^1.0.30001332, caniuse-lite@npm:^1.0.30001335, caniuse-lite@npm:^1.0.30001646":
-  version: 1.0.30001668
-  resolution: "caniuse-lite@npm:1.0.30001668"
-  checksum: ce6996901b5883454a8ddb3040f82342277b6a6275876dfefcdecb11f7e472e29877f34cae47c2b674f08f2e71971dd4a2acb9bc01adfe8421b7148a7e9e8297
+  version: 1.0.30001712
+  resolution: "caniuse-lite@npm:1.0.30001712"
+  checksum: 83760e735d1d7ab9ff7270747d70b71da4341bdc1c90df9fe2008ada382653e13d7501bfd7068e1d835184b03b8ac598b127bfe3e7d53419b9d7827730b4ae1a
   languageName: node
   linkType: hard
 
@@ -9700,15 +9700,15 @@ __metadata:
     "@mui/material": ^7.0.1
     "@testing-library/dom": ^10.4.0
     "@testing-library/jest-dom": ^6.6.3
-    "@testing-library/react": ^16.2.0
+    "@testing-library/react": ^16.3.0
     "@testing-library/user-event": ^14.6.1
-    "@types/react": ^19.0.12
-    "@types/react-dom": ^19.0.4
+    "@types/react": ^19.1.0
+    "@types/react-dom": ^19.1.1
     react: ^19.1.0
     react-device-detect: ^2.2.3
     react-dom: ^19.1.0
     react-scripts: 5.0.1
-    typescript: ^5.8.2
+    typescript: ^5.8.3
   languageName: unknown
   linkType: soft
 
@@ -13200,23 +13200,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.8.2":
-  version: 5.8.2
-  resolution: "typescript@npm:5.8.2"
+"typescript@npm:^5.8.3":
+  version: 5.8.3
+  resolution: "typescript@npm:5.8.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 7f9e3d7ac15da6df713e439e785e51facd65d6450d5f51fab3e8d2f2e3f4eb317080d895480b8e305450cdbcb37e17383e8bf521e7395f8b556e2f2a4730ed86
+  checksum: cb1d081c889a288b962d3c8ae18d337ad6ee88a8e81ae0103fa1fecbe923737f3ba1dbdb3e6d8b776c72bc73bfa6d8d850c0306eed1a51377d2fccdfd75d92c4
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5.8.2#~builtin<compat/typescript>":
-  version: 5.8.2
-  resolution: "typescript@patch:typescript@npm%3A5.8.2#~builtin<compat/typescript>::version=5.8.2&hash=bda367"
+"typescript@patch:typescript@^5.8.3#~builtin<compat/typescript>":
+  version: 5.8.3
+  resolution: "typescript@patch:typescript@npm%3A5.8.3#~builtin<compat/typescript>::version=5.8.3&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: a58d19ff9811c1764a299dd83ca20ed8020f0ab642906dafc880121b710751227201531fdc99878158205c356ac79679b0b61ac5b42eda0e28bfb180947a258d
+  checksum: 1b503525a88ff0ff5952e95870971c4fb2118c17364d60302c21935dedcd6c37e6a0a692f350892bafcef6f4a16d09073fe461158547978d2f16fbe4cb18581c
   languageName: node
   linkType: hard
 

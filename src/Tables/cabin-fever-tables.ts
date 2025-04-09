@@ -8,8 +8,8 @@ export const CabinFeverClassTable = [
   "Coagulant",
   "Reaper",
   "Shipwright",
-  // "ASH Dealer",
-  // "The Tattooed",
+  "ASH Dealer",
+  "The Tattooed",
   // "The Griot"
 ]
 
@@ -23,7 +23,7 @@ export const CabinFeverClassStatsModifierTable = [
  export const CabinFeverClassDevilsLuckCircleFillTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg" (1), "Privateer", "Angler"
   "1", "1", "2", "0", "1", "1",
-  // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
+  // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed" (None?), "The Griot" (None?)
   "1", "1", "1", "2", "0", "0" ]
 
  export const CabinFeverClassHpTable = [
@@ -135,28 +135,29 @@ export const ashDealerAbilityTable = [
   "TRIP ENDER Can attempt to end the effects of ASH consumption on another individual (Presence DR 12)",
   "RIDE THE LIGHTNING If Devil’s Luck is depleted, can immediately regain d2 when under the effects of ASH" ]
 
+export const tattooedUsesPerDayText = "You may use your tattoos d4+Spirit times each day."
 // Roll d12 and d20 for your two tattoos. You may use your tattoos d4+Spirit times each day.
 export const tattooedAbilityTable = [
-  "Compass Always know the way",
-  "Crescent Moon Cast a soft light for d8 rounds",
-  "Parrot Speak in another’s voice",
-  "Dice Reroll a roll",
-  "Two Bars AC -2 permanent effect",
-  "Dagger Always have a blade in your hand when you need it",
-  "Conch Shell Whisper to a known target, no matter the distance",
-  "Key Can open locks or shackles",
-  "Anchor Target tests Spirit DR12 or is held frozen in place",
-  "Harpoon Shoot a ghostly harpoon, Presence test, d10 damage",
-  "Crab Arm transforms into a crab pincher, d8 damage, transformation lasts for d6 rounds",
-  "Gust of Wind Shoot a controlled blast of wind, target tests Toughness DR 14 or is knocked to the ground",
-  "Wave can breathe underwater and swim at double normal rate",
-  "Shark Fin Transform into a half-shark for d4+Spirit rounds. Bite d8, breathe underwater",
-  "Storm Cloud Test Spirit (DR 12) to strike a target with Lightning (d12+2 damage)",
-  "Ship +2 to all sailing crew actions",
-  "Skull Commune with the dead. You may ask d4+Spirit yes or no questions",
-  "Cannon +2 to all ranged attacks",
-  "Crossed Sabres +2 to all attacks with a bladed weapon",
-  "The Black Spot Touch someone to transfer the tattoo to them. They die in 1d4 rounds or 1d4 days (your choice)", ]
+  "COMPASS Always know the way",
+  "CRESCENT MOON Cast a soft light for d8 rounds",
+  "PARROT Speak in another’s voice",
+  "DICE Reroll a roll",
+  "TWO BARS AC -2 permanent effect",
+  "DAGGER Always have a blade in your hand when you need it",
+  "CONCH SHELL Whisper to a known target, no matter the distance",
+  "KEY Can open locks or shackles",
+  "ANCHOR Target tests Spirit DR12 or is held frozen in place",
+  "HARPOON Shoot a ghostly harpoon, Presence test, d10 damage",
+  "CRAB Arm transforms into a crab pincher, d8 damage, transformation lasts for d6 rounds",
+  "GUST OF WIND Shoot a controlled blast of wind, target tests Toughness DR 14 or is knocked to the ground",
+  "WAVE can breathe underwater and swim at double normal rate",
+  "SHARK FIN Transform into a half-shark for d4+Spirit rounds. Bite d8, breathe underwater",
+  "STORM CLOUD Test Spirit (DR 12) to strike a target with Lightning (d12+2 damage)",
+  "SHIP +2 to all sailing crew actions",
+  "SSKULL Commune with the dead. You may ask d4+Spirit yes or no questions",
+  "CANNON +2 to all ranged attacks",
+  "CROSSED SABRES +2 to all attacks with a bladed weapon",
+  "THE BLACK SPOT Touch someone to transfer the tattoo to them. They die in 1d4 rounds or 1d4 days (your choice)", ]
 
 // Storyteller: Test Spirit DR 12 to use a story to compel, persuade, or
 // inspire.
