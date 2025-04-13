@@ -10,7 +10,7 @@ export const CabinFeverClassTable = [
   "Shipwright",
   "ASH Dealer",
   "The Tattooed",
-  // "The Griot"
+  "The Griot"
 ]
 
 // strength, agility, presence, toughness, spirit
@@ -35,13 +35,13 @@ export const CabinFeverClassStatsModifierTable = [
  export const CabinFeverClassClothingTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   6, 10, 6, 4, 8, 4, 
-  // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed" (TODO none), "The Griot"
+  // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
   2, 6, 10, 8, 0, 6 ]
 
  export const CabinFeverClassHatTable = [
   // "The Mess", "The Barnacle", The Sulphur", "Powder Keg", "Privateer", "Angler"
   12, 12, 12, 6, 6, 6,
-  // "Coagulant", "Reaper", "Shipwright", "ASH Dealer" (TODO + 1), "The Tattooed", "The Griot"
+  // "Coagulant", "Reaper", "Shipwright", "ASH Dealer", "The Tattooed", "The Griot"
   6, 10, 10, 10, 10, 10 ]
 
  export const CabinFeverClassWeaponTable = [
@@ -159,21 +159,19 @@ export const tattooedAbilityTable = [
   "CROSSED SABRES +2 to all attacks with a bladed weapon",
   "THE BLACK SPOT Touch someone to transfer the tattoo to them. They die in 1d4 rounds or 1d4 days (your choice)", ]
 
-// Storyteller: Test Spirit DR 12 to use a story to compel, persuade, or
-// inspire.
 
-// Roll d8 for your spirit pact. You may petition them for aid in their
-// domain of influence by making an offering of words, ash, rum, or
-// blood. They may answer. They may not.
+const griotStoryteller = "Storyteller: Test Spirit DR 12 to use a story to compel, persuade, or inspire.\n\nSpirit Pact: "
+const griotPetition = "\n\nYou may petition them for aid in their domain of influence by making an offering of words, ash, rum, or blood. They may answer. They may not."
+
 export const griotAbilityTable = [
-  "Gor-Bloodshed, Violence, Warfare",
-  "Inkai-Metal, Craftsmanship, Weapons",
-  "Siras-Sorcery, Dark magic",
-  "Wea So-Water, The Sea",
-  "Agai-Life, Death",
-  "Huop-Trade, Boundaries, Barter",
-  "Feazan-Art, Music, Wisdom",
-  "Yosa-Trickery, Deception" ]
+  griotStoryteller + "Gor-Bloodshed, Violence, Warfare" + griotPetition,
+  griotStoryteller + "Inkai-Metal, Craftsmanship, Weapons" + griotPetition,
+  griotStoryteller + "Siras-Sorcery, Dark magic" + griotPetition,
+  griotStoryteller + "Wea So-Water, The Sea" + griotPetition,
+  griotStoryteller + "Agai-Life, Death" + griotPetition,
+  griotStoryteller + "Huop-Trade, Boundaries, Barter" + griotPetition,
+  griotStoryteller + "Feazan-Art, Music, Wisdom" + griotPetition,
+  griotStoryteller + "Yosa-Trickery, Deception" + griotPetition, ]
 
 export const cabinFeverClassAbilityTables = [
   messAbilityTable, barnacleAbilityTable, sulphurAbilityTable, powderKegAbilityTable, privateerAbilityTable, anglerAbilityTable,
