@@ -63,7 +63,6 @@ function CharacterSheet(props) {
     classHatValue = classHatValue + 1;
   }
 
-
   const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][0], -3);
   const agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][1], -3);
   const presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][2], -3);
@@ -89,7 +88,11 @@ function CharacterSheet(props) {
   const thingOfImportance = thingOfImportanceTable[thingOfImportanceValue];
   const background = backgroundTable[backgroundValue];
 
-  const clothing = clothingTable[classClothingValue];
+  let clothing = clothingTable[classClothingValue];
+  if (className === 'The Tattooed'){
+    clothing = 'Cannot wear shirts or armor';
+  }
+
   const hat = hatTable[classHatValue];
   const weapon = DetermineWeapon(className, classValue, settings);
   const firstNames = firstNamesTable[firstNamesValue];
