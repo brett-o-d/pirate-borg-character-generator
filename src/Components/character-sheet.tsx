@@ -66,10 +66,15 @@ function CharacterSheet(props) {
   const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][0], -3);
   const agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][1], -3);
   const presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][2], -3);
-  const toughnessStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][3], -3);
+  let toughnessStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][3], -3);
   const spiritStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][4], -3);
 
+  if (className === 'Buccaneer' && classAbilityValue === 5){
+    toughnessStat = toughnessStat + 1;
+  }
+
   const classHp = Math.max(Math.floor((Math.random() * combinedClassHpTable[classValue])) + toughnessStat, 1);
+
 
   const distinctiveFlawValue = Math.floor((Math.random() * distinctiveFlawsTable.length));
   const physicalAilmentValue = Math.floor((Math.random() * physicalAilmentTable.length));
