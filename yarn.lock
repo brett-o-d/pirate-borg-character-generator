@@ -1788,7 +1788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.28.6":
+"@babel/runtime@npm:^7.29.7":
   version: 7.29.7
   resolution: "@babel/runtime@npm:7.29.7"
   checksum: bc311855c6dbf5356030979584ca0f8b6cee39fe058175b02e85a73e246fc76ae30248b0d40e70c2652101faeb43279468ed2d086a670673eb9783c1fee1df2b
@@ -2835,49 +2835,49 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/core-downloads-tracker@npm:^7.3.11":
-  version: 7.3.11
-  resolution: "@mui/core-downloads-tracker@npm:7.3.11"
-  checksum: 722ea7a10698d8a8b92c985a444af56eefb29d56fc6cb85e426980c4e241059d5006ef4089350378735142b81ceee13000e65ed91e55ca18f02522844d78eec5
+"@mui/core-downloads-tracker@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/core-downloads-tracker@npm:9.4.0"
+  checksum: 3d6e1758c445e94cc87fcc2a884c8bab3cbe780743f66b517b04f242eeed2bf75451f7cdc4de6f7fa7508e0182db3411e268cd4c1a4db1a07722daf612430b49
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^7.3.11":
-  version: 7.3.11
-  resolution: "@mui/icons-material@npm:7.3.11"
+"@mui/icons-material@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/icons-material@npm:9.4.0"
   dependencies:
-    "@babel/runtime": ^7.28.6
+    "@babel/runtime": ^7.29.7
   peerDependencies:
-    "@mui/material": ^7.3.11
+    "@mui/material": ^9.4.0
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 2dedc080520bf0ad107930a569ac5b33c60bec310ec0e37af1a18836441ef347febbd5d99925b379d8d1e77476a3b871f707da377d772e28a7243d6cf07c0740
+  checksum: 13dfc12ce8c2194f6e21d0b9a6ba9d27242c347ba0fcfd7d3b96958fef91962e31505649b35d3ae95819f9e95fda3cf0acbd3f96560e69c963c7ac1546f13856
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^7.3.11":
-  version: 7.3.11
-  resolution: "@mui/material@npm:7.3.11"
+"@mui/material@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/material@npm:9.4.0"
   dependencies:
-    "@babel/runtime": ^7.28.6
-    "@mui/core-downloads-tracker": ^7.3.11
-    "@mui/system": ^7.3.11
-    "@mui/types": ^7.4.12
-    "@mui/utils": ^7.3.11
+    "@babel/runtime": ^7.29.7
+    "@mui/core-downloads-tracker": ^9.4.0
+    "@mui/system": ^9.4.0
+    "@mui/types": ^9.4.0
+    "@mui/utils": ^9.4.0
     "@popperjs/core": ^2.11.8
     "@types/react-transition-group": ^4.4.12
     clsx: ^2.1.1
     csstype: ^3.2.3
     prop-types: ^15.8.1
-    react-is: ^19.2.3
+    react-is: ^19.2.8
     react-transition-group: ^4.4.5
   peerDependencies:
     "@emotion/react": ^11.5.0
     "@emotion/styled": ^11.3.0
-    "@mui/material-pigment-css": ^7.3.11
+    "@mui/material-pigment-css": ^9.4.0
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -2890,16 +2890,16 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 76002cc699dd1b8b05f1474f48c03926e01a111e8835e0c4f879a51181fbc44fdd73f7d2b2a7b6cd2c8d755ae1225ebc7010490932cdcb6b0120753afffc55f8
+  checksum: b0c725b34d1054d54b429f1d0cbdc2ae2e8721b2c2c42f86895ce55ddcf59821f183bff4f58850e20e971ca24c6e6e10a477301a9d558be618b0139bad1ca133
   languageName: node
   linkType: hard
 
-"@mui/private-theming@npm:^7.3.11":
-  version: 7.3.11
-  resolution: "@mui/private-theming@npm:7.3.11"
+"@mui/private-theming@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/private-theming@npm:9.4.0"
   dependencies:
-    "@babel/runtime": ^7.28.6
-    "@mui/utils": ^7.3.11
+    "@babel/runtime": ^7.29.7
+    "@mui/utils": ^9.4.0
     prop-types: ^15.8.1
   peerDependencies:
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -2907,15 +2907,15 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 00849a034b742cda3814d5acd832c0b338209f7201870a584b557872a97f010f626e192cecea7ce76ceb59c3697dd0f264edc1478e6054ae731235fdd2e6ba06
+  checksum: b6e1b0844e96fb55ef6e65c7a178c0a46827f7b476b5ba4fa2c51c2e6420cf74ecd4c93b9b54384ca8bf2d8eba69021468823a7f01679c7aca352ab73f01f3c4
   languageName: node
   linkType: hard
 
-"@mui/styled-engine@npm:^7.3.10":
-  version: 7.3.10
-  resolution: "@mui/styled-engine@npm:7.3.10"
+"@mui/styled-engine@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/styled-engine@npm:9.4.0"
   dependencies:
-    "@babel/runtime": ^7.28.6
+    "@babel/runtime": ^7.29.7
     "@emotion/cache": ^11.14.0
     "@emotion/serialize": ^1.3.3
     "@emotion/sheet": ^1.4.0
@@ -2930,19 +2930,19 @@ __metadata:
       optional: true
     "@emotion/styled":
       optional: true
-  checksum: d242b68f0caac1eb80f416446823e52888caa36b08e304d621569d05a12e38a5352e6130552f758fea6c33f2540fb8d82d75a45f2145e61488fe2858a6310e94
+  checksum: 3505382db3ede1f0ab1227d9163738f40be2fe1ae6f6e4f1f4180d5fcfca7e2e8c7dfa0a7d1ae47fca12358cfde2a5c528178dd4e6a5a8ae6e8395454cec486e
   languageName: node
   linkType: hard
 
-"@mui/system@npm:^7.3.11":
-  version: 7.3.11
-  resolution: "@mui/system@npm:7.3.11"
+"@mui/system@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/system@npm:9.4.0"
   dependencies:
-    "@babel/runtime": ^7.28.6
-    "@mui/private-theming": ^7.3.11
-    "@mui/styled-engine": ^7.3.10
-    "@mui/types": ^7.4.12
-    "@mui/utils": ^7.3.11
+    "@babel/runtime": ^7.29.7
+    "@mui/private-theming": ^9.4.0
+    "@mui/styled-engine": ^9.4.0
+    "@mui/types": ^9.4.0
+    "@mui/utils": ^9.4.0
     clsx: ^2.1.1
     csstype: ^3.2.3
     prop-types: ^15.8.1
@@ -2958,41 +2958,41 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 4aa13f35acfb2eb3e2a848e5e7641029f09a52fa85de72774c2877ee5ef0a086b47044ed8a9dc6ff43d24304042252e0616c19e6e3d60faf9cf555706327b8bf
+  checksum: e1a66f21a9135cc1aa81b7debb0149e7be0d5a4f13aaf56a8183ad3ee16b5a3614b0c3d16550d23c6c55a109acf933a91ab50c3e94e23cc498991e78fe60a6c1
   languageName: node
   linkType: hard
 
-"@mui/types@npm:^7.4.12":
-  version: 7.4.12
-  resolution: "@mui/types@npm:7.4.12"
+"@mui/types@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/types@npm:9.4.0"
   dependencies:
-    "@babel/runtime": ^7.28.6
+    "@babel/runtime": ^7.29.7
   peerDependencies:
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: f3217cc0a7beaf7f5e6557e5a55c8597d7a7bfc42f69472ac0fe2de6aeee6e7d85828f05a09ccc31de1261e713cf4203f597cd6b839e269829b534df2109ad98
+  checksum: b53db6f6fcbe8d8484f0b3d70ab6e31ec164b4865d463596594b35b72c856291d6e75b376a7e0a1e5e8efc406cc74aefd1f55f474db7d1c3cf13b6574813463a
   languageName: node
   linkType: hard
 
-"@mui/utils@npm:^7.3.11":
-  version: 7.3.11
-  resolution: "@mui/utils@npm:7.3.11"
+"@mui/utils@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "@mui/utils@npm:9.4.0"
   dependencies:
-    "@babel/runtime": ^7.28.6
-    "@mui/types": ^7.4.12
+    "@babel/runtime": ^7.29.7
+    "@mui/types": ^9.4.0
     "@types/prop-types": ^15.7.15
     clsx: ^2.1.1
     prop-types: ^15.8.1
-    react-is: ^19.2.3
+    react-is: ^19.2.8
   peerDependencies:
     "@types/react": ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 24c4e7a6d9c0c0c40e414a8a39a9f0be389456dc27d80393c9bc135231193487947cec239d11ecd79c72ff653f37c900b0843ec1e5eb7484d580d65f647b9281
+  checksum: 94dfbac2b53dffc2ca01bc6952ae206eff58fa50c0087a70dc495526b2eb5871c1ee104d6a10d995aa306bfae08c8886227494a487d08d4788f808ad611f8619
   languageName: node
   linkType: hard
 
@@ -3338,9 +3338,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^6.9.1":
-  version: 6.9.1
-  resolution: "@testing-library/jest-dom@npm:6.9.1"
+"@testing-library/jest-dom@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "@testing-library/jest-dom@npm:7.0.1"
   dependencies:
     "@adobe/css-tools": ^4.4.0
     aria-query: ^5.0.0
@@ -3348,7 +3348,13 @@ __metadata:
     dom-accessibility-api: ^0.6.3
     picocolors: ^1.1.1
     redent: ^3.0.0
-  checksum: 5c77126a59a1c0df5935d29569652364c56e5026982f0357f0daaeb21b75fcd9a6aeff8365bdcba719687a4359b3f8bf74bba81ccbae7635cf18ad9789e1e323
+  peerDependencies:
+    "@testing-library/dom": ">=10 <11"
+    vitest: ">= 0.32"
+  peerDependenciesMeta:
+    vitest:
+      optional: true
+  checksum: 5f8616723f4fbd72483474f3e927a6361ee1565382185b4c5e6290c546e6b06a2714b04179b789fb85e62d4f7baf7d7c50ff217f79e60afa427d9a08b089662d
   languageName: node
   linkType: hard
 
@@ -3976,6 +3982,146 @@ __metadata:
     "@typescript-eslint/types": 5.23.0
     eslint-visitor-keys: ^3.0.0
   checksum: 322e10d52a985e8a90d3612bb9d09a87dc64fc4cb1248484f1a9a7a98f65d3ef65a465ce868773a4939e35fa3b726ad609dac5a168efd7eaca4b06df33e965e3
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-aix-ppc64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-aix-ppc64@npm:7.0.2"
+  conditions: os=aix & cpu=ppc64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-darwin-arm64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-darwin-arm64@npm:7.0.2"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-darwin-x64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-darwin-x64@npm:7.0.2"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-freebsd-arm64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-freebsd-arm64@npm:7.0.2"
+  conditions: os=freebsd & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-freebsd-x64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-freebsd-x64@npm:7.0.2"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-arm64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-arm64@npm:7.0.2"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-arm@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-arm@npm:7.0.2"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-loong64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-loong64@npm:7.0.2"
+  conditions: os=linux & cpu=loong64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-mips64el@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-mips64el@npm:7.0.2"
+  conditions: os=linux & cpu=mips64el
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-ppc64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-ppc64@npm:7.0.2"
+  conditions: os=linux & cpu=ppc64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-riscv64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-riscv64@npm:7.0.2"
+  conditions: os=linux & cpu=riscv64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-s390x@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-s390x@npm:7.0.2"
+  conditions: os=linux & cpu=s390x
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-linux-x64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-linux-x64@npm:7.0.2"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-netbsd-arm64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-netbsd-arm64@npm:7.0.2"
+  conditions: os=netbsd & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-netbsd-x64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-netbsd-x64@npm:7.0.2"
+  conditions: os=netbsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-openbsd-arm64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-openbsd-arm64@npm:7.0.2"
+  conditions: os=openbsd & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-openbsd-x64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-openbsd-x64@npm:7.0.2"
+  conditions: os=openbsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-sunos-x64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-sunos-x64@npm:7.0.2"
+  conditions: os=sunos & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-win32-arm64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-win32-arm64@npm:7.0.2"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@typescript/typescript-win32-x64@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@typescript/typescript-win32-x64@npm:7.0.2"
+  conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
@@ -10018,10 +10164,10 @@ __metadata:
     "@emotion/react": ^11.14.0
     "@emotion/styled": ^11.14.1
     "@material-ui/core": ^4.12.4
-    "@mui/icons-material": ^7.3.11
-    "@mui/material": ^7.3.11
+    "@mui/icons-material": ^9.4.0
+    "@mui/material": ^9.4.0
     "@testing-library/dom": ^10.4.1
-    "@testing-library/jest-dom": ^6.9.1
+    "@testing-library/jest-dom": ^7.0.1
     "@testing-library/react": ^16.3.3
     "@testing-library/user-event": ^14.6.7
     "@types/react": ^19.2.18
@@ -10030,7 +10176,7 @@ __metadata:
     react-device-detect: ^2.2.3
     react-dom: ^19.2.8
     react-scripts: 5.0.1
-    typescript: ^5.9.3
+    typescript: ^7.0.2
   languageName: unknown
   linkType: soft
 
@@ -11795,7 +11941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^19.2.3":
+"react-is@npm:^19.2.8":
   version: 19.2.8
   resolution: "react-is@npm:19.2.8"
   checksum: ec955b3b167cbe041a1f474063d15aa0c5a4d67a75b95e3e4090e9b964986a1fcf66370f3aa4deb34342c898e5d95da37d725d089c40e537598e0c3cc8bba00e
@@ -13530,23 +13676,145 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.9.3":
-  version: 5.9.3
-  resolution: "typescript@npm:5.9.3"
+"typescript@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "typescript@npm:7.0.2"
+  dependencies:
+    "@typescript/typescript-aix-ppc64": 7.0.2
+    "@typescript/typescript-darwin-arm64": 7.0.2
+    "@typescript/typescript-darwin-x64": 7.0.2
+    "@typescript/typescript-freebsd-arm64": 7.0.2
+    "@typescript/typescript-freebsd-x64": 7.0.2
+    "@typescript/typescript-linux-arm": 7.0.2
+    "@typescript/typescript-linux-arm64": 7.0.2
+    "@typescript/typescript-linux-loong64": 7.0.2
+    "@typescript/typescript-linux-mips64el": 7.0.2
+    "@typescript/typescript-linux-ppc64": 7.0.2
+    "@typescript/typescript-linux-riscv64": 7.0.2
+    "@typescript/typescript-linux-s390x": 7.0.2
+    "@typescript/typescript-linux-x64": 7.0.2
+    "@typescript/typescript-netbsd-arm64": 7.0.2
+    "@typescript/typescript-netbsd-x64": 7.0.2
+    "@typescript/typescript-openbsd-arm64": 7.0.2
+    "@typescript/typescript-openbsd-x64": 7.0.2
+    "@typescript/typescript-sunos-x64": 7.0.2
+    "@typescript/typescript-win32-arm64": 7.0.2
+    "@typescript/typescript-win32-x64": 7.0.2
+  dependenciesMeta:
+    "@typescript/typescript-aix-ppc64":
+      optional: true
+    "@typescript/typescript-darwin-arm64":
+      optional: true
+    "@typescript/typescript-darwin-x64":
+      optional: true
+    "@typescript/typescript-freebsd-arm64":
+      optional: true
+    "@typescript/typescript-freebsd-x64":
+      optional: true
+    "@typescript/typescript-linux-arm":
+      optional: true
+    "@typescript/typescript-linux-arm64":
+      optional: true
+    "@typescript/typescript-linux-loong64":
+      optional: true
+    "@typescript/typescript-linux-mips64el":
+      optional: true
+    "@typescript/typescript-linux-ppc64":
+      optional: true
+    "@typescript/typescript-linux-riscv64":
+      optional: true
+    "@typescript/typescript-linux-s390x":
+      optional: true
+    "@typescript/typescript-linux-x64":
+      optional: true
+    "@typescript/typescript-netbsd-arm64":
+      optional: true
+    "@typescript/typescript-netbsd-x64":
+      optional: true
+    "@typescript/typescript-openbsd-arm64":
+      optional: true
+    "@typescript/typescript-openbsd-x64":
+      optional: true
+    "@typescript/typescript-sunos-x64":
+      optional: true
+    "@typescript/typescript-win32-arm64":
+      optional: true
+    "@typescript/typescript-win32-x64":
+      optional: true
   bin:
     tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 0d0ffb84f2cd072c3e164c79a2e5a1a1f4f168e84cb2882ff8967b92afe1def6c2a91f6838fb58b168428f9458c57a2ba06a6737711fdd87a256bbe83e9a217f
+  checksum: ca080a72699001d8c636cf78289bae3dfbd67e60a75dbbdb03d36f9529da65653eca7a61d925b850029e1128a87aa2bae900331163bcff6d401e7ec213398c38
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5.9.3#~builtin<compat/typescript>":
-  version: 5.9.3
-  resolution: "typescript@patch:typescript@npm%3A5.9.3#~builtin<compat/typescript>::version=5.9.3&hash=bda367"
+"typescript@patch:typescript@^7.0.2#~builtin<compat/typescript>":
+  version: 7.0.2
+  resolution: "typescript@patch:typescript@npm%3A7.0.2#~builtin<compat/typescript>::version=7.0.2&hash=bda367"
+  dependencies:
+    "@typescript/typescript-aix-ppc64": 7.0.2
+    "@typescript/typescript-darwin-arm64": 7.0.2
+    "@typescript/typescript-darwin-x64": 7.0.2
+    "@typescript/typescript-freebsd-arm64": 7.0.2
+    "@typescript/typescript-freebsd-x64": 7.0.2
+    "@typescript/typescript-linux-arm": 7.0.2
+    "@typescript/typescript-linux-arm64": 7.0.2
+    "@typescript/typescript-linux-loong64": 7.0.2
+    "@typescript/typescript-linux-mips64el": 7.0.2
+    "@typescript/typescript-linux-ppc64": 7.0.2
+    "@typescript/typescript-linux-riscv64": 7.0.2
+    "@typescript/typescript-linux-s390x": 7.0.2
+    "@typescript/typescript-linux-x64": 7.0.2
+    "@typescript/typescript-netbsd-arm64": 7.0.2
+    "@typescript/typescript-netbsd-x64": 7.0.2
+    "@typescript/typescript-openbsd-arm64": 7.0.2
+    "@typescript/typescript-openbsd-x64": 7.0.2
+    "@typescript/typescript-sunos-x64": 7.0.2
+    "@typescript/typescript-win32-arm64": 7.0.2
+    "@typescript/typescript-win32-x64": 7.0.2
+  dependenciesMeta:
+    "@typescript/typescript-aix-ppc64":
+      optional: true
+    "@typescript/typescript-darwin-arm64":
+      optional: true
+    "@typescript/typescript-darwin-x64":
+      optional: true
+    "@typescript/typescript-freebsd-arm64":
+      optional: true
+    "@typescript/typescript-freebsd-x64":
+      optional: true
+    "@typescript/typescript-linux-arm":
+      optional: true
+    "@typescript/typescript-linux-arm64":
+      optional: true
+    "@typescript/typescript-linux-loong64":
+      optional: true
+    "@typescript/typescript-linux-mips64el":
+      optional: true
+    "@typescript/typescript-linux-ppc64":
+      optional: true
+    "@typescript/typescript-linux-riscv64":
+      optional: true
+    "@typescript/typescript-linux-s390x":
+      optional: true
+    "@typescript/typescript-linux-x64":
+      optional: true
+    "@typescript/typescript-netbsd-arm64":
+      optional: true
+    "@typescript/typescript-netbsd-x64":
+      optional: true
+    "@typescript/typescript-openbsd-arm64":
+      optional: true
+    "@typescript/typescript-openbsd-x64":
+      optional: true
+    "@typescript/typescript-sunos-x64":
+      optional: true
+    "@typescript/typescript-win32-arm64":
+      optional: true
+    "@typescript/typescript-win32-x64":
+      optional: true
   bin:
     tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 8bb8d86819ac86a498eada254cad7fb69c5f74778506c700c2a712daeaff21d3a6f51fd0d534fe16903cb010d1b74f89437a3d02d4d0ff5ca2ba9a4660de8497
+  checksum: 5c0a23465ede99b22705875cd39ef46504c73b643878226e80ec7ecd3ef8f805f92bd6c6a64e20e40ba92d48fb6168d17ce98518a1e5f244254e77b06afb54f0
   languageName: node
   linkType: hard
 
