@@ -75,7 +75,7 @@ export const sulphurAbilityTable = [
   "ASH CHYMIST: During a long rest, you can craft 1d4+Presence improvised bombs from ASH. If taken again, you craft 2d4+Presence bombs instead.",
   "Keep Your Powder Dry: You can fire your black powder weapons while swimming or in the rain. If taken again, you take d6 less from explosions." ]
 
-const powderKegDevilsLuckAbility = "Starts with 1 Devils Luck";
+const powderKegDevilsLuckAbility = "Starts with 1 Devils Luck ";
 export const powderKegAbilityTable = [
   powderKegDevilsLuckAbility + "POWDER FLASK PUNK Add +1 PRESENCE when throwing bombs. You can throw 2 bombs per turn, even if you also move. Also, you can make bombs at half the cost. Bombs are only made while in port. Limit: d4 per stay.",
   powderKegDevilsLuckAbility + "RIGGING RAT Add +1 to AGILITY when maneuvering on a ship. Your movement speed goes up to 40’ (or eight 5-foot squares) while aboard a ship. UNLOCK #6 (CANNONEER).",

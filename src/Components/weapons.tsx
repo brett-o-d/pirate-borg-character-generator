@@ -1,6 +1,5 @@
-import React from 'react';
 import { TextStyles, PositionStyles } from './styles.js';
-import { bombTable, classWeaponTable, weaponTable } from '../Tables/tables.js';
+import { bombTable, classWeaponTable, weaponTable } from '../Tables/tables.ts';
 import { CabinFeverClassWeaponTable, anglerWeaponTable } from '../Tables/cabin-fever-tables.ts';
 
 export function WeaponDisplay(weapon: string, classValue: number ): any {
