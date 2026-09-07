@@ -1,24 +1,28 @@
-import React from 'react';
 import { TextStyles, PositionStyles } from './styles.js';
 import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
         unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
         clothingTable, hatTable, firstNamesTable, nicknameTable,
         lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
         classHatTable, classHpTable, classDevilsLuckCircleFillTable,
-        classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.js';
+        classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.ts';
 import { CabinFeverClassTable, cabinFeverClassAbilityTables, CabinFeverClassStatsModifierTable,
          CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable, tattooedUsesPerDayText,
          CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
+import { DownAmongTheDeadClassTable, DownAmongTheDeadClassStatsModifierTable, DownAmongTheDeadClassDevilsLuckCircleFillTable,
+         DownAmongTheDeadClassHpTable, DownAmongTheDeadClassClothingTable, DownAmongTheDeadClassHatTable,
+         DownAmongTheDeadClassWeaponTable, antiquarianPhobiaTable, antiquarianHolyGrailTable, 
+         antiquarianAbilityTable, deepOneAbilityTable, unlockedSoulAbilityTable, anglerWeaponTable, 
+         DownAmongTheDeadClassAbilityTables} from '../Tables/down-amon-the-dead-tables.ts';
 import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
 import PirateBorgCharacterSheetBWLetter from '../Assets/Pirate_Borg_Character_Sheet_BW_Letter_cropped.jpg';
-import RollStat from '../Utilities/stat-roller.js';
+import RollStat from '../Utilities/stat-roller.ts';
 import { WeaponDisplay, DetermineWeapon } from './weapons.tsx';
 import EquipmentDisplay from './equipment.tsx';
 import './css/character-sheet.css';
 import './css/print.css';
 
-function CharacterSheet(props) {
+function CharacterSheet(props: { settings: any; }) {
   const settings = props.settings;
 
   let combinedClassTable = classTable;
@@ -39,6 +43,16 @@ function CharacterSheet(props) {
     combinedClassHpTable = combinedClassHpTable.concat(CabinFeverClassHpTable);
   }
 
+  if (settings.includes('down-among-the-dead')){
+    combinedClassTable = combinedClassTable.concat(DownAmongTheDeadClassTable);
+    combinedDevilsLuckTable = combinedDevilsLuckTable.concat(DownAmongTheDeadClassDevilsLuckCircleFillTable);
+    combinedClassAbilityTables = combinedClassAbilityTables.concat(DownAmongTheDeadClassAbilityTables);
+    combinedClassClothingTable = combinedClassClothingTable.concat(DownAmongTheDeadClassClothingTable);
+    combinedClassHatTable = combinedClassHatTable.concat(DownAmongTheDeadClassHatTable);
+    combinedClassStatsModifierTable = combinedClassStatsModifierTable.concat(DownAmongTheDeadClassStatsModifierTable);
+    combinedClassHpTable = combinedClassHpTable.concat(DownAmongTheDeadClassHpTable);
+  }
+
   const classValue = Math.floor((Math.random() * combinedClassTable.length));
 
   const className = combinedClassTable[classValue];
@@ -51,6 +65,13 @@ function CharacterSheet(props) {
     const d12TattooValue = Math.floor((Math.random() * 12));
     const d12Tattoo = combinedClassAbilityTables[classValue][d12TattooValue];
     classAbility = classAbility + '\n\n' + d12Tattoo + '\n\n' + tattooedUsesPerDayText;
+  }
+  if (className === 'The Antiquarian'){
+    const phobiaValue = Math.floor((Math.random() * antiquarianPhobiaTable.length));
+    const holyGrailValue = Math.floor((Math.random() * antiquarianHolyGrailTable.length));
+    const phobia = antiquarianPhobiaTable[phobiaValue];
+    const holyGrail = antiquarianHolyGrailTable[holyGrailValue];
+    classAbility = classAbility + '\n' + "PHOBIA: " + phobia + '\n' + "HOLY GRAIL:" + holyGrail;
   }
 
   let classClothingValue = Math.floor((Math.random() * combinedClassClothingTable[classValue]));

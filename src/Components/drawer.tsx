@@ -8,7 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Switch from '@mui/material/Switch';
 import About from './about.tsx';
 
-export default function TemporaryDrawer(props) {
+export default function TemporaryDrawer(props: { settings: any; setSettings: any; }) {
   const [open, setOpen] = React.useState(false);
   const settings = props.settings;
   const setSettings = props.setSettings;
@@ -51,6 +51,15 @@ export default function TemporaryDrawer(props) {
       </PBSettingListItem>
       <Divider />
       <PBSettingListItem>
+        <ListItemText primary="Down Among The Dead"/>
+        <Switch
+          edge="end"
+          onChange={handleToggle('down-among-the-dead')}
+          checked={settings.includes('down-among-the-dead')}
+        />
+      </PBSettingListItem>
+      {/* <Divider />
+      <PBSettingListItem>
         <ListItemText primary="Haunted Soul" secondary='coming soon'/>
         <Switch
           edge="end"
@@ -67,7 +76,7 @@ export default function TemporaryDrawer(props) {
           onChange={handleToggle('tall-tale')}
           checked={settings.includes('tall-tale')}
         />
-      </PBSettingListItem>
+      </PBSettingListItem> */}
       <Divider />
       <PBSettingListItem>
         <ListItemText primary="Cabin Fever"/>

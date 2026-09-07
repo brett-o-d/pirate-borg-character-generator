@@ -1,4 +1,4 @@
-export function RollStat() {
+export function RollStat() : number {
     return Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6)) + Math.ceil((Math.random() * 6));
 }
 

@@ -1,7 +1,6 @@
-import React from 'react';
 import { TextStyles } from './styles.js';
 import { containerTable, cheapGearTable, valuableGearTable, petTable,
-    instrumentTable, relicTable, relicDescriptionTable, bombTable} from '../Tables/tables.js';
+    instrumentTable, relicTable, relicDescriptionTable, bombTable} from '../Tables/tables.ts';
 
 export function EquipmentDisplay(className: string, clothesValue: number, hatValue: number ){
 
@@ -22,6 +21,10 @@ export function EquipmentDisplay(className: string, clothesValue: number, hatVal
   const relic = relicTable[relicValue];
   const relicDescription = relicDescriptionTable[relicValue];
 
+  const antiquarianRelicValue = Math.floor((Math.random() * relicTable.length));
+  const antiquarianRelic = relicTable[antiquarianRelicValue];
+  const antiquarianRelicDescription = relicDescriptionTable[antiquarianRelicValue];
+
   return (
     <div className={textStyleClasses.mediumText}>
       <div className={"equipment"}>
@@ -35,12 +38,20 @@ export function EquipmentDisplay(className: string, clothesValue: number, hatVal
         {className === 'Reaper' ? <div>tinderbox</div> : null}
         {className === 'Shipwright' ? <div>portable toolbox</div> : null}
       </div>
-      {valuableGearValue === 3 ? 
-        <div className={"relic"}>
-          <div><strong>{relic}</strong></div>
-          <div><i>{relicDescription}</i></div>
-        </div> 
-        : null}
+      <div className={"relic"}>
+        {valuableGearValue === 3 ? 
+          <div>
+            <div><strong>{relic}</strong></div>
+            <div><i>{relicDescription}</i></div>
+          </div> 
+          : null}
+        {className === 'The Antiquarian' ? 
+          <div>
+            <div><strong>{antiquarianRelic}</strong></div>
+            <div><i>{antiquarianRelicDescription}</i></div>
+          </div> 
+          : null}
+      </div>
     </div>
   ); 
 }

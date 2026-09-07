@@ -6,7 +6,7 @@ export const classTable = [
     "Zealot",
     "Sorcerer" ]
 
-export const statLookupTable = {
+export const statLookupTable: { [key: string]: string } = {
     "1":"-3",
     "2":"-3",
     "3":"-3",
