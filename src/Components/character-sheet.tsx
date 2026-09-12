@@ -1,18 +1,18 @@
 import { TextStyles, PositionStyles } from './styles.js';
-import {distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
-        unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
-        clothingTable, hatTable, firstNamesTable, nicknameTable,
-        lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable, 
-        classHatTable, classHpTable, classDevilsLuckCircleFillTable,
-        classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.ts';
+import { distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
+  unfortunateIncidentsTable, thingOfImportanceTable, backgroundTable,
+  clothingTable, hatTable, firstNamesTable, nicknameTable,
+  lastNameTable, statLookupTable, classTable, classAbilityTables, classStatsModifierTable,
+  classHatTable, classHpTable, classDevilsLuckCircleFillTable,
+  classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.ts';
 import { CabinFeverClassTable, cabinFeverClassAbilityTables, CabinFeverClassStatsModifierTable,
-         CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable, tattooedUsesPerDayText,
-         CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
+  CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable, tattooedUsesPerDayText,
+  CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
 import { DownAmongTheDeadClassTable, DownAmongTheDeadClassStatsModifierTable, DownAmongTheDeadClassDevilsLuckCircleFillTable,
-         DownAmongTheDeadClassHpTable, DownAmongTheDeadClassClothingTable, DownAmongTheDeadClassHatTable,
-         DownAmongTheDeadClassWeaponTable, antiquarianPhobiaTable, antiquarianHolyGrailTable, 
-         antiquarianAbilityTable, deepOneAbilityTable, unlockedSoulAbilityTable, anglerWeaponTable, 
-         DownAmongTheDeadClassAbilityTables} from '../Tables/down-amon-the-dead-tables.ts';
+  DownAmongTheDeadClassHpTable, DownAmongTheDeadClassClothingTable, DownAmongTheDeadClassHatTable,
+  DownAmongTheDeadClassWeaponTable, antiquarianPhobiaTable, antiquarianHolyGrailTable,
+  antiquarianAbilityTable, deepOneOriginStatsModifierTable, unlockedSoulAbilityTable, anglerWeaponTable,
+  DownAmongTheDeadClassAbilityTables, deepOneOriginTable } from '../Tables/down-among-the-dead-tables.ts';
 import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
 import PirateBorgCharacterSheetBWLetter from '../Assets/Pirate_Borg_Character_Sheet_BW_Letter_cropped.jpg';
@@ -33,7 +33,7 @@ function CharacterSheet(props: { settings: any; }) {
   let combinedClassStatsModifierTable = classStatsModifierTable;
   let combinedClassHpTable = classHpTable;
 
-  if (settings.includes('cabin-fever')){
+  if (settings.includes('cabin-fever')) {
     combinedClassTable = combinedClassTable.concat(CabinFeverClassTable);
     combinedDevilsLuckTable = combinedDevilsLuckTable.concat(CabinFeverClassDevilsLuckCircleFillTable);
     combinedClassAbilityTables = combinedClassAbilityTables.concat(cabinFeverClassAbilityTables);
@@ -43,7 +43,7 @@ function CharacterSheet(props: { settings: any; }) {
     combinedClassHpTable = combinedClassHpTable.concat(CabinFeverClassHpTable);
   }
 
-  if (settings.includes('down-among-the-dead')){
+  if (settings.includes('down-among-the-dead')) {
     combinedClassTable = combinedClassTable.concat(DownAmongTheDeadClassTable);
     combinedDevilsLuckTable = combinedDevilsLuckTable.concat(DownAmongTheDeadClassDevilsLuckCircleFillTable);
     combinedClassAbilityTables = combinedClassAbilityTables.concat(DownAmongTheDeadClassAbilityTables);
@@ -61,12 +61,12 @@ function CharacterSheet(props: { settings: any; }) {
 
   const classAbilityValue = Math.floor((Math.random() * combinedClassAbilityTables[classValue].length));
   let classAbility = combinedClassAbilityTables[classValue][classAbilityValue];
-  if (className === 'The Tattooed'){
+  if (className === 'The Tattooed') {
     const d12TattooValue = Math.floor((Math.random() * 12));
     const d12Tattoo = combinedClassAbilityTables[classValue][d12TattooValue];
     classAbility = classAbility + '\n\n' + d12Tattoo + '\n\n' + tattooedUsesPerDayText;
   }
-  if (className === 'The Antiquarian'){
+  if (className === 'The Antiquarian') {
     const phobiaValue = Math.floor((Math.random() * antiquarianPhobiaTable.length));
     const holyGrailValue = Math.floor((Math.random() * antiquarianHolyGrailTable.length));
     const phobia = antiquarianPhobiaTable[phobiaValue];
@@ -76,22 +76,30 @@ function CharacterSheet(props: { settings: any; }) {
 
   let classClothingValue = Math.floor((Math.random() * combinedClassClothingTable[classValue]));
   let classHatValue = Math.floor((Math.random() * combinedClassHatTable[classValue]));
-  if (className === 'Privateer'){
+  if (className === 'Privateer') {
     classClothingValue = classClothingValue + 2;
     classHatValue = classHatValue + 4;
   }
-  if (className === 'ASH Dealer'){
+  if (className === 'ASH Dealer') {
     classHatValue = classHatValue + 1;
   }
 
-  const strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][0], -3);
-  const agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][1], -3);
-  const presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][2], -3);
+  let strengthStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][0], -3);
+  let agilityStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][1], -3);
+  let presenceStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][2], -3);
   let toughnessStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][3], -3);
-  const spiritStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][4], -3);
+  let spiritStat = Math.max(parseInt(statLookupTable[RollStat()]) + combinedClassStatsModifierTable[classValue][4], -3);
 
-  if (className === 'Buccaneer' && classAbilityValue === 5){
+  if (className === 'Buccaneer' && classAbilityValue === 5) {
     toughnessStat = toughnessStat + 1;
+  }
+
+  if (className === 'Deep One') {
+    strengthStat = strengthStat + deepOneOriginStatsModifierTable[classAbilityValue][0];
+    agilityStat = agilityStat + deepOneOriginStatsModifierTable[classAbilityValue][1];
+    presenceStat = presenceStat + deepOneOriginStatsModifierTable[classAbilityValue][2];
+    toughnessStat = toughnessStat + deepOneOriginStatsModifierTable[classAbilityValue][3];
+    spiritStat = spiritStat + deepOneOriginStatsModifierTable[classAbilityValue][4];
   }
 
   const classHp = Math.max(Math.floor((Math.random() * combinedClassHpTable[classValue])) + toughnessStat, 1);
@@ -115,7 +123,7 @@ function CharacterSheet(props: { settings: any; }) {
   const background = backgroundTable[backgroundValue];
 
   let clothing = clothingTable[classClothingValue];
-  if (className === 'The Tattooed'){
+  if (className === 'The Tattooed') {
     clothing = 'Cannot wear shirts or armor';
   }
 
@@ -129,17 +137,17 @@ function CharacterSheet(props: { settings: any; }) {
   const textStyleClasses = TextStyles();
   const positionStyleClasses = PositionStyles();
 
-  function ClothesDisplay(){
+  function ClothesDisplay() {
     return (
       <div className={textStyleClasses.mediumText + " clothes-text " + positionStyleClasses.Clothes}>
         <strong>Clothes:</strong> {clothing}
-        <br/>
+        <br />
         <strong>Hat:</strong> {hat}
       </div>
     );
   }
 
-  function DevilsLuckCircles(){
+  function DevilsLuckCircles() {
     return (
       <div>
         <div className={'devils-luck-circle-one ' + textStyleClasses.largeText}>
@@ -155,9 +163,9 @@ function CharacterSheet(props: { settings: any; }) {
     );
   }
 
-  function BackgroundImage(){
-    if (settings.includes('us-letter')){
-      if (settings.includes('printer-friendly')){
+  function BackgroundImage() {
+    if (settings.includes('us-letter')) {
+      if (settings.includes('printer-friendly')) {
         return (
           <img src={PirateBorgCharacterSheetBWLetter} className="character-sheet" alt=""></img>
         )
@@ -172,70 +180,70 @@ function CharacterSheet(props: { settings: any; }) {
       <img src={PirateBorgCharacterSheetv3p1} className="character-sheet" alt=""></img>
     )
   }
-  
+
   return (
     <div className={'container ' + (settings.includes('us-letter') ? 'us-letter' : 'a4') + (settings.includes('printer-friendly') ? ' printer-friendly' : '')} id="print-content">
-        <BackgroundImage/>
+      <BackgroundImage />
 
-        <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
-            <span>{firstNames + " “" + nickname + "” " + lastName}</span>
-        </div>
-        <div className={textStyleClasses.largeText + " class-name " + positionStyleClasses.ClassName}>{className}</div>
-        <div className={textStyleClasses.mediumText + " class-features " + positionStyleClasses.ClassFeatures}>
+      <div className={textStyleClasses.largeText + " character-name-text " + positionStyleClasses.CharacterName}>
+        <span>{firstNames + " “" + nickname + "” " + lastName}</span>
+      </div>
+      <div className={textStyleClasses.largeText + " class-name " + positionStyleClasses.ClassName}>{className}</div>
+      <div className={textStyleClasses.mediumText + " class-features " + positionStyleClasses.ClassFeatures}>
         {classValue === 2 /* Buccaneer */
-                ? <div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}<br/><br/></div>
-                : null}
+          ? <div>{buccaneerWeaponTable[Math.floor((Math.random() * buccaneerWeaponTable.length))]}<br /><br /></div>
+          : null}
         <div>{classAbility}</div>
         {classValue === 0 /* Brute */
-            ? <div><br/>{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div> 
-            : null}
-        </div>
+          ? <div><br />{bruteWeaponTable[Math.floor((Math.random() * bruteWeaponTable.length))]}</div>
+          : null}
+      </div>
 
-        <div className={textStyleClasses.extraLargeText + " hp " + positionStyleClasses.HitPoints}>
-            <strong>{classHp}</strong>
-        </div>
+      <div className={textStyleClasses.extraLargeText + " hp " + positionStyleClasses.HitPoints}>
+        <strong>{classHp}</strong>
+      </div>
 
-        <div className={textStyleClasses.extraLargeText + " strength " + positionStyleClasses.Strength}>
-            {(strengthStat >= 0)? "+"+strengthStat : strengthStat}
-        </div>
-        <div className={textStyleClasses.extraLargeText + " agility " + positionStyleClasses.Agility}>
-            {(agilityStat >= 0)? "+"+agilityStat : agilityStat}
-        </div>
-        <div className={textStyleClasses.extraLargeText + " presence " + positionStyleClasses.Presence}>
-            {(presenceStat >= 0)? "+"+presenceStat : presenceStat}
-        </div>
-        <div className={textStyleClasses.extraLargeText + " toughness " + positionStyleClasses.Toughness}>
-            {(toughnessStat >= 0)? "+"+toughnessStat : toughnessStat}
-        </div>    
-        <div className={textStyleClasses.extraLargeText + " spirit " + positionStyleClasses.Spirit}>
-            {(spiritStat >= 0)? "+"+spiritStat : spiritStat}
-        </div>
-        {DevilsLuckCircles()}
+      <div className={textStyleClasses.extraLargeText + " strength " + positionStyleClasses.Strength}>
+        {(strengthStat >= 0) ? "+" + strengthStat : strengthStat}
+      </div>
+      <div className={textStyleClasses.extraLargeText + " agility " + positionStyleClasses.Agility}>
+        {(agilityStat >= 0) ? "+" + agilityStat : agilityStat}
+      </div>
+      <div className={textStyleClasses.extraLargeText + " presence " + positionStyleClasses.Presence}>
+        {(presenceStat >= 0) ? "+" + presenceStat : presenceStat}
+      </div>
+      <div className={textStyleClasses.extraLargeText + " toughness " + positionStyleClasses.Toughness}>
+        {(toughnessStat >= 0) ? "+" + toughnessStat : toughnessStat}
+      </div>
+      <div className={textStyleClasses.extraLargeText + " spirit " + positionStyleClasses.Spirit}>
+        {(spiritStat >= 0) ? "+" + spiritStat : spiritStat}
+      </div>
+      {DevilsLuckCircles()}
 
-        {WeaponDisplay(weapon, classValue)}
+      {WeaponDisplay(weapon, classValue)}
 
 
-        <div className={textStyleClasses.mediumText + " character-background"}>
-            {background}
-        </div>
-        <div className={textStyleClasses.mediumText + " distinctive-flaw"}>
-            {distinctiveFlaw}
-        </div>
-        <div className={textStyleClasses.mediumText + " physical-ailment"}>
-            {physicalAilment}
-        </div>
-        <div className={textStyleClasses.mediumText + " idiosyncracies"}>
-            {idiosyncracies}
-        </div>
-        <div className={textStyleClasses.mediumText + " unfortunate-incidents"}>
-            {unfortunateIncidents}
-        </div>
-        <div className={textStyleClasses.mediumText + " thing-of-importance"}>
-            {thingOfImportance}
-        </div>
+      <div className={textStyleClasses.mediumText + " character-background"}>
+        {background}
+      </div>
+      <div className={textStyleClasses.mediumText + " distinctive-flaw"}>
+        {distinctiveFlaw}
+      </div>
+      <div className={textStyleClasses.mediumText + " physical-ailment"}>
+        {physicalAilment}
+      </div>
+      <div className={textStyleClasses.mediumText + " idiosyncracies"}>
+        {idiosyncracies}
+      </div>
+      <div className={textStyleClasses.mediumText + " unfortunate-incidents"}>
+        {unfortunateIncidents}
+      </div>
+      <div className={textStyleClasses.mediumText + " thing-of-importance"}>
+        {thingOfImportance}
+      </div>
 
-        {ClothesDisplay()}
-        {EquipmentDisplay(className, classClothingValue, classHatValue)}
+      {ClothesDisplay()}
+      {EquipmentDisplay(className, classClothingValue, classHatValue)}
     </div>
   );
 }
