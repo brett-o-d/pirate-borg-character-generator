@@ -1,6 +1,7 @@
 import { TextStyles, PositionStyles } from './styles.js';
 import { bombTable, classWeaponTable, weaponTable } from '../Tables/tables.ts';
 import { CabinFeverClassWeaponTable, anglerWeaponTable } from '../Tables/cabin-fever-tables.ts';
+import { DownAmongTheDeadClassWeaponTable } from '../Tables/down-among-the-dead-tables.ts';
 
 export function WeaponDisplay(weapon: string, classValue: number ): any {
   const textStyleClasses = TextStyles();
@@ -20,6 +21,9 @@ export function DetermineWeapon(className: string, classValue: number, settings:
   if (settings.includes('cabin-fever')){
     combinedClassWeaponTable = combinedClassWeaponTable.concat(CabinFeverClassWeaponTable);
   }
+  if (settings.includes('down-among-the-dead')){
+    combinedClassWeaponTable = combinedClassWeaponTable.concat(DownAmongTheDeadClassWeaponTable);
+  }
   const classWeaponValue = Math.floor((Math.random() * combinedClassWeaponTable[classValue]));
 
   switch (className) {
@@ -35,6 +39,8 @@ export function DetermineWeapon(className: string, classValue: number, settings:
       return weaponTable[classWeaponValue + 2]
     case 'Angler':
       return anglerWeaponTable[classWeaponValue]
+    case 'Deep One':
+      return 'Fishing Spear [d6]';
     default:
       return weaponTable[classWeaponValue];
   }
