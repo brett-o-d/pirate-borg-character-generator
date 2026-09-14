@@ -7,10 +7,10 @@ import { distinctiveFlawsTable, physicalAilmentTable, idiosyncraciesTable,
   classClothingTable, bruteWeaponTable, buccaneerWeaponTable } from '../Tables/tables.ts';
 import { CabinFeverClassTable, cabinFeverClassAbilityTables, CabinFeverClassStatsModifierTable,
   CabinFeverClassDevilsLuckCircleFillTable, CabinFeverClassHpTable, tattooedUsesPerDayText,
-  CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
+  CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts'; 
 import { DownAmongTheDeadClassTable, DownAmongTheDeadClassStatsModifierTable, DownAmongTheDeadClassDevilsLuckCircleFillTable,
   DownAmongTheDeadClassHpTable, DownAmongTheDeadClassClothingTable, DownAmongTheDeadClassHatTable,
-  antiquarianPhobiaTable, antiquarianHolyGrailTable, deepOneOriginStatsModifierTable, 
+  antiquarianPhobiaTable, antiquarianHolyGrailTable, deepOneOriginStatsModifierTable,
   DownAmongTheDeadClassAbilityTables } from '../Tables/down-among-the-dead-tables.ts';
 import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
