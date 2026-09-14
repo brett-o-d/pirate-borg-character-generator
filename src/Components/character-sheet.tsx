@@ -10,9 +10,8 @@ import { CabinFeverClassTable, cabinFeverClassAbilityTables, CabinFeverClassStat
   CabinFeverClassClothingTable, CabinFeverClassHatTable } from '../Tables/cabin-fever-tables.ts';
 import { DownAmongTheDeadClassTable, DownAmongTheDeadClassStatsModifierTable, DownAmongTheDeadClassDevilsLuckCircleFillTable,
   DownAmongTheDeadClassHpTable, DownAmongTheDeadClassClothingTable, DownAmongTheDeadClassHatTable,
-  DownAmongTheDeadClassWeaponTable, antiquarianPhobiaTable, antiquarianHolyGrailTable,
-  antiquarianAbilityTable, deepOneOriginStatsModifierTable, unlockedSoulAbilityTable, anglerWeaponTable,
-  DownAmongTheDeadClassAbilityTables, deepOneOriginTable } from '../Tables/down-among-the-dead-tables.ts';
+  antiquarianPhobiaTable, antiquarianHolyGrailTable, deepOneOriginStatsModifierTable, 
+  DownAmongTheDeadClassAbilityTables } from '../Tables/down-among-the-dead-tables.ts';
 import PirateBorgCharacterSheetColorLetter from '../Assets/Pirate_Borg_Character_Sheet_Color_Letter_v2_cropped.jpg';
 import PirateBorgCharacterSheetv3p1 from '../Assets/PirateBorgCharacterSheetv3p1.jpg';
 import PirateBorgCharacterSheetBWLetter from '../Assets/Pirate_Borg_Character_Sheet_BW_Letter_cropped.jpg';
